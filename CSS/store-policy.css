@@ -1,0 +1,118 @@
+.title-section {
+    height: 167px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.title-box {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.title-box-data {
+    font-family: 'Poppins', sans-serif;
+    font-size: 42px;
+    line-height: 1.1em;
+    letter-spacing: 0.2em;
+    font-weight: 600;
+    color: #111111;
+}
+
+.main-content {
+    height: 830px;
+    width: 100%;
+    background-color: #f6f3ef;
+    display: flex;
+    flex-direction: column;
+}
+
+.upper-box-container {
+    height: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.upper-content-box {
+    height: 74%;
+    width: 37%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.content-box-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.content-box-header {
+    font-family: 'Poppins', sans-serif;
+    font-size: 24px;
+    line-height: 1.2em;
+    letter-spacing: 0.25em;
+    font-weight: 600;
+    color: #111111;
+    margin-bottom: 14px;
+}
+
+.content-box-line {
+    width: 5%;
+    border: 1.5px #111111 solid;
+}
+
+.content-box-data {
+    text-align: center;
+}
+
+.content-box-paragraph {
+    font-family: 'Barlow', sans-serif;
+    font-size: 16px;
+    line-height: 1.7em;
+    letter-spacing: 0.01em;
+    font-weight: 200;
+    word-break: break-word;
+}
+
+.shipping-button {
+    height: 13%;
+    width: 58.2%;
+    background-color: transparent;
+    border: 1px #0f0f0f solid; 
+    font-family: 'Barlow', sans-serif;
+    font-size: 16px;
+    font-weight: 200;
+    color: #797767;
+    cursor: pointer;
+}
+
+.shipping-button:hover {
+    background-color: #797767;
+    color: #FFFFFF;
+    transition: 0.4s ease-out;
+}
+
+.lower-box-container {
+    height: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.lower-content-box {
+    height: 36%;
+    width: 37%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}

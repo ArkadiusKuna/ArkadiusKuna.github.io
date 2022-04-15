@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Biżuteria | Måne</title>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax.js/1.5.0/parallax.min.js" integrity="sha512-Blu6KWaTqestULmtJUTB2mwDFTB/FDRuTHV52Uu5dTFVQZ8YWUq2LuxN/brNEjWAqlHr50oAbxrydsuxoK/mqQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <link rel="stylesheet" href="/CSS/process.css">
+        <link rel="stylesheet" href="/CSS/global.css">
+        <link rel="icon" href="/Img/global-img/title-img/logo-nav-bar.webp" type="logo">
+        <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@200;300;400&family=Poppins:wght@600&family=Work+Sans:wght@200&display=swap" rel="stylesheet">        
+    </head>  
+    <body>
+
+        <section>
+            <div class="signing" id="login-form">
+                        <img src="/Img/global-img/modal/close.png" class="signing__close-icon" id="login-form-close" alt="close-icon"/>
+                <form action="" class="form">
+                    <div class="form__header">
+                        <h1 class="form__title">Zaloguj się</h1>
+                        <p class="form__text">Nowy na stronie?
+                            <a href="#" class="form__link"><span class="form__text--underline" id="register"> Zarejestruj się</span></a>
+                        </p>
+                    </div>
+                    <div class="field">
+                        <label class="field__label" for="e-mail">E-mail *</label>
+                        <input class="input field__input--login" type="email" name="login-email" id="login-e-mail" placeholder="E-mail" required/>
+                    </div>
+                    <div class="field field--lower-margin">
+                        <label class="field__label" for="password">Hasło *</label>
+                        <input class="input field__input--login" type="password" name="login-password" id="login-password" placeholder="Hasło" required/>
+                    </div>  
+                        <p class="form__text form__text--underline form__text--higher-margin form__text--left-align form__text--font-s">
+                            <a class="form__link" href="#">Zapomniałeś hasła?</a>
+                        </p>
+                    <div class="form__button">
+                        <button class="button form__button--login">Zaloguj się</button>
+                    </div>
+                        <p class="form__text form__text--lower-margin">albo</p>
+                    <div class="form__social-media-login">
+                        <img class="form__img" src="Img/global-img/modal/facebook.png" alt="facebook"/>
+                        <img class="form__img" src="Img/global-img/modal/google.png" alt="google"/>
+                    </div>
+                </form>
+            </div>
+            
+            <div class="signing" id="register-form">
+                    <img src="/Img/global-img/modal/close.png" class="signing__close-icon" id="register-form-close" alt="close-icon"/>
+                <form action="" class="form">
+                    <div class="form__header">
+                        <h1 class="form-title form__title--register">Zarejestruj się</h1>
+                    </div>
+                    <div class="field">
+                        <input class="input field__input--register" type="text" name="name" placeholder="Imię"/>
+                    </div>
+                    <div class="field">
+                        <input class="input field__input--register" type="text" name="last-name" placeholder="Nazwisko"/>
+                    </div>  
+                    <div class="field">
+                        <input class="input field__input--register" type="email" name="email" placeholder="E-mail"/>
+                    </div>  
+                    <div class="field">
+                        <input class="input field__input--register input--higher-margin" type="password" name="password" placeholder="Hasło"/>
+                    </div>  
+                    <div class="form__button">
+                        <button class="button form__button--register">Zarejestruj się</button>
+                    </div>
+                      <p class="form__text">Jesteś już zarejestrowany?
+                          <a href="#" class="form__link"><span class="form__text--bold" id="login"> Zaloguj się</span></a>
+                      </p>
+                </form>
+            </div>
+        </section>
+
+        <header class="navigation-container">
+            <nav class="navigation" id="top">
+                <ul class="navigation__list">
+                    <li class="navigation__item">
+                        <a class="navigation__link" href="/index.html" target="_self"><img src="/Img/global-img/nav-bar/logo-nav-bar.webp" class="navigation__image" id="header-img" alt="logo-img"></a>
+                    </li>
+                    <li class="navigation__item">
+                        <a class="navigation__link" href="/index.html" target="_self">strona główna</a>
+                    </li>
+                    <li class="navigation__item">
+                        <a class="navigation__link" href="/shop.html" target="_self">sklep</a>
+                    </li>
+                    <li class="navigation__item">
+                        <a class="navigation__link" href="/about.html" target="_self">o mnie</a>
+                    </li>
+                    <li class="navigation__item">
+                        <a class="navigation__link" href="/process.html" target="_self">proces</a>
+                    </li>
+                    <li class="navigation__item">
+                        <a class="navigation__link" href="/contact.html" target="_self">kontakt</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <nav class="navigation navigation--side-bar">
+                <ul class="navigation__list navigation__list--side-bar">
+                    <li class="navigation__item navigation__item--side-bar" id="log-in-button">
+                        <p class="navigation__text">Zaloguj</p>
+                    </li>
+                    <li class="navigation__item navigation__item--side-bar">
+                        <img src="/Img/global-img/nav-bar/empty-cart.jpg" class="navigation__image navigation__image--side-bar" id="registration-img" alt="empty-cart-img">
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <section class="title-section">
+            <div class="title-box" id="process">
+                <h1 class="title-header">PROCES</h1>
+            </div>
+        </section>
+        <main class="main-section">
+            <div class="main-section-upper-container">
+                <div class="content-box">
+                    <div class="data-box" id="design">
+                        <div class="header-box">
+                            <h2 class="header-box-data">DESIGN</h2>
+                            <hr class="line-box-data">
+                        </div>
+                        <div class="paragraph-box">
+                            <p class="paragraph-box-data">
+                                Bransoletki które tworzę to minimalistyczne połączenie naturalnych kamieni wplecionych w nylonowe sznureczki.
+                                Rodzaj tej plecionki nazywamy makramą. Jest to sztuka wiązania sznurków, znana od starożytności, do której nie 
+                                używa się igieł, drutów ani szydełka.
+                            </p>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="parralax-box">
+                        <div class="parallax-window" data-parallax="scroll" data-image-src="/Img/process-img/upper-img.png"></div>
+                    </div>
+            </div>
+            <div class="main-section-middle-container">
+                <div class="parralax-box">
+                    <div class="parallax-window" data-parallax="scroll" data-image-src="/Img/process-img/middle-img.png"></div>
+                </div>
+                <div class="content-box">
+                    <div class="data-box">
+                        <div class="header-box" id="properties">
+                            <h2 class="header-box-data">WŁAŚCIWOŚCI</h2>
+                            <hr class="line-box-data">
+                        </div>
+                        <div class="paragraph-box">
+                            <p class="paragraph-box-data">
+                                Każdy kamień ma właściwości, które wpływają pozytywnie na nasze samopoczucie oraz zdrowie. 
+                                Możemy je dobierać biorąc pod uwagę wpływ jakiego oczekujemy, ich urodę lub obie te rzeczy!
+                                Więcej informacji na temat kamieni jakich używam znajdziesz w opisie produktu. Jeśli chcesz 
+                                zgłębić tę wiedzę zachęcam do zapoznania się z dedykowanymi kamieniom książkami i stronami.
+                            </p>
+                        </div>
+                    </div>
+                    </div>
+            </div>
+            <div class="main-section-lower-container">
+                <div class="content-box">
+                    <div class="data-box">
+                        <div class="header-box">
+                            <h2 class="header-box-data">PAKOWANIE</h2>
+                            <hr class="line-box-data">
+                        </div>
+                        <div class="paragraph-box">
+                            <p class="paragraph-box-data">
+                                Bransoletki są zapakowane w ekologiczne pudełka,
+                                które sprawdzą się również w roli podarunku.
+                                            <br><br>
+                                Przed wysyłką zabezpieczam je w papierowe materiały.
+                                Do pakowania nie używam plastiku.
+                            </p>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="parralax-box">
+                        <div class="parallax-window" data-parallax="scroll" data-image-src="/Img/process-img/lower-img.png"></div>
+                    </div>
+            </div>
+        </main>
+        <footer class="footer">
+            <div class="social-media-icons">
+                <a href="https://www.facebook.com/M%C3%A5ne-103075501648613" target="_blank"><img src="/Img/global-img/footer/facebook.webp" class="social-media-icons__img" alt="fb-logo"></a>
+                <a href="https://www.instagram.com/bizuteria_mane/" target="_blank"><img src="/Img/global-img/footer/instagram.webp" class="social-media-icons__img" alt="insta-logo"></a>
+            </div>
+            <div class="elevator">
+                <img src="/Img/global-img/footer/logo-mane-black.webp" class="elevator__img" id="elevator" alt="logo-img">
+            </div>
+                <ul class="footer__list">
+                    <li class="footer__item">
+                        <a href="/index.html" target="_self" class="footer__link">strona główna</a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="/shop.html" target="_self" class="footer__link">sklep</a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="/about.html" target="_self" class="footer__link">o nas</a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="/process.html" target="_self" class="footer__link">design</a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="/contact.html" target="_self" class="footer__link">kontakt</a>
+                    </li>
+                </ul>
+
+                <ul class="footer__list footer__list--right">
+                    <li class="footer__item">
+                        <a href="/FAQ.html" target="_self" class="footer__link">FAQ</a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="" class="footer__link">wysyłka i zwroty</a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="/store-policy.html#policy" target="_self" class="footer__link">polityka sklepu</a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="/store-policy.html#payments" target="_self" class="footer__link">metoda płatności</a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="mailto:bizuteria.mane@gmail.com" class="footer__link">bizuteria.mane@gmail.com</a>
+                    </li>
+                </ul>
+        </footer>
+        <script src="/JS/elevator.js"></script>
+        <script src="/JS/modal.js"></script>
+    </body>
+        </html>

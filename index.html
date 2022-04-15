@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Biżuteria | Måne</title>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax.js/1.5.0/parallax.min.js" integrity="sha512-Blu6KWaTqestULmtJUTB2mwDFTB/FDRuTHV52Uu5dTFVQZ8YWUq2LuxN/brNEjWAqlHr50oAbxrydsuxoK/mqQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+        <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+        <link rel="stylesheet" href="/CSS/global.css">
+        <link rel="stylesheet" href="/CSS/index.css">
+        <link rel="icon" href="/Img/global-img/title-img/logo-nav-bar.webp" type="logo-img">
+        <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@200;300;400;700&family=Poppins:wght@600&family=Work+Sans:wght@200&display=swap" rel="stylesheet">        
+        <link href="//db.onlinewebfonts.com/c/16efa2896f117dae2debeb23ab4715dd?family=DidoteTextW01-Italic" rel="stylesheet" type="text/css"/>
+        <link href="//db.onlinewebfonts.com/c/46e20e11617943dd78a875c8543334b0?family=DINNextW01-LightItalic" rel="stylesheet" type="text/css"/>
+    </head>  
+        <body>
+<!-- ------------------------------------------------  LOGIN, REGISTER AND MISSING EMAIL FORMS  -------------------------------------------------------------- -->
+            <section>
+                <div class="signing" id="login-form">
+                            <img src="/Img/global-img/modal/close.png" class="signing__close-icon" id="login-form-close" alt="close-icon"/>
+                    <form action="" class="form">
+                        <div class="form__header">
+                            <h1 class="form__title">Zaloguj się</h1>
+                            <p class="form__text">Nowy na stronie?
+                                <a href="#" class="form__link">
+                                    <span class="form__text--underline" id="register"> Zarejestruj się</span></a>
+                            </p>
+                        </div>
+                        <div class="field">
+                            <label class="field__label" for="e-mail">E-mail *</label>
+                            <input class="input field__input--login" type="email" name="login-email" id="login-e-mail" placeholder="E-mail" required/>
+                        </div>
+                        <div class="field field--lower-margin">
+                            <label class="field__label" for="password">Hasło *</label>
+                            <input class="input field__input--login" type="password" name="login-password" id="login-password" placeholder="Hasło" required/>
+                        </div>  
+                            <p class="form__text form__text--underline form__text--higher-margin form__text--left-align form__text--font-s">
+                                <a class="form__link" href="#">Zapomniałeś hasła?</a>
+                            </p>
+                        <div class="form__button">
+                            <button class="button form__button--login">Zaloguj się</button>
+                        </div>
+                            <p class="form__text form__text--lower-margin">albo</p>
+                        <div class="form__social-media-login">
+                            <img class="form__img" src="Img/global-img/modal/facebook.png" alt="facebook"/>
+                            <img class="form__img" src="Img/global-img/modal/google.png" alt="google"/>
+                        </div>
+                    </form>
+                </div>
+                
+                <div class="signing" id="register-form">
+                        <img src="/Img/global-img/modal/close.png" class="signing__close-icon" id="register-form-close" alt="close-icon"/>
+                    <form action="" class="form">
+                        <div class="form__header">
+                            <h1 class="form-title form__title--register">Zarejestruj się</h1>
+                        </div>
+                        <div class="field">
+                            <input class="input field__input--register" type="text" name="name" placeholder="Imię"/>
+                        </div>
+                        <div class="field">
+                            <input class="input field__input--register" type="text" name="last-name" placeholder="Nazwisko"/>
+                        </div>  
+                        <div class="field">
+                            <input class="input field__input--register" type="email" name="email" placeholder="E-mail"/>
+                        </div>  
+                        <div class="field">
+                            <input class="input field__input--register input--higher-margin" type="password" name="password" placeholder="Hasło"/>
+                        </div>  
+                        <div class="form__button">
+                            <button class="button form__button--register">Zarejestruj się</button>
+                        </div>
+                          <p class="form__text">Jesteś już zarejestrowany?
+                              <a href="#" class="form__link"><span class="form__text--bold" id="login"> Zaloguj się</span></a>
+                          </p>
+                    </form>
+                </div>
+            </section>
+<!-- -------------------------------------------------  HEADER NAVIGATION BARS  ------------------------------------------------------------------------------ -->
+            <header class="navigation-container">
+                <nav class="navigation" id="top">
+                    <ul class="navigation__list">
+                        <li class="navigation__item">
+                            <a class="navigation__link" href="/index.html" target="_self"><img src="/Img/global-img/nav-bar/logo-nav-bar.webp" class="navigation__image" id="header-img" alt="logo-img"></a>
+                        </li>
+                        <li class="navigation__item">
+                            <a class="navigation__link" href="/index.html" target="_self">strona główna</a>
+                        </li>
+                        <li class="navigation__item">
+                            <a class="navigation__link" href="/shop.html" target="_self">sklep</a>
+                        </li>
+                        <li class="navigation__item">
+                            <a class="navigation__link" href="/about.html" target="_self">o mnie</a>
+                        </li>
+                        <li class="navigation__item">
+                            <a class="navigation__link" href="/process.html" target="_self">proces</a>
+                        </li>
+                        <li class="navigation__item">
+                            <a class="navigation__link" href="/contact.html" target="_self">kontakt</a>
+                        </li>
+                    </ul>
+                </nav>
+
+                <nav class="navigation navigation--side-bar">
+                    <ul class="navigation__list navigation__list--side-bar">
+                        <li class="navigation__item navigation__item--side-bar" id="log-in-button">
+                            <p class="navigation__text">Zaloguj</p>
+                        </li>
+                        <li class="navigation__item navigation__item--side-bar">
+                            <img src="/Img/global-img/nav-bar/empty-cart.jpg" class="navigation__image navigation__image--side-bar" id="registration-img" alt="empty-cart-img">
+                        </li>
+                    </ul>
+                </nav>
+            </header>
+<!-- ----------------------------------------------------  INTRO SLIDER SECTION  ----------------------------------------------------------------------------- -->
+            <section>
+                <div class="intro-slider">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide swiper-slide--intro-slider">
+                            <img src="/Img/index-img/main-slider/main-slider-1.png" class="swiper-slide__intro-slider-image" draggable="false" alt="slide-img">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="/Img/index-img/main-slider/main-slider-2.png" class="swiper-slide__intro-slider-image" draggable="false" alt="slide-img">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="/Img/index-img/main-slider/main-slider-3.png" class="swiper-slide__intro-slider-image" draggable="false" alt="slide-img">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="/Img/index-img/main-slider/main-slider-4.png" class="swiper-slide__intro-slider-image" draggable="false" alt="slide-img">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="/Img/index-img/main-slider/main-slider-5.png" class="swiper-slide__intro-slider-image" draggable="false" alt="slide-img">
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+            </section>
+<!-- ---------------------------------------------------  NEWS SLIDER SECTION  ------------------------------------------------------------------------------- -->
+            <section>
+                <div class="news-header">
+                    <h1 class="news-header__title">NOWOŚCI</h1>
+                    <hr class="news-header__line">
+                </div>
+                <div class="products-slider">
+                    <div class="swiper-button-next swiper-button-next--products-slider"></div>
+                    <div class="swiper-button-prev swiper-button-next--products-slider"></div>
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide swiper-slide--news-slider">
+                            <div class="product-box">
+                                <a href="" class="product-box__link">
+                                    <div class="image-swap">
+                                        <img src="/Img/index-img/news-slider/box-1-img-1.webp" class="image-swap__image" alt="product-img">
+                                        <img src="/Img/index-img/news-slider/box-1-img-2.webp" class="image-swap__image image-swap__image--hover" alt="display-img">
+                                        <div class="image-swap__overlay">
+                                            <div class="image-swap__text">Podgląd</div>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="" class="product-box__link">
+                                    <div class="product-description">
+                                        <h3 class="product-description__header">Pleciona bransoletka z Agatem</h3>
+                                        <hr class="product-description__line">
+                                        <p class="product-description__price">80,00 zł</p>
+                                    </div>
+                                </a>
+                                <div class="product-button">
+                                    <button class="button button--add-to-cart">Dodaj do koszyka</button>
+                                </div>
+                            </div>
+                        </div>
+                                
+                        <div class="swiper-slide swiper-slide--news-slider">
+                            <div class="product-box">
+                                <a href="" class="product-box__link">
+                                    <div class="image-swap">
+                                        <img src="/Img/index-img/news-slider/box-2-img-1.webp" class="image-swap__image" alt="product-img">
+                                        <img src="/Img/index-img/news-slider/box-2-img-2.webp" class="image-swap__image image-swap__image--hover" alt="display-img">
+                                        <div class="image-swap__overlay">
+                                            <div class="image-swap__text">Podgląd</div>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="" class="product-box__link">
+                                    <div class="product-description">
+                                        <h3 class="product-description__header">Pleciona bransoletka z Turmalinem</h3>
+                                        <hr class="product-description__line">
+                                        <p class="product-description__price">90,00 zł</p>
+                                    </div>
+                                </a>
+                                <div class="product-button">
+                                    <button class="button button--add-to-cart">Dodaj do koszyka</button>
+                                </div>
+                            </div>
+                        </div>
+        
+                        <div class="swiper-slide swiper-slide--news-slider">
+                            <div class="product-box">
+                                <a href="" class="product-box__link">
+                                    <div class="image-swap">
+                                        <img src="/Img/index-img/news-slider/box-3-img-1.webp" class="image-swap__image" alt="product-img">
+                                        <img src="/Img/index-img/news-slider/box-3-img-2.webp" class="image-swap__image image-swap__image--hover" alt="display-img">
+                                        <div class="image-swap__overlay">
+                                            <div class="image-swap__text">Podgląd</div>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="" class="product-box__link">
+                                    <div class="product-description">
+                                        <h3 class="product-description__header">Pleciona bransoletka z Rodonitem</h3>
+                                        <hr class="product-description__line">
+                                        <p class="product-description__price">100,00 zł</p>
+                                    </div>
+                                </a>
+                                <div class="product-button">
+                                    <button class="button button--add-to-cart">Dodaj do koszyka</button>
+                                </div>
+                            </div>
+                        </div>
+        
+                        <div class="swiper-slide swiper-slide--news-slider">
+                            <div class="product-box">
+                                <a href="/process.html" class="product-box__link">
+                                    <div class="image-swap">
+                                        <img src="/Img/index-img/news-slider/box-4-img-1.webp" class="image-swap__image" alt="product-img">
+                                        <img src="/Img/index-img/news-slider/box-4-img-2.webp" class="image-swap__image image-swap__image--hover" alt="display-img">
+                                        <div class="image-swap__overlay">
+                                            <div class="image-swap__text">Podgląd</div>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="" class="product-box__link">
+                                    <div class="product-description">
+                                        <h3 class="product-description__header">Pleciona bransoletka z Jaspisem</h3>
+                                        <hr class="product-description__line">
+                                        <p class="product-description__price">80,00 zł</p>
+                                    </div>
+                                </a>
+                                <div class="product-button">
+                                    <button class="button button--add-to-cart">Dodaj do koszyka</button>
+                                </div>
+                            </div>
+                        </div>
+        
+                        <div class="swiper-slide swiper-slide--news-slider">
+                            <div class="product-box">
+                                <a href="" class="product-box__link">
+                                    <div class="image-swap">
+                                        <img src="/Img/index-img/news-slider/box-5-img-1.webp" class="image-swap__image" alt="product-img">
+                                        <img src="/Img/index-img/news-slider/box-5-img-2.webp" class="image-swap__image image-swap__image--hover" alt="display-img">
+                                        <div class="image-swap__overlay">
+                                            <div class="image-swap__text">Podgląd</div>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="" class="product-box__link">
+                                    <div class="product-description">
+                                        <h3 class="product-description__header">Pleciona bransoletka z Cytrynem</h3>
+                                        <hr class="product-description__line">
+                                        <p class="product-description__price">90,00 zł</p>
+                                    </div>
+                                </a>
+                                <div class="product-button">
+                                    <button class="button button--add-to-cart">Dodaj do koszyka</button>
+                                </div>
+                            </div>
+                        </div>
+        
+                        <div class="swiper-slide swiper-slide--news-slider">
+                            <div class="product-box">
+                                <a href="" class="product-box__link">
+                                    <div class="image-swap">
+                                        <img src="/Img/index-img/news-slider/box-6-img-1.webp" class="image-swap__image" alt="product-img">
+                                        <img src="/Img/index-img/news-slider/box-6-img-2.webp" class="image-swap__image image-swap__image--hover" alt="display-img">
+                                        <div class="image-swap__overlay">
+                                            <div class="image-swap__text">Podgląd</div>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="" class="product-box__link">
+                                    <div class="product-description product-description--lower-padding">
+                                        <h3 class="product-description__header">Pleciona bransoletka z Cytrynem i księżycową zawieszką</h3>
+                                        <hr class="product-description__line">
+                                        <p class="product-description__price">120,00 zł</p>
+                                    </div>
+                                </a>
+                                <div class="product-button">
+                                    <button class="button button--add-to-cart">Dodaj do koszyka</button>
+                                </div>
+                            </div>
+                        </div>
+        
+                        <div class="swiper-slide swiper-slide--news-slider">
+                            <div class="product-box">
+                                <a href="" class="product-box__link">
+                                    <div class="image-swap">
+                                        <img src="/Img/index-img/news-slider/box-7-img-1.webp" class="image-swap__image" alt="product-img">
+                                        <img src="/Img/index-img/news-slider/box-7-img-2.webp" class="image-swap__image image-swap__image--hover" alt="display-img">
+                                        <div class="image-swap__overlay">
+                                            <div class="image-swap__text">Podgląd</div>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="" class="product-box__link">
+                                    <div class="product-description">
+                                        <h3 class="product-description__header">Pleciona bransoletka z Azurytem</h3>
+                                        <hr class="product-description__line">
+                                        <p class="product-description__price">100,00 zł</p>
+                                    </div>
+                                </a>
+                                <div class="product-button">
+                                    <button class="button button--add-to-cart">Dodaj do koszyka</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+<!-- ---------------------------------------------  PARALLAX PHOTOS & PRODUCTS ------------------------------------------------------------------------------- -->
+            <section>
+                <div class="container">
+                <div class="best-seller">
+                    <a href="" class="best-seller__link">
+                    <img src="/Img/index-img/sub-section/left-panel-product.webp" class="best-seller__image" alt="product-img">
+                    <div class="best-seller__data">
+                        <p class="best-seller__paragraph">Pleciona bransoletka z Azurytem</p>
+                        <p class="best-seller__paragraph best-seller__paragraph--price">100,00 zł</p>
+                    </div>
+                    <div class="hover-button-box">
+                        <button class="button button--hover"><span class="best-seller__paragraph best-seller__paragraph--button-text">Dodaj do koszyka</span></button>
+                    </div>
+                    </a>
+                    </div>
+                    <div class="parallax-container">
+                    <div class="parallax-window" data-parallax="scroll" data-image-src="/Img/index-img/sub-section/Bransoletki.jpg">
+                        <div class="parallax-window__data">
+                        <a href="" class="parallax-window__link">
+                            <h2 class="parallax-window__title">bransoletki</h2>
+                        </a>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                
+                <div class="container">
+                <div class="parallax-container">
+                    <div class="parallax-window" data-parallax="scroll" data-image-src="/Img/index-img/sub-section/Kamienie.webp">
+                    <div class="parallax-window__data">
+                        <a href="/process.html#process" class="parallax-window__link">
+                            <h2 class="parallax-window__title">kamienie</h2>
+                        </a>
+                    </div>
+                    </div>
+                </div>
+                <div class="best-seller">
+                    <a href="" class="best-seller__link">
+                    <img src="/Img/index-img/sub-section/right-panel-product.webp" class="best-seller__image" alt="product-img">
+                    <div class="best-seller__data">
+                        <p class="best-seller__paragraph">Pleciona bransoletka z Rodonitem</p>
+                        <p class="best-seller__paragraph best-seller__paragraph--price">100,00 zł</p>
+                    </div>
+                    <div class="hover-button-box">
+                        <button class="button button--hover"><span class="best-seller__paragraph best-seller__paragraph--button-text">Dodaj do koszyka</span></button>
+                    </div>
+                    </a>
+                    </div>
+                </div>
+            </section>
+<!-- ----------------------------------------------------------  INFO SECTION  ------------------------------------------------------------------------------- -->
+            <section class="info-section">
+                <div class="info-section-wrapper">
+                    <div class="info-box">
+                        <div class="info-img-container">
+                            <img src="/Img/index-img/info-section/left-img.jpeg" class="info_img" alt="mainkg-img">
+                            <div class="info-box-data">
+                                <p class="info-paragraph">JAK POWSTAJĄ</p>
+                                <h2 class="info-header">BRANSOLETKI</h2>
+                                <hr class="info-line">
+                                <a href="/about.html#making" target="_self" class="info-link">wykonanie</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="info-box">
+                        <div class="info-img-container">
+                            <img src="/Img/index-img/info-section/middle-img.jpeg" class="info_img" alt="proprties-img">
+                            <div class="info-box-data">
+                                <p class="info-paragraph">KAMIENNE</p>
+                                <h2 class="info-header">WŁAŚCIOWOŚCI</h2>
+                                <hr class="info-line">
+                                <a href="/process.html#properties" target="_self" class="info-link">kilka słów</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="info-box">
+                        <div class="info-img-container">
+                            <img src="/Img/index-img/info-section/right-img.jpeg" class="info_img" alt="design-img">
+                            <div class="info-box-data">
+                                <p class="info-paragraph">RĘCZNE</p>
+                                <h2 class="info-header">PLECIONKI</h2>
+                                <hr class="info-line">
+                                <a href="/process.html#design" target="_self" class="info-link">design</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="instagram-section">
+                <div class="instagram-section-wrapper">
+                    <div class="section-header">
+                        <div class="header-box">
+                        <h2 class="instagram-section-header-data">Instagram</h2>
+                        <a href="https://www.instagram.com/accounts/login/?next=/bizuteria_mane/" target="_blank" class="instagram-section-link">@bizuteria_mane</a>
+                    </div>
+                </div>
+                    <div class="instagram-feed">
+
+                    </div>
+                </div>
+            </section>
+            <footer class="footer">
+                <div class="social-media-icons">
+                    <a href="https://www.facebook.com/M%C3%A5ne-103075501648613" target="_blank"><img src="/Img/global-img/footer/facebook.webp" class="social-media-icons__img" alt="fb-logo"></a>
+                    <a href="https://www.instagram.com/bizuteria_mane/" target="_blank"><img src="/Img/global-img/footer/instagram.webp" class="social-media-icons__img" alt="insta-logo"></a>
+                </div>
+                <div class="elevator">
+                    <img src="/Img/global-img/footer/logo-mane-black.webp" class="elevator__img" id="elevator" alt="logo-img">
+                </div>
+                    <ul class="footer__list">
+                        <li class="footer__item">
+                            <a href="/index.html" target="_self" class="footer__link">strona główna</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="/shop.html" target="_self" class="footer__link">sklep</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="/about.html" target="_self" class="footer__link">o nas</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="/process.html" target="_self" class="footer__link">design</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="/contact.html" target="_self" class="footer__link">kontakt</a>
+                        </li>
+                    </ul>
+
+                    <ul class="footer__list footer__list--right">
+                        <li class="footer__item">
+                            <a href="/FAQ.html" target="_self" class="footer__link">FAQ</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="" class="footer__link">wysyłka i zwroty</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="/store-policy.html#policy" target="_self" class="footer__link">polityka sklepu</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="/store-policy.html#payments" target="_self" class="footer__link">metoda płatności</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="mailto:bizuteria.mane@gmail.com" class="footer__link">bizuteria.mane@gmail.com</a>
+                        </li>
+                    </ul>
+            </footer>
+            <script src="/JS/slider.js"></script>
+            <script src="/JS/elevator.js"></script>
+            <script src="/JS/modal.js"></script>
+        </body>
+</html>
