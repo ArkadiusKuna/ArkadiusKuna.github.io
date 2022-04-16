@@ -8,11 +8,13 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax.js/1.5.0/parallax.min.js" integrity="sha512-Blu6KWaTqestULmtJUTB2mwDFTB/FDRuTHV52Uu5dTFVQZ8YWUq2LuxN/brNEjWAqlHr50oAbxrydsuxoK/mqQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
         <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+        <script src="https://apis.google.com/js/platform.js" async defer></script>
         <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
         <link rel="stylesheet" href="/CSS/global.css">
         <link rel="stylesheet" href="/CSS/index.css">
         <link rel="icon" href="/Img/global-img/title-img/logo-nav-bar.webp" type="logo-img">
-        <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@200;300;400;700&family=Cinzel&family=Poppins:wght@600&family=Work+Sans:wght@200&display=swap" rel="stylesheet">        
+        <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@200;300;400;700&family=Cinzel&family=Poppins:wght@600&family=Work+Sans:wght@200&display=swap" rel="stylesheet">      
+        <meta name="google-signin-client_id" content="394700794104-q2lpo4shjrfmo48hmtemcsj7tlir1oki.apps.googleusercontent.com">  
     </head>  
         <body>
 <!-- ------------------------------------------------  LOGIN, REGISTER AND MISSING EMAIL FORMS  -------------------------------------------------------------- -->
@@ -44,7 +46,8 @@
                             <p class="form__text form__text--lower-margin">albo</p>
                         <div class="form__social-media-login">
                             <img class="form__img" src="Img/global-img/modal/facebook.png" alt="facebook"/>
-                            <img class="form__img" src="Img/global-img/modal/google.png" alt="google"/>
+                            <div class="g-signin2" data-onsuccess="onSignIn"></div>
+                            <!-- <img class="form__img" src="Img/global-img/modal/google.png" alt="google"/> -->
                         </div>
                     </form>
                 </div>
