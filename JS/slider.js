@@ -26,3 +26,13 @@ var swiper = new Swiper(".products-slider", {
     prevEl: ".swiper-button-prev",
   },
 });
+
+var swiper = new Swiper(".pop-up--swiper", {
+  direction: 'horizontal',
+  allowTouchMove: false,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+    type: "bullets",
+  },
+});

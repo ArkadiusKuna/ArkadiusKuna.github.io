@@ -8,13 +8,11 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax.js/1.5.0/parallax.min.js" integrity="sha512-Blu6KWaTqestULmtJUTB2mwDFTB/FDRuTHV52Uu5dTFVQZ8YWUq2LuxN/brNEjWAqlHr50oAbxrydsuxoK/mqQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
         <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
-        <script src="https://apis.google.com/js/platform.js" async defer></script>
         <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
         <link rel="stylesheet" href="/CSS/global.css">
         <link rel="stylesheet" href="/CSS/index.css">
         <link rel="icon" href="/Img/global-img/title-img/logo-nav-bar.webp" type="logo-img">
-        <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@200;300;400;700&family=Cinzel&family=Poppins:wght@600&family=Work+Sans:wght@200&display=swap" rel="stylesheet">      
-        <meta name="google-signin-client_id" content="394700794104-q2lpo4shjrfmo48hmtemcsj7tlir1oki.apps.googleusercontent.com">  
+        <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@200;300;400;700&family=Cinzel&family=Poppins:wght@200;600&family=Work+Sans:wght@200&display=swap" rel="stylesheet">      
     </head>  
         <body>
 <!-- ------------------------------------------------  LOGIN, REGISTER AND MISSING EMAIL FORMS  -------------------------------------------------------------- -->
@@ -46,8 +44,7 @@
                             <p class="form__text form__text--lower-margin">albo</p>
                         <div class="form__social-media-login">
                             <img class="form__img" src="Img/global-img/modal/facebook.png" alt="facebook"/>
-                            <div class="g-signin2" data-onsuccess="onSignIn"></div>
-                            <!-- <img class="form__img" src="Img/global-img/modal/google.png" alt="google"/> -->
+                            <img class="form__img" src="Img/global-img/modal/google.png" alt="google"/>
                         </div>
                     </form>
                 </div>
@@ -312,6 +309,53 @@
                                 </a>
                                 <div class="product-button">
                                     <button class="button button--add-to-cart">Dodaj do koszyka</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+<!-- ---------------------------------------------  PRDUCTS POP-UPS ------------------------------------------------------------------------------- -->
+            <section>
+                <div class="background">
+                    <div class="pop-up">
+                        <div class="pop-up__left-box">
+                            <div class="swiper pop-up--swiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide swiper-slide--product">
+                                      <img src="/Img/products-pop-ups/box-1-img-1.webp" class="pop-up__image" alt="product-image"></img>
+                                    </div>
+                                    <div class="swiper-slide swiper-slide--product">
+                                      <img src="/Img/products-pop-ups/box-1-img-2.webp" class="pop-up__image" alt="product-image"></img>
+                                    </div>
+                                </div>
+                                <div class="swiper-pagination pop-up--pagination"></div>
+                              </div>
+                        </div>
+                        <div class="pop-up__right-box">
+                            <div>
+                                <h1 class="pop-up__header">Pleciona bransoletka z Agatem</h1>
+                            </div>
+                            <div class="product-price-box">
+                                <p class="product-price">80,00 zł</p>
+                            </div>
+                            <div class="product-properties">
+                                <div class="size-select">
+                                    <div class="label-box">
+                                    <label class="label" for="size">Rozmiar</label>
+                                    </div>
+                                    <div>
+                                    <select class="select" name="size" id="">
+                                        <option disabled selected value="">Wybierz</option>
+                                        <option value="14-15 cm">Obwód nadgarsta - 14-15 cm</option>
+                                        <option value="16-17 cm">Obwód nadgarsta - 16-17 cm</option>
+                                        <option value="18-19 cm">Obwód nadgarsta - 18-19 cm</option>
+                                    </select>
+                                    </div>
+                                </div>
+                                <div class="quantity-select">
+                                    <label class="label" for="quantity">Ilość</label>
+                                    <select name="quantity" id=""><span>Wybierz</span></select>
                                 </div>
                             </div>
                         </div>
