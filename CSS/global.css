@@ -16,7 +16,7 @@ body {
 }
 
 /*- LOGIN, REGISTER AND MISSING EMAIL FORMS-   */
-.signing {
+.signing-modal {
   height: 100vh;
   width: 100vw;
   position: fixed;
@@ -47,11 +47,12 @@ body {
   align-items: center;
 }
 
-.form__header {
+.form-header {
+  width: 300px;
   margin: 50px 0 39px 0;
 }
 
-.form__title {
+.form-header__title {
   font-family: 'Poppins', sans-serif;
   font-size: 40px;
   font-weight: 600;
@@ -69,13 +70,13 @@ body {
   line-height: .8em;
 }
 
-.form__link {
+.form-header__link {
   width: 300px;
   text-decoration: none;
   color: #111111;
 }
 
-.form__text {
+.form-header__text {
   width: 300px;
   font-family: 'Barlow', sans-serif;
   font-size: 16px;
@@ -86,7 +87,7 @@ body {
   color: #111111;
 }
 
-.form__text--underline {
+.form-header__text--underline {
   text-decoration: underline;
 }
 

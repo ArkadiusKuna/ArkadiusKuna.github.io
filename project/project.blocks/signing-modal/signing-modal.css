@@ -1,0 +1,30 @@
+@import "/project/project.blocks/signing-modal/__close-icon/signing-modal__close-icon.css";
+@import "/project/project.blocks/form/form.css";
+@import "/project/project.blocks/form/__title/form__title.css";
+@import "/project/project.blocks/form/__title/_small/form__title_small.css";
+@import "/project/project.blocks/form/__title/_extended_margin_bottom/form__title_extended_margin_bottom.css";
+@import "/project/project.blocks/form/__text/form__text.css";
+@import "/project/project.blocks/form/__text/_bold/form__text_bold.css";
+@import "/project/project.blocks/form/__link/form__link.css";
+@import "/project/project.blocks/form/__input/form__input.css";
+@import "/project/project.blocks/form/__input/_extended_margin_bottom/form__input_extended_margin_bottom.css";
+@import "/project/project.blocks/form/__button/form__button.css";
+@import "/project/project.blocks/form/__image/form__image.css";
+
+
+
+
+
+
+.signing-modal {
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  z-index: 200;
+  overflow: hidden;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  background-color: #FFFFFF;
+  box-sizing: border-box;
+}

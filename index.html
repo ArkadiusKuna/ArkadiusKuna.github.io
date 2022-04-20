@@ -9,70 +9,67 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax.js/1.5.0/parallax.min.js" integrity="sha512-Blu6KWaTqestULmtJUTB2mwDFTB/FDRuTHV52Uu5dTFVQZ8YWUq2LuxN/brNEjWAqlHr50oAbxrydsuxoK/mqQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
         <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
         <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
-        <link rel="stylesheet" href="/CSS/global.css">
+        <link rel="stylesheet" href="/project/project.blocks/all-blocks/all-blocks.css">
+        <link rel="stylesheet" href="/project/project.blocks/body/body.css">
+        <link rel="stylesheet" href="/project/project.blocks/signing-modal/signing-modal.css">
+        <!-- <link rel="stylesheet" href="/CSS/global.css"> -->
         <link rel="stylesheet" href="/CSS/index.css">
         <link rel="icon" href="/Img/global-img/title-img/logo-nav-bar.webp" type="logo-img">
-        <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@200;300;400;700&family=Cinzel&family=Poppins:wght@200;600&family=Work+Sans:wght@200&display=swap" rel="stylesheet">      
+        <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@200;300;400;500;600;700&family=Cinzel&family=Poppins:wght@200;600&family=Work+Sans:wght@200&display=swap" rel="stylesheet">      
     </head>  
-        <body>
+        <body class="body">
 <!-- ------------------------------------------------  LOGIN, REGISTER AND MISSING EMAIL FORMS  -------------------------------------------------------------- -->
             <section>
-                <div class="signing" id="login-form">
-                            <img src="/Img/global-img/modal/close.png" class="signing__close-icon" id="login-form-close" alt="close-icon"/>
+                <div class="signing-modal" id="login-form">
+
+                    <img src="/Img/global-img/modal/close.png" class="signing__close-icon" id="login-form-close" alt="close-icon"/>
+
                     <form action="" class="form">
-                        <div class="form__header">
-                            <h1 class="form__title">Zaloguj się</h1>
-                            <p class="form__text">Nowy na stronie?
-                                <a href="#" class="form__link">
-                                    <span class="form__text--underline" id="register"> Zarejestruj się</span></a>
-                            </p>
-                        </div>
-                        <div class="field">
-                            <label class="field__label" for="e-mail">E-mail *</label>
-                            <input class="input field__input--login" type="email" name="login-email" id="login-e-mail" placeholder="E-mail" required/>
-                        </div>
-                        <div class="field field--lower-margin">
-                            <label class="field__label" for="password">Hasło *</label>
-                            <input class="input field__input--login" type="password" name="login-password" id="login-password" placeholder="Hasło" required/>
-                        </div>  
-                            <p class="form__text form__text--underline form__text--higher-margin form__text--left-align form__text--font-s">
-                                <a class="form__link" href="#">Zapomniałeś hasła?</a>
-                            </p>
-                        <div class="form__button">
-                            <button class="button form__button--login">Zaloguj się</button>
-                        </div>
-                            <p class="form__text form__text--lower-margin">albo</p>
+                        
+                        <h1 class="form__title">Zaloguj się</h1>
+                            
+                        <p class="form__text">Nowy na stronie?
+                            <a href="#" class="form__link">
+                                <span class="form__text form__text--bold" id="register"> Zarejestruj się</span></a>
+                        </p>
+
+                        <input class="form__input form__input--hover form__input--focus" type="e-mail" name="login-email" id="login-e-mail" placeholder="E-mail" required/>
+                        <input class="form__input form__input--hover form__input--focus" type="password" name="login-password" id="login-password" placeholder="Hasło" required/>
+
+                        <p class="form__text form__text--bold">
+                            <a class="form__link" href="#">Zapomniałeś hasła?</a>
+                        </p>
+
+                        <button class="form__button">Zaloguj się</button>
+
+                        <p class="form__text">albo</p>
+<!-- 
                         <div class="form__social-media-login">
-                            <img class="form__img" src="Img/global-img/modal/facebook.png" alt="facebook"/>
-                            <img class="form__img" src="Img/global-img/modal/google.png" alt="google"/>
-                        </div>
+                            <img class="form__image" src="Img/global-img/modal/facebook.png" alt="facebook"/>
+                            <img class="form__image" src="Img/global-img/modal/google.png" alt="google"/>
+                        </div> -->
                     </form>
                 </div>
                 
-                <div class="signing" id="register-form">
-                        <img src="/Img/global-img/modal/close.png" class="signing__close-icon" id="register-form-close" alt="close-icon"/>
+                <div class="signing-modal" id="register-form">
+
+                    <img src="/Img/global-img/modal/close.png" class="signing__close-icon" id="register-form-close" alt="close-icon"/>
+
                     <form action="" class="form">
-                        <div class="form__header">
-                            <h1 class="form-title form__title--register">Zarejestruj się</h1>
-                        </div>
-                        <div class="field">
-                            <input class="input field__input--register" type="text" name="name" placeholder="Imię"/>
-                        </div>
-                        <div class="field">
-                            <input class="input field__input--register" type="text" name="last-name" placeholder="Nazwisko"/>
-                        </div>  
-                        <div class="field">
-                            <input class="input field__input--register" type="email" name="email" placeholder="E-mail"/>
-                        </div>  
-                        <div class="field">
-                            <input class="input field__input--register input--higher-margin" type="password" name="password" placeholder="Hasło"/>
-                        </div>  
-                        <div class="form__button">
-                            <button class="button form__button--register">Zarejestruj się</button>
-                        </div>
-                          <p class="form__text">Jesteś już zarejestrowany?
-                              <a href="#" class="form__link"><span class="form__text--bold" id="login"> Zaloguj się</span></a>
-                          </p>
+
+                        <h1 class="form__title form__title--small form__title_extended_margin_bottom">Zarejestruj się</h1>
+                            
+                        <input class="form__input" type="text" name="name" placeholder="Imię"/>
+                        <input class="form__input" type="text" name="last-name" placeholder="Nazwisko"/>
+                        <input class="form__input" type="email" name="email" placeholder="E-mail"/>
+                        <input class="form__input form__input--extended-margin-bottom" type="password" name="password" placeholder="Hasło"/>
+                        
+                        <button class="form__button">Zarejestruj się</button>
+                        
+                        <p class="form__text">Jesteś już zarejestrowany?
+                            <a href="#" class="form__link"><span class="form__text--bold" id="login"> Zaloguj się</span></a>
+                        </p>
+
                     </form>
                 </div>
             </section>
