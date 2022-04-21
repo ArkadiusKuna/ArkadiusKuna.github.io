@@ -5,6 +5,9 @@ const login = document.getElementById("login");
 const register = document.getElementById("register");
 const loginModalClose = document.getElementById("login-form-close");
 const registerModalClose = document.getElementById("register-form-close");
+const lostPasswordModal = document.getElementById("forgotten-password");
+const passwordModal = document.getElementById("lost-email");
+const lostPasswordModalClose = document.getElementById("missing-email-form-close");
 
 
 logInBtn.addEventListener("click", () => {
@@ -28,6 +31,14 @@ login.addEventListener("click", () => {
 registerModalClose.addEventListener("click", () => {
     modalHide(loginModal);
     modalHide(registerModal);
+})
+
+lostPasswordModal.addEventListener("click", () => {
+    modalVisible(passwordModal); 
+})
+
+lostPasswordModalClose.addEventListener("click", () => {
+    modalHide(passwordModal);
 })
 
 

@@ -1,5 +1,6 @@
 @import "/project/project.blocks/signing-modal/__close-icon/signing-modal__close-icon.css";
 @import "/project/project.blocks/form/form.css";
+@import "/project/project.blocks/form/_wider/form_wider.css";
 @import "/project/project.blocks/form/__title/form__title.css";
 @import "/project/project.blocks/form/__title/_small/form__title_small.css";
 @import "/project/project.blocks/form/__title/_extended_margin_bottom/form__title_extended_margin_bottom.css";
