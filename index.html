@@ -12,6 +12,7 @@
         <link rel="stylesheet" href="/project/project.blocks/all-blocks/all-blocks.css">
         <link rel="stylesheet" href="/project/project.blocks/body/body.css">
         <link rel="stylesheet" href="/project/project.blocks/signing-modal/signing-modal.css">
+        <link rel="stylesheet" href="/project/project.blocks/header/header.css">
         <!-- <link rel="stylesheet" href="/CSS/global.css"> -->
         <link rel="stylesheet" href="/CSS/index.css">
         <link rel="icon" href="/Img/global-img/title-img/logo-nav-bar.webp" type="logo-img">
@@ -20,14 +21,15 @@
         <body class="body">
 <!-- ------------------------------------------------  LOGIN, REGISTER AND MISSING EMAIL FORMS  -------------------------------------------------------------- -->
             <section>
+
                 <div class="signing-modal" id="login-form">
 
                     <img src="/Img/global-img/modal/close.png" class="signing__close-icon" id="login-form-close" alt="close-icon"/>
 
                     <form action="" class="form">
-                        
+
                         <h1 class="form__title">Zaloguj się</h1>
-                            
+
                         <p class="form__text">Nowy na stronie?
                             <a href="#" class="form__link">
                                 <span class="form__text form__text--bold" id="register"> Zarejestruj się</span></a>
@@ -69,7 +71,6 @@
                         <p class="form__text">Jesteś już zarejestrowany?
                             <a href="#" class="form__link"><span class="form__text--bold" id="login"> Zaloguj się</span></a>
                         </p>
-
                     </form>
                 </div>
 
@@ -86,42 +87,50 @@
                         <input type="email" class="form__input form__input--extended-margin-bottom" name="email" placeholder="E-mail">
 
                         <button class="form__button">Utwórz hasło</button>
-
                     </form>
                 </div>
             </section>
 <!-- -------------------------------------------------  HEADER NAVIGATION BARS  ------------------------------------------------------------------------------ -->
-            <header class="navigation-container">
-                <nav class="navigation" id="top">
-                    <ul class="navigation__list">
-                        <li class="navigation__item">
-                            <a class="navigation__link" href="/index.html" target="_self"><img src="/Img/global-img/nav-bar/logo-nav-bar.webp" class="navigation__image" id="header-img" alt="logo-img"></a>
+            <header class="header">
+
+                <nav class="menu" id="top">
+
+                    <ul class="menu__list">
+
+                        <li class="menu__item">
+                                <div class="logo">
+                                    <a class="menu__link" href="/index.html" target="_self"></a>
+                                        <img src="/Img/global-img/nav-bar/logo-nav-bar.webp" class="logo__image" id="header-img" alt="logo-img">
+                                    </a>
+                                </div>
                         </li>
-                        <li class="navigation__item">
-                            <a class="navigation__link" href="/index.html" target="_self">strona główna</a>
+                        <li class="menu__item">
+                            <a class="menu__link" href="/index.html" target="_self">strona główna</a>
                         </li>
-                        <li class="navigation__item">
-                            <a class="navigation__link" href="/shop.html" target="_self">sklep</a>
+                        <li class="menu__item">
+                            <a class="menu__link" href="/shop.html" target="_self">sklep</a>
                         </li>
-                        <li class="navigation__item">
-                            <a class="navigation__link" href="/about.html" target="_self">o mnie</a>
+                        <li class="menu__item">
+                            <a class="menu__link" href="/about.html" target="_self">o mnie</a>
                         </li>
-                        <li class="navigation__item">
-                            <a class="navigation__link" href="/process.html" target="_self">proces</a>
+                        <li class="menu__item">
+                            <a class="menu__link" href="/process.html" target="_self">proces</a>
                         </li>
-                        <li class="navigation__item">
-                            <a class="navigation__link" href="/contact.html" target="_self">kontakt</a>
+                        <li class="menu__item">
+                            <a class="menu__link" href="/contact.html" target="_self">kontakt</a>
                         </li>
                     </ul>
                 </nav>
 
-                <nav class="navigation navigation--side-bar">
-                    <ul class="navigation__list navigation__list--side-bar">
-                        <li class="navigation__item navigation__item--side-bar" id="log-in-button">
-                            <p class="navigation__text">Zaloguj</p>
+                <nav class="side-menu">
+
+                    <ul class="side-menu__list">
+
+                        <li class="side-menu__item">
+                            <a href="#" class="side-menu__link" id="log-in-button">Zaloguj</a>
                         </li>
-                        <li class="navigation__item navigation__item--side-bar">
-                            <img src="/Img/global-img/nav-bar/empty-cart.jpg" class="navigation__image navigation__image--side-bar" id="registration-img" alt="empty-cart-img">
+                        <li class="side-menu__item">
+                            <img src="/Img/global-img/nav-bar/empty-cart.jpg" class="side-menu__image" id="registration-img" alt="empty-cart-img">
                         </li>
                     </ul>
                 </nav>

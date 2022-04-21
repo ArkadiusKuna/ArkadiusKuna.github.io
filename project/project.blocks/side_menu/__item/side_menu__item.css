@@ -1,0 +1,5 @@
+.side-menu__item {
+    min-width: 40px;
+    padding: 10px;
+    display: flex;
+  }

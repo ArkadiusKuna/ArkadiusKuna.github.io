@@ -1,0 +1,6 @@
+.menu {
+    width: 80vw;
+    display: inline-flex;
+    justify-content: flex-end;
+    text-align: center;
+  }

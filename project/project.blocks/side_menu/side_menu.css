@@ -1,0 +1,6 @@
+.side-menu {
+  height: 65px;
+  width: 20vw;
+  display: flex;
+  align-items: flex-end;
+}

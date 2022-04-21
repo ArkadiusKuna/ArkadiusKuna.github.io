@@ -1,0 +1,5 @@
+.side-menu__list {
+  list-style: none;
+  display: inline-flex;
+  align-items: center;
+}
