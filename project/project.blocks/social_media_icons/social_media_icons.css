@@ -1,0 +1,8 @@
+.social-media-icons {
+    height: 30px;
+    width: 40px;
+    display: inline-flex;
+    position: fixed;
+    bottom: 0px;
+    margin-left: 10px;
+}

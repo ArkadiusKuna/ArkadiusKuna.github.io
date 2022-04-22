@@ -1,7 +1,7 @@
 .menu__list {
-    width: 75vw;
-    list-style: none;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
+  width: 60vw;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}

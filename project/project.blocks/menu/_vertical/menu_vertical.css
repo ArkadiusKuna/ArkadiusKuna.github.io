@@ -1,0 +1,7 @@
+.menu-vertical {
+    height: 250px;
+    width: 50vw;
+    display: flex;
+    justify-content: flex-start;
+
+}
