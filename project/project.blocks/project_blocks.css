@@ -1,0 +1,47 @@
+                        /* ALL BLOCKS STYLES*/
+@import "/project/project.blocks/all-blocks/all-blocks.css";
+
+                        /* BODY STYLES */
+@import "/project/project.blocks/body/body.css";
+
+                        /* MODALS STYLES */
+@import "/project/project.blocks/signing-modal/signing-modal.css";
+@import "/project/project.blocks/signing-modal/__close-icon/signing-modal__close-icon.css";
+@import "/project/project.blocks/form/form.css";
+@import "/project/project.blocks/form/_wider/form_wider.css";
+@import "/project/project.blocks/form/__title/form__title.css";
+@import "/project/project.blocks/form/__title/_small/form__title_small.css";
+@import "/project/project.blocks/form/__title/_extended_margin_bottom/form__title_extended_margin_bottom.css";
+@import "/project/project.blocks/form/__text/form__text.css";
+@import "/project/project.blocks/form/__text/_bold/form__text_bold.css";
+@import "/project/project.blocks/form/__link/form__link.css";
+@import "/project/project.blocks/form/__input/form__input.css";
+@import "/project/project.blocks/form/__input/_extended_margin_bottom/form__input_extended_margin_bottom.css";
+@import "/project/project.blocks/form/__button/form__button.css";
+@import "/project/project.blocks/form/__image/form__image.css";
+
+                        /* HEADER STYLES */
+@import "/project/project.blocks/header/header.css";
+@import "/project/project.blocks/menu/menu.css";
+@import "/project/project.blocks/menu/__list/menu__list.css";
+@import "/project/project.blocks/menu/__item/menu__item.css";
+@import "/project/project.blocks/menu/__link/menu__link.css";
+@import "/project/project.blocks/menu/__image/menu__image.css";
+@import "/project/project.blocks/logo/logo.css";
+@import "/project/project.blocks/logo/__image/logo__image.css";
+@import "/project/project.blocks/side_menu/side_menu.css";
+@import "/project/project.blocks/side_menu/__list/side-menu__list.css";
+@import "/project/project.blocks/side_menu/__item/side_menu__item.css";
+@import "/project/project.blocks/side_menu/__link/side_menu__link.css";
+@import "/project/project.blocks/side_menu/__image/side_menu__image.css";
+
+                        /* FOOTER STYLES */
+@import "/project/project.blocks/footer/footer.css";
+@import "/project/project.blocks/social_media_icons/social_media_icons.css";
+@import "/project/project.blocks/social_media_icons/__image/social_media_icons__image.css";
+@import "/project/project.blocks/logo/_bigger_box/logo_bigger_box.css";
+@import "/project/project.blocks/logo/__image/_small/logo__image_small.css";
+@import "/project/project.blocks/logo/__image/_no_margin/logo__image_no_margin.css";
+@import "/project/project.blocks/menu/_vertical/menu_vertical.css";
+@import "/project/project.blocks/menu/__list/_vertical/menu__list_vertical.css";
+@import "/project/project.blocks/menu/__list/_right_allign/menu__list_right_allign.css";
