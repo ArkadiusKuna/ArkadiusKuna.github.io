@@ -2,7 +2,3 @@
     text-decoration: none;
     color: #111111;
 }
-
-.menu__link:active {
-    opacity: 0.4;
-}

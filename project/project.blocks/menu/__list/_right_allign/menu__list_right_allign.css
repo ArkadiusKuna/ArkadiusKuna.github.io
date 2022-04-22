@@ -1,5 +1,4 @@
 .menu__list--right-allign {
-    display: flex;
     align-items: flex-end;
     text-align: right;
 }

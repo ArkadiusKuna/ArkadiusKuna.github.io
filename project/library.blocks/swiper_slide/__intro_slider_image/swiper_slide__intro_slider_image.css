@@ -1,0 +1,5 @@
+.swiper-slide__intro-slider-image {
+    height: 400px;
+    width: 100vw;
+    object-fit: cover;
+} 
