@@ -1,4 +1,24 @@
+                        /* INTRO SLIDER */
 @import "/project/library.blocks/intro_slider/intro_slider.css";
 @import "/project/library.blocks/swiper_slide/swiper_slide.css";
 @import "/project/library.blocks/swiper_slide/__intro_slider_image/swiper_slide__intro_slider_image.css";
 @import "/project/library.blocks/swiper_pagination/swiper_pagination.css";
+
+                        /* PRODUCTS SLIDER */
+@import "/project/library.blocks/products_slider/products_slider.css";
+@import "/project/library.blocks/swiper_buttons/_swiper_button_next/swiper_button_next_products_slider.css";
+@import "/project/library.blocks/swiper_buttons/_swiper_button_prev/swiper_button_prev_products_slider.css";
+@import "/project/library.blocks/swiper_slide/_products_slider/swiper_slide_products_slider.css";
+@import "/project/library.blocks/product_box/product_box.css";
+@import "/project/library.blocks/product_box/__link/product_box__link.css";
+@import "/project/library.blocks/product_box/__image_swap/product_box__image_swap.css";
+@import "/project/library.blocks/product_box/__image/product-box__image.css";
+@import "/project/library.blocks/product_box/__image/_hover/product-box__image_hover.css";
+@import "/project/library.blocks/product_box/__overlay/product-box__overlay.css";
+@import "/project/library.blocks/product_box/__overlay_text/product-box__overlay_text.css";
+@import "/project/library.blocks/product_box/__description/product_box__description.css";
+@import "/project/library.blocks/product_box/__description/_small/product_box__description_small.css";
+@import "/project/library.blocks/product_box/__header/product_box__header.css";
+@import "/project/library.blocks/product_box/__line/product_box__line.css";
+@import "/project/library.blocks/product_box/__price/product_box__price.css";
+@import "/project/library.blocks/product_box/__button/product_box__button.css";

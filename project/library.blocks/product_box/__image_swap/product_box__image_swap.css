@@ -1,0 +1,18 @@
+.product-box__image-swap {
+    height: 205px;
+    width: 272px;
+    display: flex;
+    position: relative;
+}
+
+.product-box__link:hover .product-box__overlay {
+    height: 35%;
+}
+
+.product-box__link:hover .product-box__image {
+    display: none;
+}
+
+.product-box__link:hover .product-box__image--hover {
+    display: block;
+}

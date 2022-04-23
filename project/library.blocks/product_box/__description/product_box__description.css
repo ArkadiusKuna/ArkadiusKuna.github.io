@@ -1,0 +1,6 @@
+.product-box__description {
+    padding: 16px 38px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

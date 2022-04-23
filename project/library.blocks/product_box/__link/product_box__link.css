@@ -1,0 +1,16 @@
+.product-box__link {
+    text-decoration: none;
+    color: #111111;
+}
+
+.product-box__link:hover .image-swap__overlay {
+    height: 35%;
+}
+
+.product-box__link:hover .image-swap__image {
+    display: none;
+}
+
+.product-box__link:hover .image-swap__image--hover {
+    display: block;
+}

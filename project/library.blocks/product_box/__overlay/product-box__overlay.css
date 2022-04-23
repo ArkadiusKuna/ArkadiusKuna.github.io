@@ -1,0 +1,11 @@
+.product-box__overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #FFFFFF;
+    overflow: hidden;
+    width: 101%;
+    height: 0;
+    transition: 0.6s ease;
+}

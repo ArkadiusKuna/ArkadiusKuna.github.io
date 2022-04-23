@@ -21,7 +21,7 @@
 @import "/project/project.blocks/form/__image/form__image.css";
 
                         /* HEADER STYLES */
-@import "/project/project.blocks/header/header.css";
+@import "/project/project.blocks/navigation/navigation.css";
 @import "/project/project.blocks/menu/menu.css";
 @import "/project/project.blocks/menu/__list/menu__list.css";
 @import "/project/project.blocks/menu/__item/menu__item.css";
@@ -45,3 +45,8 @@
 @import "/project/project.blocks/menu/_vertical/menu_vertical.css";
 @import "/project/project.blocks/menu/__list/_vertical/menu__list_vertical.css";
 @import "/project/project.blocks/menu/__list/_right_allign/menu__list_right_allign.css";
+
+                        /* SECTION HEADER */
+@import "/project/project.blocks/section_header/section_header.css";
+@import "/project/project.blocks/section_header/__title/section_header__title.css";
+@import "/project/project.blocks/section_header/__line/section_header__line.css";

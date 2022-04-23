@@ -1,0 +1,16 @@
+.product-box__button {
+    height: 45px;
+    width: 196px;
+    font-family: 'Barlow', sans-serif;
+    font-size: 16px;
+    font-weight: 200;
+    background-color: transparent;
+    border: 1px #111111 solid;
+    padding: 8px 16px;
+    cursor: pointer;
+}
+
+.product-box__button:hover {
+    opacity: 0.5;
+    transition: 0.4s ease;
+}

@@ -1,0 +1,6 @@
+.product-box__line {
+    width: 155px;
+    margin: 5px 0;
+    border: none;
+    border-bottom: 3px solid #111111;
+}
