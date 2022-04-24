@@ -37,11 +37,12 @@
 @import "/project/library.blocks/parallax/__link/parallax__link.css";
 @import "/project/library.blocks/parallax/__title/parallax__title.css";
 
-
-
-
-
-
-
-
-
+                        /* INFO SECTION    */
+@import "/project/project.blocks/info/info.css";
+@import "/project/project.blocks/info/__card/info__card.css";
+@import "/project/project.blocks/info/__image/info__image.css";
+@import "/project/project.blocks/info/__content/info__content.css";
+@import "/project/project.blocks/info/__text/info__text.css";
+@import "/project/project.blocks/info/__title/info__title.css";
+@import "/project/project.blocks/info/__line/info__line.css";
+@import "/project/project.blocks/info/__link/info__link.css";
