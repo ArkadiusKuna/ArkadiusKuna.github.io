@@ -1,0 +1,5 @@
+.widget {
+    height: 610px;
+    width: 100vw;
+    display: inline-flex;
+}

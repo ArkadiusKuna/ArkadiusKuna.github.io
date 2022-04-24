@@ -321,6 +321,7 @@
 
 .best-seller {
     width: 50vw;
+    height: 610px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -362,7 +363,6 @@
     font-family: 'Cinzel', serif;
     font-size: 18px;
     color: #797767;
-    text-align: center;
     margin: 0;
 }
 

@@ -1,0 +1,6 @@
+.widget__image {
+    height: 310px;
+    width: 485px;
+    transform: scale(1.0);
+    transition: 0.4s ease-in;
+}

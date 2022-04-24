@@ -1,0 +1,8 @@
+.parallax-window {
+    height: 610px;
+    min-width: 50vw;
+    background: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

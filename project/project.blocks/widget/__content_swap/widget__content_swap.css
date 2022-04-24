@@ -1,0 +1,8 @@
+.widget__content-swap {
+    height: 100px;
+    width: 485px;
+    text-align: center;
+    padding: 20px 0;
+    transition: opacity 0.2s ease;
+    transition-delay: 0.2s;
+}
