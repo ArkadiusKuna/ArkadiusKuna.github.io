@@ -3,7 +3,13 @@
     position: relative;
     bottom: 70px;
     left: 122px;
-    color: #797767;
+    background-color: transparent;
+    color: #111111;
     opacity: 0;
     transition: opacity 0.2s ease;
+}
+
+.button--large:hover {
+    opacity: 0.8;
+    transition: 0.3s ease;
 }

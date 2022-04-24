@@ -21,17 +21,8 @@
 @import "/project/library.blocks/product_box/__header/product_box__header.css";
 @import "/project/library.blocks/product_box/__line/product_box__line.css";
 @import "/project/library.blocks/product_box/__price/product_box__price.css";
-@import "/project/project.blocks/button/button.css";
 
                         /* PARALLAX PHOTOS & PRODUCTS WIDGETS    */
-@import "/project/project.blocks/widget/widget.css";
-@import "/project/project.blocks/widget/__product/widget__product.css";
-@import "/project/project.blocks/widget/__link/widget__link.css";
-@import "/project/project.blocks/widget/__image/widget__image.css";
-@import "/project/project.blocks/widget/__content_swap/widget__content_swap.css";
-@import "/project/project.blocks/widget/__text/widget__text.css";
-@import "/project/project.blocks/widget/__text/_price/widget__text_price.css";
-@import "/project/project.blocks/button/_large/button_large.css";
 @import "/project/library.blocks/parallax/parallax.css";
 @import "/project/library.blocks/parallax/parallax__window/parallax__window.css";
 @import "/project/library.blocks/parallax/__link/parallax__link.css";

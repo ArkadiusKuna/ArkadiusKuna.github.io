@@ -1,0 +1,7 @@
+.social-media-login {
+    display: flex;
+    height: 30px;
+    width: 180px;
+    justify-content: space-evenly;
+    cursor: pointer;
+}

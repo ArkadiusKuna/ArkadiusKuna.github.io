@@ -16,79 +16,54 @@
         <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@200;300;400;500;600;700&family=Cinzel&family=Poppins:wght@200;400;600&family=Work+Sans:wght@200&display=swap" rel="stylesheet">      
     </head>  
     
-        <body class="body">
+    <body class="body">
 <!-- ------------------------------------------------  LOGIN, REGISTER AND MISSING EMAIL FORMS  -------------------------------------------------------------- -->
-            <section>
-
-                <div class="signing-modal" id="login-form">
-                    <img src="/project/project.blocks/signing-modal/close.png" class="signing__close-icon" id="login-form-close" alt="close-icon"/>
-                    
-                    <form action="" class="form">
-
-                        <h1 class="form__title">Zaloguj się</h1>
-
-                        <p class="form__text">Nowy na stronie?
-                            <a href="#" class="form__link">
-                                <span class="form__text form__text--bold" id="register"> Zarejestruj się</span></a>
-                        </p>
-
-                        <input class="form__input form__input--hover form__input--focus" type="e-mail" name="login-email" id="login-e-mail" placeholder="E-mail" required/>
-                        <input class="form__input form__input--hover form__input--focus" type="password" name="login-password" id="login-password" placeholder="Hasło" required/>
-
-                        <p class="form__text form__text--bold">
-                            <a class="form__link" id="forgotten-password" href="#">Zapomniałeś hasła?</a>
-                        </p>
-
-                        <button class="form__button">Zaloguj się</button>
-
-                        <p class="form__text">albo</p>
-<!-- 
-                        <div class="form__social-media-login">
-                            <img class="form__image" src="Img/global-img/modal/facebook.png" alt="facebook"/>
-                            <img class="form__image" src="Img/global-img/modal/google.png" alt="google"/>
-                        </div> -->
-
-                    </form>
+        <div class="form" id="login-form">                    
+            <form action="" class="form__inner">                
+                <img src="/project/project.blocks/form/close.png" class="form__close-icon" id="login-form-close" alt="close-icon"/>
+                <h1 class="form__title">Zaloguj się</h1>
+                <p class="form__text">Nowy na stronie?
+                    <a href="#" class="form__link">
+                        <span class="form__text form__text--bold" id="register"> Zarejestruj się</span></a>
+                </p>
+                <input class="input input--form" type="e-mail" name="login-email" id="login-e-mail" placeholder="E-mail" required/>
+                <input class="input input--form" type="password" name="login-password" id="login-password" placeholder="Hasło" required/>
+                <p class="form__text form__text--bold">
+                    <a class="form__link" id="forgotten-password" href="#">Zapomniałeś hasła?</a>
+                </p>
+                <button class="button button--form">Zaloguj się</button>
+                <p class="form__text">albo</p>                
+                <div class="social-media-login">
+                    <img class="social-media-login__image" src="/project/project.blocks/social_media_login/facebook.png" alt="facebook"/>
+                    <img class="social-media-login__image" src="/project/project.blocks/social_media_login/google.png" alt="google"/>
                 </div>
+            </form>
+        </div>
                 
-                <div class="signing-modal" id="register-form">
-                    <img src="/project/project.blocks/signing-modal/close.png" class="signing__close-icon" id="register-form-close" alt="close-icon"/>
+        <div class="form" id="register-form">
+            <form action="" class="form__inner">
+                <img src="/project/project.blocks/form/close.png" class="form__close-icon" id="register-form-close" alt="close-icon"/>
+                <h1 class="form__title form__title--small form__title_extended_margin_bottom">Zarejestruj się</h1>                          
+                <input class="input input--form" type="text" name="name" placeholder="Imię"/>
+                <input class="input input--form" type="text" name="last-name" placeholder="Nazwisko"/>
+                <input class="input input--form" type="email" name="email" placeholder="E-mail"/>
+                <input class="input input--form input--extended-margin-bottom" type="password" name="password" placeholder="Hasło"/>                       
+                <button class="button button--form">Zarejestruj się</button>                       
+                <p class="form__text">Jesteś już zarejestrowany?
+                    <a href="#" class="form__link"><span class="form__text--bold" id="login"> Zaloguj się</span></a>
+                </p>
+            </form>
+        </div>
 
-                    <form action="" class="form">
-
-                        <h1 class="form__title form__title--small form__title_extended_margin_bottom">Zarejestruj się</h1>
-                            
-                        <input class="form__input" type="text" name="name" placeholder="Imię"/>
-                        <input class="form__input" type="text" name="last-name" placeholder="Nazwisko"/>
-                        <input class="form__input" type="email" name="email" placeholder="E-mail"/>
-                        <input class="form__input form__input--extended-margin-bottom" type="password" name="password" placeholder="Hasło"/>
-                        
-                        <button class="form__button">Zarejestruj się</button>
-                        
-                        <p class="form__text">Jesteś już zarejestrowany?
-                            <a href="#" class="form__link"><span class="form__text--bold" id="login"> Zaloguj się</span></a>
-                        </p>
-
-                    </form>
-                </div>
-
-                <div class="signing-modal" id="lost-email">
-
-                    <img src="/project/project.blocks/signing-modal/close.png" class="signing__close-icon" id="missing-email-form-close" alt="close-icon"/>
-
-                    <form action="" class="form form--wider">
-
-                        <h1 class="form__title form__title--small form__title_extended_margin_bottom">Stwórz nowe hasło</h1>
-
-                        <p class="form__text">Wpisz swój adres email</p>
-
-                        <input type="email" class="form__input form__input--extended-margin-bottom" name="email" placeholder="E-mail">
-
-                        <button class="form__button">Utwórz hasło</button>
-
-                    </form>
-                </div>
-            </section>
+        <div class="form" id="lost-email">
+            <form action="" class="form__inner form__inner--wider">
+                <img src="/project/project.blocks/form/close.png" class="form__close-icon" id="missing-email-form-close" alt="close-icon"/>
+                <h1 class="form__title form__title--small form__title_extended_margin_bottom">Stwórz nowe hasło</h1>
+                <p class="form__text">Wpisz swój adres email</p>
+                <input class="input input--form input--extended-margin-bottom" type="email" name="email" placeholder="E-mail">
+                <button class="button button--form">Utwórz hasło</button>
+            </form>
+        </div>
 <!-- -------------------------------------------------  HEADER NAVIGATION BARS  ------------------------------------------------------------------------------ -->
             <header class="navigation">
 

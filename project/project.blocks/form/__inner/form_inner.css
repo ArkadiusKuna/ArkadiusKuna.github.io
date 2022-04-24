@@ -1,0 +1,9 @@
+.form__inner {
+    height: 600px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}

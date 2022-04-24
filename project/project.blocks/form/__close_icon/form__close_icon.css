@@ -1,4 +1,4 @@
-.signing__close-icon {
+.form__close-icon {
     height: 50px;
     width: 50px;
     position: absolute;
@@ -8,4 +8,4 @@
     margin-right: 60px;
     box-sizing: border-box;
     cursor: pointer;
-  }
+}

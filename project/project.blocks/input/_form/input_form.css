@@ -1,24 +1,23 @@
-.form__input {
+.input--form {
     height: 42px;
-    width: 300px;
+    width: 250px;
     font-family: 'Barlow', sans-serif;
     font-size: 16px;
     font-weight: 200;
     color: #111111;
-    box-sizing: border-box;
     outline: none;
     border: none;
-    border-bottom: 1px solid #111111;
+    border-bottom: 1px solid #797767;
     padding: 3px 3px 3px 12px;
     margin-bottom: 22px;
 }
 
-.form__input:hover {
-    border-bottom: 2px solid #111111;
+.input--form:hover {
+    border-bottom: 2px solid #797767;
     padding: 2px 2px 1px 12px;
 }
 
-.form__input:focus {
-    border-bottom: 2px solid #111111;
+.input--form:focus {
+    border-bottom: 2px solid #797767;
     padding: 2px 2px 1px 12px;
 }

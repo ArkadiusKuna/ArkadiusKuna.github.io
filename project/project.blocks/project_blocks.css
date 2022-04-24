@@ -4,21 +4,28 @@
                         /* BODY STYLES */
 @import "/project/project.blocks/body/body.css";
 
+                        /* GLOBAL ELEMENTS */
+@import "/project/project.blocks/button/button.css";
+@import "/project/project.blocks/input/input.css";
+
+
                         /* MODALS STYLES */
-@import "/project/project.blocks/signing-modal/signing-modal.css";
-@import "/project/project.blocks/signing-modal/__close-icon/signing-modal__close-icon.css";
 @import "/project/project.blocks/form/form.css";
-@import "/project/project.blocks/form/_wider/form_wider.css";
+@import "/project/project.blocks/form/__inner/form_inner.css";
+@import "/project/project.blocks/form/__inner/_wider/form__inner_wider.css";
+@import "/project/project.blocks/form/__close_icon/form__close_icon.css";
 @import "/project/project.blocks/form/__title/form__title.css";
 @import "/project/project.blocks/form/__title/_small/form__title_small.css";
 @import "/project/project.blocks/form/__title/_extended_margin_bottom/form__title_extended_margin_bottom.css";
 @import "/project/project.blocks/form/__text/form__text.css";
 @import "/project/project.blocks/form/__text/_bold/form__text_bold.css";
 @import "/project/project.blocks/form/__link/form__link.css";
-@import "/project/project.blocks/form/__input/form__input.css";
-@import "/project/project.blocks/form/__input/_extended_margin_bottom/form__input_extended_margin_bottom.css";
-@import "/project/project.blocks/form/__button/form__button.css";
+@import "/project/project.blocks/input/_form/input_form.css";
+@import "/project/project.blocks/input/_extended_margin_bottom/form__input_extended_margin_bottom.css";
 @import "/project/project.blocks/form/__image/form__image.css";
+@import "/project/project.blocks/button/_form/button_form.css";
+@import "/project/project.blocks/social_media_login/social_media_login.css";
+@import "/project/project.blocks/social_media_login/__image/social_media_login__image.css";
 
                         /* HEADER STYLES */
 @import "/project/project.blocks/navigation/navigation.css";
@@ -34,6 +41,26 @@
 @import "/project/project.blocks/side_menu/__item/side_menu__item.css";
 @import "/project/project.blocks/side_menu/__link/side_menu__link.css";
 @import "/project/project.blocks/side_menu/__image/side_menu__image.css";
+
+                        /* PARALLAX PHOTOS & PRODUCTS WIDGETS    */
+@import "/project/project.blocks/widget/widget.css";
+@import "/project/project.blocks/widget/__product/widget__product.css";
+@import "/project/project.blocks/widget/__link/widget__link.css";
+@import "/project/project.blocks/widget/__image/widget__image.css";
+@import "/project/project.blocks/widget/__content_swap/widget__content_swap.css";
+@import "/project/project.blocks/widget/__text/widget__text.css";
+@import "/project/project.blocks/widget/__text/_price/widget__text_price.css";
+@import "/project/project.blocks/button/_large/button_large.css";
+
+                        /* INFO SECTION    */
+@import "/project/project.blocks/info/info.css";
+@import "/project/project.blocks/info/__card/info__card.css";
+@import "/project/project.blocks/info/__image/info__image.css";
+@import "/project/project.blocks/info/__content/info__content.css";
+@import "/project/project.blocks/info/__text/info__text.css";
+@import "/project/project.blocks/info/__title/info__title.css";
+@import "/project/project.blocks/info/__line/info__line.css";
+@import "/project/project.blocks/info/__link/info__link.css";
 
                         /* FOOTER STYLES */
 @import "/project/project.blocks/footer/footer.css";
