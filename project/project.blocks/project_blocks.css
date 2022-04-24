@@ -13,6 +13,7 @@
 @import "/project/project.blocks/form/form.css";
 @import "/project/project.blocks/form/__inner/form_inner.css";
 @import "/project/project.blocks/form/__inner/_wider/form__inner_wider.css";
+@import "/project/project.blocks/form/__inner/_centered/form__inner_centered.css";
 @import "/project/project.blocks/form/__close_icon/form__close_icon.css";
 @import "/project/project.blocks/form/__title/form__title.css";
 @import "/project/project.blocks/form/__title/_small/form__title_small.css";

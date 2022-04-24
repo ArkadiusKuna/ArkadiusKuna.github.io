@@ -41,9 +41,9 @@
         </div>
                 
         <div class="form" id="register-form">
-            <form action="" class="form__inner">
+            <form action="" class="form__inner form__inner--wider">
                 <img src="/project/project.blocks/form/close.png" class="form__close-icon" id="register-form-close" alt="close-icon"/>
-                <h1 class="form__title form__title--small form__title_extended_margin_bottom">Zarejestruj się</h1>                          
+                <h1 class="form__title form__title_extended_margin_bottom">Zarejestruj się</h1>                          
                 <input class="input input--form" type="text" name="name" placeholder="Imię"/>
                 <input class="input input--form" type="text" name="last-name" placeholder="Nazwisko"/>
                 <input class="input input--form" type="email" name="email" placeholder="E-mail"/>
@@ -56,61 +56,54 @@
         </div>
 
         <div class="form" id="lost-email">
-            <form action="" class="form__inner form__inner--wider">
+            <form action="" class="form__inner form__inner--wider form__inner--centered">
                 <img src="/project/project.blocks/form/close.png" class="form__close-icon" id="missing-email-form-close" alt="close-icon"/>
-                <h1 class="form__title form__title--small form__title_extended_margin_bottom">Stwórz nowe hasło</h1>
+                <h1 class="form__title form__title_extended_margin_bottom">Stwórz nowe hasło</h1>
                 <p class="form__text">Wpisz swój adres email</p>
                 <input class="input input--form input--extended-margin-bottom" type="email" name="email" placeholder="E-mail">
                 <button class="button button--form">Utwórz hasło</button>
             </form>
         </div>
 <!-- -------------------------------------------------  HEADER NAVIGATION BARS  ------------------------------------------------------------------------------ -->
-            <header class="navigation">
+        <header class="navigation">
+            <nav class="menu" id="top">
+                <ul class="menu__list">
+                    <li class="menu__item">
+                        <div class="logo">
+                            <a class="menu__link" href="/index.html" target="_self">
+                                <img src="/project/project.blocks/logo/logo-mane-black.webp" class="logo__image" id="header-img" alt="logo-img"/>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="/index.html" target="_self">strona główna</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="/shop.html" target="_self">sklep</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="/about.html" target="_self">o mnie</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="/process.html" target="_self">proces</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="/contact.html" target="_self">kontakt</a>
+                    </li
+                </ul>
+            </nav>
 
-                <nav class="menu" id="top">
-
-                    <ul class="menu__list">
-
-                        <li class="menu__item">
-                            <div class="logo">
-                                <a class="menu__link" href="/index.html" target="_self">
-                                    <img src="/project/project.blocks/logo/logo-mane-black.webp" class="logo__image" id="header-img" alt="logo-img"/>
-                                </a>
-                            </div>
-                        </li>
-                        <li class="menu__item">
-                            <a class="menu__link" href="/index.html" target="_self">strona główna</a>
-                        </li>
-                        <li class="menu__item">
-                            <a class="menu__link" href="/shop.html" target="_self">sklep</a>
-                        </li>
-                        <li class="menu__item">
-                            <a class="menu__link" href="/about.html" target="_self">o mnie</a>
-                        </li>
-                        <li class="menu__item">
-                            <a class="menu__link" href="/process.html" target="_self">proces</a>
-                        </li>
-                        <li class="menu__item">
-                            <a class="menu__link" href="/contact.html" target="_self">kontakt</a>
-                        </li>
-
-                    </ul>
-                </nav>
-
-                <nav class="side-menu">
-
-                    <ul class="side-menu__list">
-
-                        <li class="side-menu__item">
-                            <a href="#" class="side-menu__link" id="log-in-button">Zaloguj</a>
-                        </li>
-                        <li class="side-menu__item">
-                            <img src="/project/project.blocks/side_menu/empty-cart.jpg" class="side-menu__image" id="registration-img" alt="empty-cart-img"/>
-                        </li>
-
-                    </ul>
-                </nav>
-            </header>
+            <nav class="side-menu">
+                <ul class="side-menu__list">
+                    <li class="side-menu__item">
+                        <a href="#" class="side-menu__link" id="log-in-button">Zaloguj</a>
+                    </li>
+                    <li class="side-menu__item">
+                        <img src="/project/project.blocks/side_menu/empty-cart.jpg" class="side-menu__image" id="registration-img" alt="empty-cart-img"/>
+                    </li>
+                </ul>
+            </nav>
+        </header>
 <!-- ----------------------------------------------------  INTRO SLIDER SECTION  ----------------------------------------------------------------------------- -->
             <section>
                 
