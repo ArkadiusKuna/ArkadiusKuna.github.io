@@ -3,7 +3,6 @@
     width: 300px;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
     align-items: center;
-    box-sizing: border-box;
+    margin: 0;
 }
