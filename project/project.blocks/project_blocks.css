@@ -45,6 +45,7 @@
 
                         /* PARALLAX PHOTOS & PRODUCTS WIDGETS    */
 @import "/project/project.blocks/widget/widget.css";
+@import "/project/project.blocks/widget/__inner/widget__inner.css";
 @import "/project/project.blocks/widget/__product/widget__product.css";
 @import "/project/project.blocks/widget/__link/widget__link.css";
 @import "/project/project.blocks/widget/__image/widget__image.css";

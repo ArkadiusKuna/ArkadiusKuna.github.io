@@ -2,3 +2,7 @@
   padding: 10px;
   display: flex;
 }
+
+.side-menu__item:hover {
+  opacity: 0.6;
+}
