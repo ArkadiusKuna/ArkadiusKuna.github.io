@@ -27,7 +27,7 @@ var swiper = new Swiper(".products-slider", {
   },
 });
 
-var swiper = new Swiper(".pop-up--swiper", {
+var swiper = new Swiper(".modal__slider", {
   direction: 'horizontal',
   allowTouchMove: false,
   pagination: {
