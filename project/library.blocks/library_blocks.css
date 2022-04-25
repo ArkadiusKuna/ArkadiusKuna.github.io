@@ -4,42 +4,14 @@
 @import "/project/library.blocks/intro_slider/__image/intro-slider__image.css";
 @import "/project/library.blocks/intro_slider/__swiper_pagination/intro_slider__swiper_pagination.css";
 
-
-
-/* @import "/project/library.blocks/swiper_slide/swiper_slide.css";
-@import "/project/library.blocks/swiper_slide/__intro_slider_image/swiper_slide__intro_slider_image.css"; */
-/* @import "/project/library.blocks/swiper_pagination/swiper_pagination.css"; */
-
                         /* PRODUCTS SLIDER */
 @import "/project/library.blocks/products_slider/products_slider.css";
-@import "/project/library.blocks/swiper_buttons/_swiper_button_next/swiper_button_next_products_slider.css";
-@import "/project/library.blocks/swiper_buttons/_swiper_button_prev/swiper_button_prev_products_slider.css";
-@import "/project/library.blocks/swiper_slide/_products_slider/swiper_slide_products_slider.css";
-@import "/project/library.blocks/product_box/product_box.css";
-@import "/project/library.blocks/product_box/__link/product_box__link.css";
-@import "/project/library.blocks/product_box/__image_swap/product_box__image_swap.css";
-@import "/project/library.blocks/product_box/__image/product-box__image.css";
-@import "/project/library.blocks/product_box/__image/_hover/product-box__image_hover.css";
-@import "/project/library.blocks/product_box/__overlay/product-box__overlay.css";
-@import "/project/library.blocks/product_box/__overlay_text/product-box__overlay_text.css";
-@import "/project/library.blocks/product_box/__description/product_box__description.css";
-@import "/project/library.blocks/product_box/__description/_small/product_box__description_small.css";
-@import "/project/library.blocks/product_box/__header/product_box__header.css";
-@import "/project/library.blocks/product_box/__line/product_box__line.css";
-@import "/project/library.blocks/product_box/__price/product_box__price.css";
+@import "/project/library.blocks/products_slider/__swiper_wrapper/products_slider__swiper_wrapper.css";
+@import "/project/library.blocks/products_slider/__swiper_slide/products_slider__swiper_slide.css";
+@import "/project/library.blocks/products_slider/__swiper_navigation/products_slider__swiper_navigation.css";
 
                         /* PARALLAX PHOTOS & PRODUCTS WIDGETS    */
 @import "/project/library.blocks/parallax/parallax.css";
 @import "/project/library.blocks/parallax/parallax__window/parallax__window.css";
 @import "/project/library.blocks/parallax/__link/parallax__link.css";
 @import "/project/library.blocks/parallax/__title/parallax__title.css";
-
-                        /* INFO SECTION    */
-@import "/project/project.blocks/info/info.css";
-@import "/project/project.blocks/info/__card/info__card.css";
-@import "/project/project.blocks/info/__image/info__image.css";
-@import "/project/project.blocks/info/__content/info__content.css";
-@import "/project/project.blocks/info/__text/info__text.css";
-@import "/project/project.blocks/info/__title/info__title.css";
-@import "/project/project.blocks/info/__line/info__line.css";
-@import "/project/project.blocks/info/__link/info__link.css";

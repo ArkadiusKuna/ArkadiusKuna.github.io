@@ -43,6 +43,20 @@
 @import "/project/project.blocks/side_menu/__link/side_menu__link.css";
 @import "/project/project.blocks/side_menu/__image/side_menu__image.css";
 
+                        /* PRODUCTS SLIDER */
+@import "/project/project.blocks/product_box/product_box.css";
+@import "/project/project.blocks/product_box/__link/product_box__link.css";
+@import "/project/project.blocks/product_box/__image_swap/product_box__image_swap.css";
+@import "/project/project.blocks/product_box/__image/product-box__image.css";
+@import "/project/project.blocks/product_box/__image/_hover/product-box__image_hover.css";
+@import "/project/project.blocks/product_box/__overlay/product-box__overlay.css";
+@import "/project/project.blocks/product_box/__overlay_text/product-box__overlay_text.css";
+@import "/project/project.blocks/product_box/__description/product_box__description.css";
+@import "/project/project.blocks/product_box/__description/_small/product_box__description_small.css";
+@import "/project/project.blocks/product_box/__header/product_box__header.css";
+@import "/project/project.blocks/product_box/__line/product_box__line.css";
+@import "/project/project.blocks/product_box/__price/product_box__price.css";
+
                         /* PARALLAX PHOTOS & PRODUCTS WIDGETS    */
 @import "/project/project.blocks/widget/widget.css";
 @import "/project/project.blocks/widget/__inner/widget__inner.css";
