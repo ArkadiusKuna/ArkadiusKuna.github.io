@@ -1,0 +1,7 @@
+.navigation__menu {
+  width: 80vw;
+  display: inline-flex;
+  justify-content: flex-end;
+  align-items: center;
+  text-align: center;
+}

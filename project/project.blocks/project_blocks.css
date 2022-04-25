@@ -1,5 +1,5 @@
                         /* ALL BLOCKS STYLES*/
-/* @import "/project/project.blocks/all-blocks/all-blocks.css"; */
+@import "/project/project.blocks/all-blocks/all-blocks.css";
 
                         /* BODY STYLES */
 @import "/project/project.blocks/body/body.css";
@@ -30,12 +30,12 @@
 
                         /* HEADER STYLES */
 @import "/project/project.blocks/navigation/navigation.css";
-@import "/project/project.blocks/menu/menu.css";
-@import "/project/project.blocks/menu/__list/menu__list.css";
-@import "/project/project.blocks/menu/__item/menu__item.css";
-@import "/project/project.blocks/menu/__link/menu__link.css";
-@import "/project/project.blocks/menu/__image/menu__image.css";
+@import "/project/project.blocks/navigation/__menu/navigation__menu.css";
+@import "/project/project.blocks/navigation/__list/navigation__list.css";
+@import "/project/project.blocks/navigation/__item/navigation__item.css";
+@import "/project/project.blocks/navigation/__link/navigation__link.css";
 @import "/project/project.blocks/logo/logo.css";
+@import "/project/project.blocks/logo/__link/logo__link.css";
 @import "/project/project.blocks/logo/__image/logo__image.css";
 @import "/project/project.blocks/side_menu/side_menu.css";
 @import "/project/project.blocks/side_menu/__list/side-menu__list.css";
@@ -64,15 +64,15 @@
 @import "/project/project.blocks/info/__link/info__link.css";
 
                         /* FOOTER STYLES */
-@import "/project/project.blocks/footer/footer.css";
+@import "/project/project.blocks/navigation/_higher/navigation_higher.css";
+@import "/project/project.blocks/navigation/__menu/_vertical/navigation__menu_vertical.css";
 @import "/project/project.blocks/social_media_icons/social_media_icons.css";
 @import "/project/project.blocks/social_media_icons/__image/social_media_icons__image.css";
 @import "/project/project.blocks/logo/_bigger_box/logo_bigger_box.css";
 @import "/project/project.blocks/logo/__image/_small/logo__image_small.css";
 @import "/project/project.blocks/logo/__image/_no_margin/logo__image_no_margin.css";
-@import "/project/project.blocks/menu/_vertical/menu_vertical.css";
-@import "/project/project.blocks/menu/__list/_vertical/menu__list_vertical.css";
-@import "/project/project.blocks/menu/__list/_right_allign/menu__list_right_allign.css";
+@import "/project/project.blocks/navigation/__list/_vertical/navigation__list_vertical.css";
+@import "/project/project.blocks/navigation/__list/_right_allign/navigation__list_right_allign.css";
 
                         /* SECTION HEADER */
 @import "/project/project.blocks/section_header/section_header.css";
