@@ -1,12 +1,5 @@
 .button--large {
-    width: 242px;
-    position: relative;
-    bottom: 70px;
-    left: 122px;
-    background-color: transparent;
-    color: #111111;
-    opacity: 0;
-    transition: opacity 0.2s ease;
+    width: 352px;
 }
 
 .button--large:hover {

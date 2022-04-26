@@ -9,7 +9,7 @@
     transition: opacity 0.2s ease;
 }
 
-.widget__link:hover .button--large {
+.widget__link:hover .button--swap {
     opacity: 1;
     transition: opacity 0.2s ease;
     transition-delay: 0.2s;

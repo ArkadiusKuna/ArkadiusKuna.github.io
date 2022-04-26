@@ -10,6 +10,13 @@
 @import "/project/library.blocks/products_slider/__swiper_slide/products_slider__swiper_slide.css";
 @import "/project/library.blocks/products_slider/__swiper_navigation/products_slider__swiper_navigation.css";
 
+                        /* PRODUCTS POP-UPS */
+@import "/project/library.blocks/modal_slider/modal_slider.css";
+@import "/project/library.blocks/modal_slider/__swiper_slide/modal-slider__swiper_slide.css";
+@import "/project/library.blocks/modal_slider/__image/modal_slider__image.css";
+@import "/project/library.blocks/modal_slider/__image/_padding/modal_slider__image_padding.css";
+@import "/project/library.blocks/modal_slider/__swiper_pagination/modal_slider__swiper_pagination.css";
+
                         /* PARALLAX PHOTOS & PRODUCTS WIDGETS    */
 @import "/project/library.blocks/parallax/parallax.css";
 @import "/project/library.blocks/parallax/parallax__window/parallax__window.css";

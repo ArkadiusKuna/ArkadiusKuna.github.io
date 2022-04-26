@@ -1,0 +1,15 @@
+.input {
+    height: 40px;
+    width: 76px;
+    font-family: 'Barlow', sans-serif;
+    font-size: 14px;
+    font-weight: 200;
+    line-height: 1.4em;
+    color: #575757;
+    border: 1px solid #c0c0c0;
+    outline: none;
+    display: block;
+    padding-left: 1em;
+    padding-right: 1em;
+    margin-bottom: 50px;
+}

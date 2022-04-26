@@ -17,7 +17,7 @@ const introSwiper = new Swiper('.intro-slider', {
 }
 });
 
-var swiper = new Swiper(".products-slider", {
+const productsSwiper = new Swiper(".products-slider", {
   slidesPerView: 4,
   loop: true,
   allowTouchMove: false,
@@ -27,12 +27,17 @@ var swiper = new Swiper(".products-slider", {
   },
 });
 
-var swiper = new Swiper(".modal__slider", {
+const modalSwiper = new Swiper('.modal-slider', {
   direction: 'horizontal',
   allowTouchMove: false,
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
-    type: "bullets",
+  effect: "fade",
+  speed: 500,
+  fadeEffect: {
+    crossFade: true,
   },
+  pagination: {
+    el: '.swiper-pagination',
+    type: "bullets",
+    clickable: true,
+  }
 });

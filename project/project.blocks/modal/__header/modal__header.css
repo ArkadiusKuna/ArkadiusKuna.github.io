@@ -1,0 +1,9 @@
+.modal__header {
+    font-family: 'Barlow', sans-serif;
+    font-size: 26px;
+    font-weight: 200;
+    line-height: 1.2em;
+    word-wrap: break-word;
+    text-align: start;
+    color: #575757;
+}

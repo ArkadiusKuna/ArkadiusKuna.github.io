@@ -1,0 +1,9 @@
+.modal__price {
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    line-height: 1.4em;
+    font-weight: 200;
+    color: #797767;
+    padding-top: 12px;
+    margin-bottom: 40px;
+}
