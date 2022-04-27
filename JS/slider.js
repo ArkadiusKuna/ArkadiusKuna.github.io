@@ -19,7 +19,7 @@ const introSwiper = new Swiper('.intro-slider', {
 
 const productsSwiper = new Swiper(".products-slider", {
   slidesPerView: 4,
-  loop: true,
+  slidesPerGroup: 4,
   allowTouchMove: false,
   navigation: {
     nextEl: ".swiper-button-next",
