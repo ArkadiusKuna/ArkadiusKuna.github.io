@@ -25,5 +25,8 @@
     "gulp-sourcemaps": "^3.0.0",
     "gulp-terser": "^2.1.0"
   },
-  "description": ""
+  "description": "",
+  "dependencies": {
+    "jquery-parallax.js": "^1.5.0"
+  }
 }

@@ -1,0 +1,7 @@
+.instafeed__inner {
+    height: 540px;
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
