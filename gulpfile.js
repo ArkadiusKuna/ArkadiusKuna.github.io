@@ -15,11 +15,12 @@ function bundleCss() {
         .pipe(concat("bundle.css"))
         .pipe(postcss([autoprefixer(), cssnano()]))
         .pipe(sourceMaps.write("."))
-        .pipe(dest("./project/project.css.bundle/"));
+        .pipe(dest("./project.bundle/"));
 }
 
-// function cssWatch() {
-//     watch([cssPath], {interval: 1000}, parallel(bundleCss));
-// }
+function cssWatch() {
+    watch([cssPath], {interval: 1000}, parallel(bundleCss));
+}
 
 exports.bundleCss = bundleCss;
+exports.default = series(parallel(bundleCss), cssWatch);
