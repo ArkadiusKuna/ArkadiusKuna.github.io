@@ -16,8 +16,14 @@
   },
   "homepage": "https://github.com/ArkadiusKuna/ArkadiusKuna.github.io#readme",
   "devDependencies": {
+    "autoprefixer": "^10.4.5",
+    "cssnano": "^5.1.7",
     "gulp": "^4.0.2",
-    "gulp-clean-css": "^4.3.0"
+    "gulp-clean-css": "^4.3.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-postcss": "^9.0.1",
+    "gulp-sourcemaps": "^3.0.0",
+    "gulp-terser": "^2.1.0"
   },
   "description": ""
 }
