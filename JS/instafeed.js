@@ -7,19 +7,18 @@ var userFeed = new Instafeed({
     sortBy: 'most-recent',
     after: function () {
 
-        const instafeedSwiper = new Swiper('.instafeed-slider', {
-            slidesPerView: 5,
-            slidesPerGroup: 3,
-            allowTouchMove: true,
-            mousewheel: {
-              container: (".instafeed-slider"),
-            },
-            navigation: {
-              nextEl: ".swiper-button-next",
-              prevEl: ".swiper-button-prev",
-            }
-          })
-
-    }
-}); 
+      const instafeedSwiper = new Swiper('.instafeed-slider', {
+        slidesPerView: 5,
+        slidesPerGroup: 3,
+        allowTouchMove: true,
+        mousewheel: {
+          container: (".instafeed-slider"),
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        }
+      })
+  }
+})
 userFeed.run();
