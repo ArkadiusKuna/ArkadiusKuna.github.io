@@ -7,11 +7,12 @@
         <title>Biżuteria | Måne</title>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
         <script src="/node_modules/jquery-parallax.js/parallax.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/gh/stevenschobert/instafeed.js@2.0.0rc1/src/instafeed.min.js"></script>
         <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
         <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
         <link rel="stylesheet" href="./project.bundle/bundle.css">
         <link rel="icon" href="/Img/global-img/title-img/logo-nav-bar.webp" type="logo-img">
-        <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@200;300;400;500;600;700&family=Cinzel&family=Poppins:wght@200;400;600&family=Work+Sans:wght@200&display=swap" rel="stylesheet">      
+        <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@200;300;400;700&family=Cinzel&family=Open+Sans:wght@300;400;500&family=Poppins:wght@600&family=Work+Sans:wght@200;300;400&display=swap" rel="stylesheet">      
     </head>  
     
     <body class="body">
@@ -611,8 +612,10 @@
                     <a href="https://www.instagram.com/accounts/login/?next=/bizuteria_mane/" target="_blank" class="section-header__link">@bizuteria_mane</a>
                 </div>
 
-                <div class="instafeed__feed">
-
+                <div class="instafeed-slider">
+                    <div class="swiper-wrapper" id="instafeed-slider"></div>
+                    <div class="instafeed-slider__swiper-navigation swiper-button-prev"></div>
+                    <div class="instafeed-slider__swiper-navigation swiper-button-next"></div>
                 </div>
             </div>
 
@@ -675,5 +678,6 @@
         <script src="./JS/elevator.js"></script>
         <script src="./JS/modal.js"></script>
         <script src="./JS/POP-UP.js"></script>
+        <script src="./JS/instafeed.js"></script>
     </body>
 </html>
