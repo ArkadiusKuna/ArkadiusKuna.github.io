@@ -86,6 +86,6 @@ function reset() {
   notMatch.style.display = "none";
 }
 
-function showContent(e) {
-  e.style.display = "block"
-}
+// function showContent(e) {
+//   e.style.display = "block"
+// }
