@@ -12,9 +12,6 @@ var userFeed = new Instafeed({
         slidesPerGroup: 3,
         spaceBetween: 40,
         allowTouchMove: true,
-        mousewheel: {
-          container: (".instafeed-slider"),
-        },
         navigation: {
           nextEl: ".swiper-button-next",
           prevEl: ".swiper-button-prev",

@@ -1,0 +1,8 @@
+.widget__header {
+    font-family: 'Poppins', sans-serif;
+    font-size: 24px;
+    line-height: 1.2em;
+    letter-spacing: 0.25em;
+    align-self: flex-end;
+    justify-self: center;
+}
