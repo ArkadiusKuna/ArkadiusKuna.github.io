@@ -1,7 +1,3 @@
 .parallax {
-    width: 50vw;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: transparent;
+    height: 710px;
 }
