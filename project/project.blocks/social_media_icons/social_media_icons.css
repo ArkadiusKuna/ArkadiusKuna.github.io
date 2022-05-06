@@ -4,5 +4,6 @@
     display: inline-flex;
     position: fixed;
     bottom: 15px;
+    z-index: 15;
     margin-left: 10px;
 }

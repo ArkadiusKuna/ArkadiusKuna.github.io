@@ -1,4 +1,5 @@
-.section-header__line {
+.header__line {
     width: 25px;
     border: 1.5px #111111 solid;
+    text-align: center;
 }

@@ -1,4 +1,6 @@
 .products-slider {
-    height: 550px;
+    height: 480px;
     padding: 0 30px;
+    display: flex;
+    align-items: flex-end;
 }
