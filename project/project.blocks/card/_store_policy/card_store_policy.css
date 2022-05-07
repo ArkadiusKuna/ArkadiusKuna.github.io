@@ -1,0 +1,8 @@
+.card--store-policy {
+    height: 350px;
+    width: 640px;
+    display: grid;
+    grid-template-rows: 170px 25px 30px 30px 30px 30px;
+    align-items: flex-start;
+    background-color: #f6f3ef;
+}
