@@ -6,7 +6,6 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Biżuteria | Måne</title>
         <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
         <link rel="stylesheet" href="./project.bundle/bundle.css">
         <link rel="stylesheet" href="./CSS/FAQ.css">
         <link rel="icon" href="./project/project.blocks/all-blocks/logo-nav-bar.webp" type="logo-img">
@@ -103,32 +102,38 @@
             </nav>
 
         </header>
+<!-- -------------------------------------------------  PAGE HEADER  ------------------------------------------------------------------------------ -->
+        <section class="header">
 
-        <section class="header-section">
-            <div class="title-box">
-                <h2 class="title-data">FAQ</h2>
-            </div>
+            <h2 class="header__title">FAQ</h2>
+
         </section>
-        <section class="FAQ-section">
-            <div class="accordion-container">
-                <div class="accordion">
-                    <div class="accordion-title-box">
-                        <h2 class="accordion-header" id="accordion-title">Najczęściej zadawane pytania</h2>
+<!-- -------------------------------------------------  FAQ ACCORDION  ------------------------------------------------------------------------------ -->
+        <section class="tab">
+
+            <div class="tab__inner tab__inner--narrow">
+
+                <div class="search-bar">
+                    <h2 class="search-bar__title" id="accordion-title">Najczęściej zadawane pytania</h2>
+                    <div class="search-bar__input" id="search-bar-box">
+                        <input class="input input--animated" oninput="liveSearch()" id="input-bar" placeholder="Czego szukasz?">
+                            <svg class="search-bar__icon search-bar__icon--search" id="magnifying-icon" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000">
+                                <path d="M0 0h24v24H0z" fill="none"/>
+                                <path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/>
+                            </svg>
+                            <svg class="search-bar__icon search-bar__icon--close" id="close-icon" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000">
+                                <path d="M0 0h24v24H0z" fill="none"/>
+                                <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/>
+                            </svg>
+                        </input>
                     </div>
-                    <div class="accordion-search-bar">
-                        <div class="search-input-box" id="search-bar-box">
-                            <input class="input-animated" oninput="liveSearch()" id="input-bar" placeholder="Czego szukasz?">
-                                <span class="material-icons" id="magnifying-icon">search</span>
-                                <span class="material-icons" id="close-icon">close</span>
-                            </input>
-                        </div>
-                        <div class="search-results">
-                        <p id="no-result">Niestety, nie mogliśmy znaleźć żadnych wyników pasujących do twoich kryteriów wyszukiwania. 
-                            Spróbuj ponownie używając innych słów kluczowych.
-                        </p>
-                        <p id="search-outcome">Pokazuję wyniki dla: <span id="input-text"></span></p>
-                        </div>
-                    </div>
+                    <p class="search-bar__text" id="no-result">
+                        Niestety, nie mogliśmy znaleźć żadnych wyników pasujących do twoich kryteriów wyszukiwania. 
+                        Spróbuj ponownie używając innych słów kluczowych.
+                    </p>
+                    <p class="search-bar__text" id="search-outcome">Pokazuję wyniki dla: <span class="search-bar__text search-bar__text--input" id="input-text"></span></p>
+                </div>  
+
                     <div class="FAQ-questions">   
                         <div class="question-box">
                             <div class="question-header">
@@ -178,8 +183,7 @@
                     </div>
                 </div>
             </div>
-        </body>
-    </html>
+
 </section>
 <!-- --------------------------------------------------------  FOOTER SECTION  ------------------------------------------------------------------------------- -->
         <footer class="navigation navigation--higher">
@@ -189,7 +193,7 @@
                 <a href="https://www.instagram.com/bizuteria_mane/" target="_blank"><img src="/project/project.blocks/social_media_icons/instagram.webp" class="social-media-icons__image" alt="insta-logo"></a>
             </div>
 
-            <nav class="navigation__menu navigation__menu--vertical">
+            <nav class="navigation__menu navigation__menu--vertical navigation__menu--right-alligned">
                 <div class="logo logo--bigger-box">
                     <img src="/project/project.blocks/logo/logo-mane-black.webp" class="logo__image logo__image--small logo__image--no-margin" id="elevator" alt="logo-img">
                 </div>

@@ -1,0 +1,16 @@
+.search-bar__input {
+    height: 40px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    transition: 1.2s;
+    margin-bottom: 10px;
+}
+
+.add-border {
+    border: 2px #0aa2fa solid;
+    width: 100%;
+    transition: 1s;
+    box-shadow: 0 0 0.5em #0aa2fa;
+}

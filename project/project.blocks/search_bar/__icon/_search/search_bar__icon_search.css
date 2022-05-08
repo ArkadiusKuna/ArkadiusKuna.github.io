@@ -1,0 +1,4 @@
+.search-bar__icon--search {
+    right: -25px;
+    transition: right 0.8s;
+}

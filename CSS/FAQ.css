@@ -1,4 +1,4 @@
-.header-section {
+/* .header-section {
     height: 167px;
     width: 100%;
 }
@@ -101,43 +101,43 @@ input::placeholder {
     color: #111111;
     left: 100px;
     opacity: 0.3;
-}
+} 
 
 .active {
-    height: 100%;
-    width: 93%;
+    height: 40px;
+    width: 59vw;
     transition: width 1.2s;
     visibility: visible;
-}
+}*/
 
-.hidden {
+/* .hidden {
     display: none;
-}
+} */
 
-#magnifying-icon {
+/* #magnifying-icon {
     position: relative;
     cursor: pointer;
-    transition: right 1.1s;
+    transition: right 0.8s;
     font-size: 20px;
     right: -1vw;
-}
+} */
 
-#magnifying-icon:hover {
+/* #magnifying-icon:hover {
     color: rgba(120, 119, 103, 0.75);
-}
+}  */
 
-#close-icon {
+/* #close-icon { 
     position: relative;
     font-size: 15px;
-    cursor: pointer;
-    visibility: hidden;
-}
+    cursor: pointer; 
+    visibility: hidden; 
+}  */
 
-#close-icon:hover {
+/* #close-icon:hover {
     color: rgba(120, 119, 103, 0.75);
-}
+}  */
 
-#no-result {
+/* #no-result {
     position: relative;
     top: 20px;
     font-family: 'Barlow', sans-serif;
@@ -160,7 +160,7 @@ input::placeholder {
     font-size: 14px;
     font-weight: 400;
     margin-left: 5px;
-}
+} */
 
 .FAQ-questions {
     height: 70%;
