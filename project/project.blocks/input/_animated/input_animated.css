@@ -6,15 +6,20 @@
     visibility: hidden;
     border: none;
     outline: none;
-    transition: 0.6s;
+    transition: 1.2s;
     margin: 0;
     padding: 0;
 }
 
 .active {
     width: 825px;
-    transition: width 0.8s;
+    transition: width opacity 0.8s;
     visibility: visible;
+}
+
+.placeholder-hide {
+    opacity: 0;
+    transition: 0.8s;
 }
 
 input::placeholder {
@@ -22,5 +27,5 @@ input::placeholder {
     font-size: 15px;
     color: #111111;
     left: 100px;
-    opacity: 0.6;
 }
+

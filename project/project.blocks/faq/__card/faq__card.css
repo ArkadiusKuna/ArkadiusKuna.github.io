@@ -1,0 +1,10 @@
+.faq__card {
+    min-height: 75px;
+    width: 900px;
+    cursor: pointer;
+}
+
+.faq__card.accord-drop .faq__answer {
+    max-height: 120px;
+    animation: 0.3s ease;
+}

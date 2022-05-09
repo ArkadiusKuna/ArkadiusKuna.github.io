@@ -4,11 +4,11 @@ const inputBar = document.getElementById("input-bar");
 const closeBtn = document.getElementById("close-icon")
 const accordionTitle = document.getElementById("accordion-title");
 const inputBox = document.getElementById("search-bar-box");
-const FAQquestions = document.querySelectorAll(".question-box");
+const FAQquestions = document.querySelectorAll(".faq__card");
 const searchOutcome = document.getElementById("search-outcome");
 const inputText = document.getElementById("input-text");
 const notMatch = document.getElementById("no-result");
-const FAQquestionsContainer = document.querySelector(".FAQ-questions");
+const FAQquestionsContainer = document.querySelector(".faq");
 
 searchBtn.addEventListener("click", showInput);
 closeBtn.addEventListener("click", hideInput,);
@@ -34,6 +34,7 @@ function hideInput() {
   closeBtn.style.visibility = "hidden";
   inputBar.value = "";
   searchOutcome.style.display="none";
+  inputBar.classList.add("placeholder-hide");
 }
 
 function showInput() {
@@ -43,6 +44,7 @@ function showInput() {
     searchBtn.style.right = "-25px";
     inputBox.classList.remove("add-border");
     closeBtn.style.visibility = "hidden";
+    inputBar.classList.add("placeholder-hide");
     return;
   }
   inputBar.classList.add("active");
@@ -50,6 +52,7 @@ function showInput() {
   searchBtn.style.right = "850px";
   inputBox.classList.add("add-border");
   closeBtn.style.visibility = "visible";
+  inputBar.classList.remove("placeholder-hide");
 }
 
 function liveSearch() {

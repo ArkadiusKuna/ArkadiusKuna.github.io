@@ -1,0 +1,10 @@
+.faq__text {
+    width: 870px;
+    font-family: 'Barlow', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.2em;
+    color: #690303;
+    padding-bottom: 20px;
+    opacity: 0.6;
+}
