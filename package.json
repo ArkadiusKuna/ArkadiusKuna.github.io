@@ -28,6 +28,7 @@
   "description": "",
   "dependencies": {
     "instafeed.js": "^2.0.0-rc3",
+    "ion-rangeslider": "^2.3.1",
     "jquery-parallax.js": "^1.5.0",
     "postcss": "^8.1.7",
     "postcss-loader": "^4.0.4",
