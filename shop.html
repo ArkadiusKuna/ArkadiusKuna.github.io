@@ -6,6 +6,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Biżuteria | Måne</title>
         <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="./node_modules/ion-rangeslider/js/ion.rangeSlider.min.js"></script>
+        <link rel="stylesheet" href="./node_modules/ion-rangeslider/css/ion.rangeSlider.min.css">
         <link rel="stylesheet" href="./project.bundle/bundle.css">
         <link rel="stylesheet" href="./CSS/shop.css">
         <link rel="icon" href="./project/project.blocks/all-blocks/logo-nav-bar.webp" type="logo-img">
@@ -132,9 +134,7 @@
                                 <i id="icon2" class="fa-solid fa-plus"></i>
                             </div>
                             <div class="accordion-filter-box-price-slider">
-                                <div class="slider-track"></div>
-                                <input type="range" min="0" max="120.00" value="0" step="2" id="slider-1" oninput="slideOne()">
-                                <input type="range" min="0" max="120.00" value="120" step="2" id="slider-2" oninput="slideTwo()">
+                                <input type="text" id="price-slider" name="price-slider" value="" />
                             <div class="slider-values">
                                 <div class="range-left">
                                 <span class="range-left-value" id="range1">0.00</span>
@@ -385,6 +385,7 @@
         <script src="/JS/elevator.js"></script>
         <script src="/JS/sortingProducts.js"></script>
         <script src="/JS/modal.js"></script>
+        <script src="/JS/rangeSlider.js"></script>
     </body>
 </html>
 
