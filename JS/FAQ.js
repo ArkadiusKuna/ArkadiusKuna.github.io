@@ -4,11 +4,11 @@ const inputBar = document.getElementById("input-bar");
 const closeBtn = document.getElementById("close-icon")
 const accordionTitle = document.getElementById("accordion-title");
 const inputBox = document.getElementById("search-bar-box");
-const FAQquestions = document.querySelectorAll(".faq__card");
+const FAQquestions = document.querySelectorAll(".accordion__card");
 const searchOutcome = document.getElementById("search-outcome");
 const inputText = document.getElementById("input-text");
 const notMatch = document.getElementById("no-result");
-const FAQquestionsContainer = document.querySelector(".faq");
+const FAQquestionsContainer = document.querySelector(".accordion");
 
 searchBtn.addEventListener("click", showInput);
 closeBtn.addEventListener("click", hideInput,);
@@ -29,7 +29,7 @@ FAQquestions.forEach((question) => {
 function hideInput() {
   inputBar.classList.remove("active");
   accordionTitle.classList.remove("hide-title");
-  searchBtn.style.right = "-25px";
+  searchBtn.style.right = "0px";
   inputBox.classList.remove("add-border");
   closeBtn.style.visibility = "hidden";
   inputBar.value = "";
@@ -41,7 +41,7 @@ function showInput() {
   if(inputBar.classList.contains("active")) {
     inputBar.classList.remove("active");
     accordionTitle.classList.remove("hide-title");
-    searchBtn.style.right = "-25px";
+    searchBtn.style.right = "0px";
     inputBox.classList.remove("add-border");
     closeBtn.style.visibility = "hidden";
     inputBar.classList.add("placeholder-hide");
@@ -49,7 +49,7 @@ function showInput() {
   }
   inputBar.classList.add("active");
   accordionTitle.classList.add("hide-title");
-  searchBtn.style.right = "850px";
+  searchBtn.style.right = "870px";
   inputBox.classList.add("add-border");
   closeBtn.style.visibility = "visible";
   inputBar.classList.remove("placeholder-hide");

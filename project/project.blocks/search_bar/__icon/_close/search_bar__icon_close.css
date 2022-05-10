@@ -1,6 +1,7 @@
 .search-bar__icon--close {
     height: 18px;
     width: 18px;
+    right: -20px;
     visibility: hidden;
 }
 

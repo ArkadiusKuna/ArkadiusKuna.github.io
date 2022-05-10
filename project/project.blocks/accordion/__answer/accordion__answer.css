@@ -1,4 +1,4 @@
-.faq__answer {
+.accordion__answer {
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.3s ease;

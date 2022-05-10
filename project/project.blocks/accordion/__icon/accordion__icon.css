@@ -1,11 +1,11 @@
-.faq__icon {
+.accordion__icon {
     transition: transform 0.4s ease;
 }
 
-.faq__icon:hover {
+.accordion__icon:hover {
     opacity: 0.5;
 }
 
-.faq__card.accord-drop svg {
+.accordion__card.accord-drop svg {
     transform: rotate(45deg);
 }

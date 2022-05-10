@@ -1,10 +1,9 @@
-.faq__card {
+.accordion__card {
     min-height: 75px;
-    width: 900px;
     cursor: pointer;
 }
 
-.faq__card.accord-drop .faq__answer {
+.accordion__card.accord-drop .accordion__answer {
     max-height: 120px;
     animation: 0.3s ease;
 }
