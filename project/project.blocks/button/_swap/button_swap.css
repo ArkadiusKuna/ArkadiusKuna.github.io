@@ -5,4 +5,5 @@
     left: 122px;
     opacity: 0;
     transition: opacity 0.2s ease;
+    background-color: transparent;
 }

@@ -13,21 +13,21 @@
 
     <body class="body">
 <!-- ------------------------------------------------  LOGIN, REGISTER AND MISSING EMAIL FORMS  -------------------------------------------------------------- -->
-        <div class="form form--white form--justify-center form--align-center" id="login-form">    
-            <form action="" class="form__inner form__inner--align-center form__inner--flex form__inner--flex-column">                
+        <div class="form" id="login-form">    
+            <form action="" class="form__inner">                
                 <img src="/project/project.blocks/form/close.png" class="form__close-icon" id="login-form-close" alt="close-icon"/>
                 <h1 class="form__title form__title--margin-top">Zaloguj się</h1>
-                <p class="form__text form__text--margin-bottom">Nowy na stronie?
-                    <a href="#" class="form__link form__link--black">
+                <p class="form__text">Nowy na stronie?
+                    <a href="#" class="form__link">
                         <span class="form__text form__text--bold" id="register"> Zarejestruj się</span></a>
                 </p>
                 <input class="input input--form" type="e-mail" name="login-email" id="login-e-mail" placeholder="E-mail" required/>
                 <input class="input input--form" type="password" name="login-password" id="login-password" placeholder="Hasło" required/>
-                <p class="form__text form__text--bold form__text--margin-bottom">
-                    <a class="form__link form__link--black" id="forgotten-password" href="#">Zapomniałeś hasła?</a>
+                <p class="form__text form__text--bold">
+                    <a class="form__link" id="forgotten-password" href="#">Zapomniałeś hasła?</a>
                 </p>
-                <button class="button button--form button--grey"><span class="button__text button__text--white">Zaloguj się</span></button>
-                <p class="form__text form__text--margin-bottom">albo</p>                
+                <button class="button button--form"><span class="button__text">Zaloguj się</span></button>
+                <p class="form__text">albo</p>                
                 <div class="social-media-login">
                     <img class="social-media-login__image" src="/project/project.blocks/social_media_login/facebook.png" alt="facebook"/>
                     <img class="social-media-login__image" src="/project/project.blocks/social_media_login/google.png" alt="google"/>
@@ -35,28 +35,28 @@
             </form>
         </div>
                 
-        <div class="form form--white form--justify-center form--align-center" id="register-form">
-            <form action="" class="form__inner form__inner--wider form__inner--align-center form__inner--flex form__inner--flex-column">
+        <div class="form" id="register-form">
+            <form action="" class="form__inner form__inner--wider">
                 <img src="/project/project.blocks/form/close.png" class="form__close-icon" id="register-form-close" alt="close-icon"/>
                 <h1 class="form__title form__title--margin-top form__title--margin-bottom">Zarejestruj się</h1>                          
                 <input class="input input--form" type="text" name="name" placeholder="Imię"/>
                 <input class="input input--form" type="text" name="last-name" placeholder="Nazwisko"/>
                 <input class="input input--form" type="email" name="email" placeholder="E-mail"/>
                 <input class="input input--form input--extended-margin-bottom" type="password" name="password" placeholder="Hasło"/>                       
-                <button class="button button--form button--grey"><span class="button__text button__text--white">Zaloguj się</span></button>                       
-                <p class="form__text form__text--margin-bottom">Jesteś już zarejestrowany?
-                    <a href="#" class="form__link form__link--black"><span class="form__text--bold" id="login"> Zaloguj się</span></a>
+                <button class="button button--form"><span class="button__text">Zaloguj się</span></button>                       
+                <p class="form__text">Jesteś już zarejestrowany?
+                    <a href="#" class="form__link"><span class="form__text--bold" id="login"> Zaloguj się</span></a>
                 </p>
             </form>
         </div>
 
-        <div class="form form--white form--justify-center form--align-center" id="lost-email">
-            <form action="" class="form__inner form__inner--wider form__inner--justify-center form__inner--align-center form__inner--flex form__inner--flex-column">
+        <div class="form" id="lost-email">
+            <form action="" class="form__inner form__inner--wider form__inner--justify-center">
                 <img src="/project/project.blocks/form/close.png" class="form__close-icon" id="missing-email-form-close" alt="close-icon"/>
                 <h1 class="form__title form__title--margin-bottom">Stwórz nowe hasło</h1>
-                <p class="form__text form__text--margin-bottom">Wpisz swój adres email</p>
+                <p class="form__text">Wpisz swój adres email</p>
                 <input class="input input--form input--extended-margin-bottom" type="email" name="email" placeholder="E-mail">
-                <button class="button button--form button--grey"><span class="button__text button__text--white">Zaloguj się</span></button>
+                <button class="button button--form"><span class="button__text">Zaloguj się</span></button>
             </form>
         </div>
         <!-- -------------------------------------------------  HEADER NAVIGATION BARS  ------------------------------------------------------------------------------ -->
@@ -102,32 +102,32 @@
 
         </header>
 <!-- -------------------------------------------------  PAGE HEADER  ------------------------------------------------------------------------------ -->
-        <section class="header header--flex header--align-center header--direction-column header--justify-center header--justify-center">
+        <section class="header">
 
-            <h1 class="header__title header__title--grey" id="policy">POLITYKA SKLEPU</h1>
+            <h1 class="header__title" id="policy">POLITYKA SKLEPU</h1>
             
         </section>
 <!-- -------------------------------------------------  POLICY TAB  ------------------------------------------------------------------------------ -->
         <section class="tab tab--large">
 
             <div class="tab__inner">
-                <div class="card card--small card--six-rows card--grid card--justify-center card--cream">
-                    <h2 class="card__title card__title--align-end card__title--grey">Obsługa klienta</h2>
-                    <hr class="card__line card__line--grey card__text--align-center">
-                    <p class="card__text card__text--grey card__text--text-centered">
+                <div class="card card--small card--six-rows">
+                    <h2 class="card__title card__title--align-end">Obsługa klienta</h2>
+                    <hr class="card__line">
+                    <p class="card__text card__text--text-centered">
                         Aby spełnić Wasze wymagania, każde zamówienie rozpatruję indywidualnie.</p>
-                    <p class="card__text card__text--wider card__text--grey card__text--text-centered">
+                    <p class="card__text card__text--wider card__text--text-centered">
                         Chcę sprawiać radość moimi produktami, więc przykładam dużo uwagi aby bransoletki były piękne i wytrzymałe. 
                         Jeśli nie jesteś zadowolony z produktów kliknij w poniższy przycisk <span style="font-weight: 700;">zwroty/reklamacje</span>. Postaram się rozwiązać Twój problem.
                     </p>
                 </div>
 
-                <button class="button button--large button--grey"><span class="button__text button__text--white">Zaloguj się</span></button>
+                <button class="button button--large"><span class="button__text">Zaloguj się</span></button>
 
-                <div class="card card--small card--six-rows card--grid card--justify-center card--cream">
-                    <h2 class="card__title card__title--align-end card__title--grey" id="payments">Metoda płatności</h2>
-                    <hr class="card__line card__line--grey card__text--align-center">
-                    <p class="card__text card__text--grey card__text--text-centered">
+                <div class="card card--small card--six-rows">
+                    <h2 class="card__title card__title--align-end" id="payments">Metoda płatności</h2>
+                    <hr class="card__line">
+                    <p class="card__text card__text--text-centered">
                         Płatność przelewem bankowym na konto podane przy składaniu zamowienia.
                     </p>
                 </div>

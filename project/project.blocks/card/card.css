@@ -1,4 +1,7 @@
 .card {
     height: 717px;
     width: 50vw;
+    display: grid;
+    justify-items: center;
+    background-color: #f6f3ef;
 }

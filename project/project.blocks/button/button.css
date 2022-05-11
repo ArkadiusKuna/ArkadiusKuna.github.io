@@ -3,4 +3,6 @@
     width: 200px;
     padding: 8px 16px;
     cursor: pointer;
+    background-color: #797767;
+    border: 1px #797767 solid;
 }
