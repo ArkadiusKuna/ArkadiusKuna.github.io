@@ -3,13 +3,6 @@
     position: relative;
     bottom: 70px;
     left: 122px;
-    background-color: transparent;
-    color: #111111;
     opacity: 0;
     transition: opacity 0.2s ease;
-}
-
-.button--swap:hover {
-    opacity: 0.8;
-    transition: 0.3s ease;
 }

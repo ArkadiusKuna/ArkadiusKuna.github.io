@@ -1,9 +1,4 @@
 .card {
     height: 717px;
     width: 50vw;
-    display: grid;
-    grid-template-rows: 200px 40px 320px;
-    justify-items: center;
-    align-items: end;
-    background-color: #f6f3ef;
 }

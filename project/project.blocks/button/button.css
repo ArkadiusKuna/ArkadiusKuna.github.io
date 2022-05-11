@@ -1,18 +1,6 @@
 .button {
     height: 42px;
     width: 200px;
-    font-family: 'Barlow', sans-serif;
-    font-size: 16px;
-    line-height: 1.4em;
-    font-weight: 200;
-    color: #FFFFFF;
-    background-color: #797767;
-    border: 1px #797767 solid;
     padding: 8px 16px;
     cursor: pointer;
-}
-
-.button:hover {
-    opacity: 0.8;
-    transition: 0.3s ease;
 }

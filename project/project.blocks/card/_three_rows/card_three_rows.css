@@ -1,0 +1,3 @@
+.card--three-rows {
+    grid-template-rows: 200px 40px 320px;
+}
