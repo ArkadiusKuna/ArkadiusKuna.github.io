@@ -1,8 +1,5 @@
 .info__card {
-    height: 415px;
-    width: 363px;
     display: flex;
     justify-content: center;
     align-items: center;
-    position: relative;
 }

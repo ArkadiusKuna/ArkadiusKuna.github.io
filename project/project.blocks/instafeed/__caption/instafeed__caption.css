@@ -1,6 +1,6 @@
 .instafeed__caption {
-    height: 290px;
-    width: 290px;
+    height: 100%;
+    width: 99%;
     position: absolute;
     display: flex;
     align-items: center;

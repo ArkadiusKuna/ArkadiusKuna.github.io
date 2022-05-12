@@ -1,19 +1,15 @@
 .input--animated {
-    height: 40px;
-    font-weight: 400;
     background-color: transparent;
     z-index: 10;
     visibility: hidden;
     border: none;
-    outline: none;
     transition: 1s;
-    margin: 0;
     padding: 0;
 }
 
 .active {
     width: 825px;
-    transition: width opacity 0.8s;
+    transition: 0.8s;
     visibility: visible;
 }
 
@@ -24,8 +20,7 @@
 
 input::placeholder {
     font-family: 'Barlow', sans-serif;
-    font-size: 15px;
+    font-size: 16px;
     color: #111111;
     left: 100px;
 }
-
