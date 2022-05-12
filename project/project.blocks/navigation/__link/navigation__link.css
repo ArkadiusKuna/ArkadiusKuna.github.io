@@ -1,8 +1,5 @@
 .navigation__link {
+    height: 20px;
     text-decoration: none;
     color: #111111;
-}
-
-.navigation__link:hover {
-    opacity: 0.6;
 }

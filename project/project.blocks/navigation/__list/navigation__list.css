@@ -1,7 +1,7 @@
 .navigation__list {
-  width: 62vw;
-  list-style: none;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+    align-items: center;
+    display: inline-flex;
+    justify-content: center;
+    list-style: none;
+    text-align: center;
 }
