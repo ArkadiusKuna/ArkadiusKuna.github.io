@@ -1,7 +1,6 @@
 .navigation__list {
     align-items: center;
     display: inline-flex;
-    justify-content: center;
     list-style: none;
     text-align: center;
 }

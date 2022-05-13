@@ -1,0 +1,7 @@
+.navigation__list--vertical {
+    height: 250px;
+    gap: 30px;
+    text-align: start;
+    flex-direction: column;
+    justify-content: flex-start;
+}
