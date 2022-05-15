@@ -14,18 +14,6 @@ searchBtn.addEventListener("click", showInput);
 closeBtn.addEventListener("click", hideInput,);
 closeBtn.addEventListener("click", reset);
 
-FAQquestions.forEach((question) => {
-    question.addEventListener("click", (e) => {
-      e.currentTarget.classList.toggle("accord-drop");
-  
-      FAQquestions.forEach((question) => {
-        if (question !== e.currentTarget) {
-          question.classList.remove("accord-drop");
-      }
-    });
-  });
-});
-
 function hideInput() {
   inputBar.classList.remove("active");
   accordionTitle.classList.remove("hide-title");
