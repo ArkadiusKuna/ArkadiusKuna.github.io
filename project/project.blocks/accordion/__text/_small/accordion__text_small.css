@@ -1,0 +1,13 @@
+.accordion__text--small {
+    font-size: 14px;
+    font-weight: 200;
+    line-height: 1.7;
+    color: #6E775D;
+    cursor: pointer;
+    opacity: 0.8;
+    padding: 0;
+}
+
+.accordion__text--small:hover {
+    opacity: 0.6;
+}

@@ -241,7 +241,7 @@ input[type="range"]:active::-webkit-slider-thumb{
 
 .accordion-filter-box-checboxes {
     height: 0;
-    position: relative;
+    position: relative; 
     overflow: hidden;
     transition: height 0.5s ease;
 }

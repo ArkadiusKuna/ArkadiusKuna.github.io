@@ -1,9 +1,8 @@
 .accordion__card {
     min-height: 75px;
-    cursor: pointer;
 }
 
-.accordion__card.accord-drop .accordion__answer {
+.accordion__card.accord-drop .accordion__content {
     max-height: 120px;
-    animation: 0.3s ease;
+    transition: max-height 0.7s ease;
 }
