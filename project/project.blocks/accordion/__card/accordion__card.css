@@ -1,5 +1,7 @@
 .accordion__card {
     min-height: 75px;
+    border-bottom: 2px solid rgba(110,119,93,.8);
+
 }
 
 .accordion__card.accord-drop .accordion__content {
