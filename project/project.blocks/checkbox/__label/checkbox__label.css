@@ -1,0 +1,12 @@
+.checkbox__label {
+    position: relative;
+    padding-left: 20px;
+    cursor: pointer;
+    display: block;
+    font-family: 'Barlow', sans-serif;
+    font-size: 14px;
+    font-weight: 200;
+    line-height: 2em;
+    color: #6E775D;
+    top: -5px;
+}
