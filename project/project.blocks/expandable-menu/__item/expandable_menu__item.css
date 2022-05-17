@@ -1,6 +1,4 @@
 .expandable-menu__item {
-    height: 16.5%;
-    width: 100%;
     padding: 8px 12px;
     text-overflow: ellipsis;
     overflow: hidden;

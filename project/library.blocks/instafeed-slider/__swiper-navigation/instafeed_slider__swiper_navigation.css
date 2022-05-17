@@ -1,9 +1,16 @@
 .instafeed-slider__swiper-navigation {
-    --swiper-navigation-size: 20px;
-    background-color: #fff;
     width: 30px;
     height: 30px;
-    border-radius: 50%;
-    color: #111;
+    --swiper-navigation-size: 20px;
     top: 3280px;
+    border-radius: 50%;
+    transition: 0.7s;
+    color: #111;
+    background-color: #fff;
+}
+
+.instafeed-slider__swiper-navigation:hover {
+    background-color: #111111;
+    color: #FFFFFF;
+    transition: 0.7s;
 }
