@@ -6,8 +6,11 @@ const postcss = require("gulp-postcss");
 const cssnano = require("cssnano");
 const autoprefixer = require("autoprefixer");
 const {src, series, parallel, dest, watch} = require("gulp");
-
 const cssPath = "./project/**/**/*.css";
+
+// function CopyHtml() {
+//     return src("src/*.html").pipe(gulp.dest("dist"));
+// }
 
 function bundleCss() {
     return src(cssPath)

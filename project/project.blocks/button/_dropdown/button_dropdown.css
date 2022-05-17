@@ -1,0 +1,11 @@
+.button--dropdown {
+    min-width: 200px;
+    width: fit-content;
+    display: flex;
+    justify-content: space-between;
+    background: transparent;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    margin: 25px 0 20px 0;
+    padding: 8px 0;
+}

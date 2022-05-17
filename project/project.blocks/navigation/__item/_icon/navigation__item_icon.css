@@ -5,7 +5,3 @@
     font-size: 65px;
     cursor: pointer;
 }
-
-.navigation__item--icon:hover {
-    opacity: 0.7;
-}

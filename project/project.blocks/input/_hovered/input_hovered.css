@@ -1,0 +1,4 @@
+.input--hovered:hover {
+    border-bottom: 2px solid #797767;
+    padding: 3px 3px 2px 12px;
+}

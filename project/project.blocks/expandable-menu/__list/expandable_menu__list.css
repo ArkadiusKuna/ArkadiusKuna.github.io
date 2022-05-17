@@ -1,0 +1,25 @@
+.expandable-menu__list {
+    height: 300px;
+    width: -webkit-fill-available;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    list-style: none;
+    padding: 12px 0;
+    border: 1px solid #797767;
+    background-color: #FFFFFF;
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 10%), 0 0 4px 0 rgb(0 0 0 / 10%);
+    border-top: 0px;
+    position: absolute;
+    top: 67px;
+    visibility: hidden;
+    transform: scaleY(0);
+    transform-origin: top;
+    transition: 0.3s;
+}
+
+.list-open {
+    transition: 0.3s;
+    visibility: visible;
+    transform: scaleY(1);
+}

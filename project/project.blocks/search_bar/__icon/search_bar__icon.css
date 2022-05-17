@@ -4,7 +4,3 @@
     position: relative;
     cursor: pointer;
 }
-
-.search-bar__icon:hover {
-    opacity: 0.5;
-}
