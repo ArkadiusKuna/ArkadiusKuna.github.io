@@ -2,7 +2,7 @@ const shopAccordion = document.querySelectorAll(".accordion__header--shop");
 const faqAccordion = document.querySelectorAll(".accordion__header--faq");
 
 shopAccordion.forEach(trigger =>
-    trigger.addEventListener("click", accordDrop));
+  trigger.addEventListener("click", accordDrop));
 
 faqAccordion.forEach((trigger) =>
   trigger.addEventListener("click", singleAccordDrop));    

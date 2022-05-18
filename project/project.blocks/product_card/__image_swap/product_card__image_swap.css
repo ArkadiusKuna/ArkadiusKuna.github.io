@@ -16,3 +16,7 @@
 .product-card__link:hover .product-card__image--hover {
     display: block;
 }
+
+.product-card__link:hover .product-card__image--hover-small {
+    display: block;
+}

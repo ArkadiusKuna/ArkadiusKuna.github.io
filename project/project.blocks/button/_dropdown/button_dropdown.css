@@ -6,6 +6,7 @@
     background: transparent;
     text-overflow: ellipsis;
     white-space: nowrap;
+    border: 1px solid rgba(110, 119, 93, 0.4);
     margin: 25px 0 20px 0;
     padding: 8px 0;
 }

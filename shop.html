@@ -9,7 +9,6 @@
         <script src="./node_modules/ion-rangeslider/js/ion.rangeSlider.min.js"></script>
         <link rel="stylesheet" href="./node_modules/ion-rangeslider/css/ion.rangeSlider.min.css">
         <link rel="stylesheet" href="./project.bundle/bundle.css">
-        <!-- <link rel="stylesheet" href="./CSS/shop.css"> -->
         <link rel="icon" href="./project/project.blocks/all-blocks/logo-nav-bar.webp" type="logo-img">
         <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@200;300;400;600;700&family=Cinzel&family=Poppins:wght@600&family=Work+Sans:wght@200&display=swap" rel="stylesheet">        
     </head>
@@ -129,17 +128,17 @@
             <h1 class="header__title">SKLEP</h1>
             
         </section>
-<!-- -------------------------------------------------  HEADER NAVIGATION BARS  ------------------------------------------------------------------------------ -->
-        <section class="tab tab--white tab--flex-dir-row tab--large">
+<!-- -------------------------------------------------  HEADER NAVIGATION BARS  ------------------------------------------------------------------------------ -->     
+        <main class="tab tab--white">
+            
+            <section class="tab__inner tab__inner--width-1250">               
+                <aside class="accordion accordion--small">
 
-            <aside class="tab__inner">
-                <div class="accordion accordion--small">
                     <div class="accordion__card accordion__card--small">
                         <div class="accordion__header accordion__header--no-top-padding accordion__header--default-cursor accordion__header--shop">
                             <h3 class="accordion__title accordion__title--large">Cena rosnąco</h3>
                         </div>
                     </div>
-
                     <div class="accordion__card accordion__card--small accordion__card--shop">
                         <div class="accordion__header accordion__header--hovered accordion__header--shop">
                             <h3 class="accordion__title accordion__title--small">Kolekcja</h3>
@@ -152,7 +151,7 @@
                             <p class="accordion__text accordion__text--small accordion__text--hovered accordion__text--padding-bottom">Bransoletki</p>
                         </div>
                     </div>
-
+                
                     <div class="accordion__card accordion__card--small accordion__card--shop">
                         <div class="accordion__header accordion__header--hovered accordion__header--shop">
                             <h3 class="accordion__title accordion__title--small">Cena</h3>
@@ -170,7 +169,7 @@
                             </div>
                         </div>
                     </div>
-
+                
                     <div class="accordion__card accordion__card--small accordion__card--shop">
                         <div class="accordion__header accordion__header--hovered accordion__header--shop">
                             <h3 class="accordion__title accordion__title--small">Rozmiar</h3>
@@ -187,38 +186,181 @@
                             <label class="checkbox__label" for="18cm"><span class="checkbox__text checkbox__text--hovered">Obwód nadgarstka - 18-19 cm</span></label>
                         </div>
                     </div>
-
-                </div>
-            </aside>
-
-            <div class="tab__inner tab__inner--large tab__inner--flex-align-items-end">
-
-                <div class="expandable-menu">
-                    <button class="button button--dropdown" id="filter-button">
-                        <span id="button-text" class="button__text button__text--black button__text--margin-y button__text--hovered">Sortuj według</span>
-                        <svg id="button-icon" class="button__icon button__icon--margin-y" viewBox="0 0 24 24" width="24" height="24">
-                            <path d="M18.2546728,8.18171329 L18.9617796,8.88882007 L12.5952867,15.2537133 L12.5978964,15.2558012 L11.8907896,15.962908 
-                                L11.8882867,15.9607133 L11.8874628,15.9617796 L11.180356,15.2546728 L11.1812867,15.2527133 L4.81828671,8.88882007 L5.52539349,8.18171329 L11.8882867,14.5457133 L18.2546728,8.18171329 Z"
-                                fill-rule="evenodd"></path>
-                        </svg>
-                    </button>
-                    <!-- <div class="expandable-menu" > -->
-                        <ul class="expandable-menu__list" id="sorting-list">
-                            <li class="expandable-menu__item expandable-menu__item--hovered"><span class="expandable-menu__text">Najnowsze</span></li>
-                            <li class="expandable-menu__item expandable-menu__item--hovered" title="Cena (od najniższej do najwyższej)"><span class="expandable-menu__text">Cena (od najniższej do najwyższej)</span></li>
-                            <li class="expandable-menu__item expandable-menu__item--hovered" title="Cena (od najwyższej do najniższej)"><span class="expandable-menu__text">Cena (od najwyższej do najniższej)</span></li>
-                            <li class="expandable-menu__item expandable-menu__item--hovered"><span class="expandable-menu__text">Nazwa A-Z</span></li>
-                            <li class="expandable-menu__item expandable-menu__item--hovered"><span class="expandable-menu__text">Nazwa Z-A</span></li>
-                        </ul>
-                    <!-- </div> -->
-
-                </div>
-
-                    <div class="products" style="height: 100%; width: 100%; background-color: blueviolet;"></div>
+                
+                </aside>
+            
+                <section class="tab__inner tab__inner--flex-dir-column tab__inner--flex-align-items-end tab__inner--width-1000">
                     
-                </div>
+                    <div class="expandable-menu">              
+                        <button class="button button--dropdown" id="sorting-button"> 
+                            <span id="button-text" class="button__text button__text--black button__text--margin-y button__text--hovered">Sortuj według</span>
+                            <svg id="button-icon" class="button__icon button__icon--margin-y" viewBox="0 0 24 24" width="24" height="24">
+                            <path
+                                d="M18.2546728,8.18171329 L18.9617796,8.88882007 L12.5952867,15.2537133 L12.5978964,15.2558012 L11.8907896,15.962908 
+                                            L11.8882867,15.9607133 L11.8874628,15.9617796 L11.180356,15.2546728 L11.1812867,15.2527133 L4.81828671,8.88882007 L5.52539349,8.18171329 L11.8882867,14.5457133 L18.2546728,8.18171329 Z"
+                                fill-rule="evenodd"></path>
+                            </svg>
+                        </button>
+                        <ul class="expandable-menu__list" id="sorting-list">
+                            <li class="expandable-menu__item expandable-menu__item--hovered">
+                                <span class="expandable-menu__text">Najnowsze</span></li>
+                            <li class="expandable-menu__item expandable-menu__item--hovered" title="Cena (od najniższej do najwyższej)">
+                                <span class="expandable-menu__text">Cena (od najniższej do najwyższej)</span></li>
+                            <li class="expandable-menu__item expandable-menu__item--hovered" title="Cena (od najwyższej do najniższej)">
+                                <span class="expandable-menu__text">Cena (od najwyższej do najniższej)</span></li>
+                            <li class="expandable-menu__item expandable-menu__item--hovered">
+                                <span class="expandable-menu__text">Nazwa A-Z</span></li>
+                            <li class="expandable-menu__item expandable-menu__item--hovered">
+                                <span class="expandable-menu__text">Nazwa Z-A</span></li>
+                        </ul>
+                    </div>
 
-        </section>
+                    <ul class="products">
+                        <li class="products__item" data-newest="3">
+                            <div class="product-card product-card--small product-card--padding-around">
+                                <a href="" class="product-card__link">
+                                    <div class="product-card__image-swap product-card__image-swap--small">
+                                        <img src="./project/project.blocks/product_card/box-1-img-1-shop.webp" class="product-card__image product-card__image--small" alt="product-img">
+                                        <img src="./project/project.blocks/product_card/box-1-img-2-shop.webp" class="product-card__image product-card__image--hover-small" alt="">
+                                        <div class="product-card__overlay">
+                                            <div class="product-card__overlay-text">Podgląd</div>
+                                        </div>
+                                    </div>
+                                    <div class="product-card__description product-card__description--small">
+                                        <p class="product-card__header">Pleciona bransoletka z Agatem</p>
+                                        <hr class="product-card__line">
+                                        <p class="product-card__price">80,00 zł</p>
+                                    </div>
+                                </a>
+                                <button class="button button--hovered"><span class="button__text">Dodaj do koszyka</span></button>
+                            </div>
+                        </li>
+            
+                        <li class="products__item" data-newest="6">
+                            <div class="product-card product-card--small product-card--padding-around">
+                                <a href="" class="product-card__link">
+                                    <div class="product-card__image-swap product-card__image-swap--small">
+                                        <img src="./project/project.blocks/product_card/box-3-img-1-shop.webp" class="product-card__image product-card__image--small" alt="product-img">
+                                        <img src="./project/project.blocks/product_card/box-3-img-2-shop.webp" class="product-card__image product-card__image--hover-small" alt="">
+                                        <div class="product-card__overlay">
+                                            <div class="product-card__overlay-text">Podgląd</div>
+                                        </div>
+                                    </div>
+                                    <div class="product-card__description product-card__description--small">
+                                        <p class="product-card__header">Pleciona bransoletka z Turmalinem</p>
+                                        <hr class="product-card__line">
+                                        <p class="product-card__price">90,00 zł</p>
+                                    </div>
+                                </a>
+                                <button class="button button--hovered"><span class="button__text">Dodaj do koszyka</span></button>
+                            </div>
+                        </li>
+            
+                        <li class="products__item" data-newest="1">
+                            <div class="product-card product-card--small product-card--padding-around">
+                                <a href="" class="product-card__link">
+                                    <div class="product-card__image-swap product-card__image-swap--small">
+                                        <img src="./project/project.blocks/product_card/box-5-img-1-shop.webp" class="product-card__image product-card__image--small" alt="product-img">
+                                        <img src="./project/project.blocks/product_card/box-5-img-2-shop.webp" class="product-card__image product-card__image--hover-small" alt="">
+                                        <div class="product-card__overlay">
+                                            <div class="product-card__overlay-text">Podgląd</div>
+                                        </div>
+                                    </div>
+                                    <div class="product-card__description product-card__description--small">
+                                        <p class="product-card__header">Pleciona bransoletka z Rodonitem</p>
+                                        <hr class="product-card__line">
+                                        <p class="product-card__price">100,00 zł</p>
+                                    </div>
+                                </a>
+                                <button class="button button--hovered"><span class="button__text">Dodaj do koszyka</span></button>
+                            </div>
+                        </li>
+            
+                        <li class="products__item" data-newest="4">
+                            <div class="product-card product-card--small product-card--padding-around">
+                                <a href="" class="product-card__link">
+                                    <div class="product-card__image-swap product-card__image-swap--small">
+                                        <img src="./project/project.blocks/product_card/box-7-img-1-shop.webp" class="product-card__image product-card__image--small" alt="product-img">
+                                        <img src="./project/project.blocks/product_card/box-7-img-2-shop.webp" class="product-card__image product-card__image--hover-small" alt="">
+                                        <div class="product-card__overlay">
+                                            <div class="product-card__overlay-text">Podgląd</div>
+                                        </div>
+                                    </div>
+                                    <div class="product-card__description product-card__description--small">
+                                        <p class="product-card__header">Pleciona bransoletka z Jaspisem</p>
+                                        <hr class="product-card__line">
+                                        <p class="product-card__price">80,00 zł</p>
+                                    </div>
+                                </a>
+                                <button class="button button--hovered"><span class="button__text">Dodaj do koszyka</span></button>
+                            </div>
+                        </li>
+            
+                        <li class="products__item" data-newest="2">
+                            <div class="product-card product-card--small product-card--padding-around">
+                                <a href="" class="product-card__link">
+                                    <div class="product-card__image-swap product-card__image-swap--small">
+                                        <img src="./project/project.blocks/product_card/box-2-img-1-shop.webp" class="product-card__image product-card__image--small" alt="product-img">
+                                        <img src="./project/project.blocks/product_card/box-2-img-2-shop.webp" class="product-card__image product-card__image--hover-small" alt="">
+                                        <div class="product-card__overlay">
+                                            <div class="product-card__overlay-text">Podgląd</div>
+                                        </div>
+                                    </div>
+                                    <div class="product-card__description product-card__description--small">
+                                        <p class="product-card__header">Pleciona bransoletka z Cytrynem</p>
+                                        <hr class="product-card__line">
+                                        <p class="product-card__price">90,00 zł</p>
+                                    </div>
+                                </a>
+                                <button class="button button--hovered"><span class="button__text">Dodaj do koszyka</span></button>
+                            </div>
+                        </li>
+            
+                        <li class="products__item" data-newest="7">
+                            <div class="product-card product-card--small product-card--padding-around">
+                                <a href="" class="product-card__link">
+                                    <div class="product-card__image-swap product-card__image-swap--small">
+                                        <img src="./project/project.blocks/product_card/box-4-img-1-shop.webp" class="product-card__image product-card__image--small" alt="product-img">
+                                        <img src="./project/project.blocks/product_card/box-4-img-2-shop.webp" class="product-card__image product-card__image--hover-small" alt="">
+                                        <div class="product-card__overlay">
+                                            <div class="product-card__overlay-text">Podgląd</div>
+                                        </div>
+                                    </div>
+                                    <div class="product-card__description product-card__description--small">
+                                        <p class="product-card__header">Pleciona bransoletka z Cytrynem i księżycową zawieszką
+                                        </p>
+                                        <hr class="product-card__line">
+                                        <p class="product-card__price">120,00 zł</p>
+                                    </div>
+                                </a>
+                                <button class="button button--hovered"><span class="button__text">Dodaj do koszyka</span></button>
+                            </div>
+                        </li>
+            
+                        <li class="products__item" data-newest="5">
+                            <div class="product-card product-card--small product-card--padding-around">
+                                <a href="" class="product-card__link">
+                                    <div class="product-card__image-swap product-card__image-swap--small">
+                                        <img src="./project/project.blocks/product_card/box-6-img-1-shop.webp" class="product-card__image product-card__image--small" alt="product-img">
+                                        <img src="./project/project.blocks/product_card/box-6-img-2-shop.webp" class="product-card__image product-card__image--hover-small" alt="">
+                                        <div class="product-card__overlay">
+                                            <div class="product-card__overlay-text">Podgląd</div>
+                                        </div>
+                                    </div>
+                                    <div class="product-card__description product-card__description--small">
+                                        <p class="product-card__header">Pleciona bransoletka z Azurytem</p>
+                                        <hr class="product-card__line">
+                                        <p class="product-card__price">100,00 zł</p>
+                                    </div>
+                                </a>
+                                <button class="button button--hovered"><span class="button__text">Dodaj do koszyka</span></button>
+                            </div>
+                        </li>
+                    </ul>
+
+                </section>
+            </section>
+        </main>
 <!-- ------------------------------------------------------  SOCIAL MEDIA FIXED ICONS  ----------------------------------------------------------------------------- -->
         <div class="social-media-icons">
 

@@ -1,8 +1,6 @@
 .tab {
-    min-height: 470px;
     width: 100vw;
     background-color: #f6f3ef;
     display: flex;
-    flex-direction: column;
     justify-content: center;
 }
