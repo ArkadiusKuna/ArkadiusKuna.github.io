@@ -1,5 +1,6 @@
 .instafeed__image {
     height: 282px;
     width: 99%;
+    object-fit: fill;
     position: absolute;
 }
