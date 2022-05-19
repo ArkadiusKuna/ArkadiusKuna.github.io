@@ -41,14 +41,6 @@ lostPasswordModalClose.addEventListener("click", () => {
     modalHide(passwordModal);
 })
 
-
-
-
-
-
-
-
-
 function modalVisible(e) {
     e.style.display = "flex";
 }
