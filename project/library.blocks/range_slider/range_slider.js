@@ -17,6 +17,7 @@ $("#price-slider").ionRangeSlider({
     textFrom.innerText = valueFrom + ",00 zł";
     textTo.innerText = valueTo + ",00 zł";
   },
+
   onChange: function (data) {
     let valueFrom = data.from;
     let valueTo = data.to;
@@ -24,9 +25,18 @@ $("#price-slider").ionRangeSlider({
     textFrom.innerText = valueFrom + ",00 zł";
     textTo.innerText = valueTo + ",00 zł";
   },
+  
   onFinish: function (data) {
     let valueFrom = data.from;
     let valueTo = data.to;
+
+    productsItems.forEach((item) => {
+      if ((valueFrom > item.getAttribute("data-price")) || (valueTo < item.getAttribute("data-price"))) {
+        item.classList.add("hide")
+      } else {
+        item.classList.remove("hide")
+      }
+    })
 
     textFrom.innerText = valueFrom + ",00 zł";
     textTo.innerText = valueTo + ",00 zł";

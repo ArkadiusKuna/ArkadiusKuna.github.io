@@ -1,5 +1,6 @@
 .irs-bar {
     height: 2px !important;
     top: 10px !important;
+    cursor: pointer;
     background-color: #6E775D !important;
 }

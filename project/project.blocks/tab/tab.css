@@ -1,4 +1,5 @@
 .tab {
+    height: fit-content;
     width: 100vw;
     background-color: #f6f3ef;
     display: flex;
