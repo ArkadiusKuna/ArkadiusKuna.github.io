@@ -1,74 +1,71 @@
-const filterBtn = document.getElementById("sorting-button");
-const iconBtn = document.getElementById("button-icon");
-const filterList = document.getElementById("sorting-list");
-const filterListItems = document.querySelectorAll(".expandable-menu__item");
-const productsList = document.querySelector(".products");
-let textBtn = document.getElementById("button-text");
-let productsListItems = Array.from(productsList.children);
+const sortingBtn = document.getElementById("sorting-button");
+const sortingBtnIcon = document.getElementById("sorting-button-icon");
+const expandableList = document.getElementById("expandable-sorting-list");
+const expandableListItems = document.querySelectorAll(".expandable-menu__item");
+const products = document.querySelector(".products");
+let productsItems = Array.from(document.querySelectorAll(".products__item"));
+let sortingBtnText = document.getElementById("sorting-btn-text");
+let productsListItems = Array.from(products.children);
 
-for (let i of productsListItems) {
-  const getPriceData = i.querySelector(".product-card__price");
-  const getPriceText = getPriceData.textContent;
-  const priceValue = parseFloat(getPriceText).toFixed(2);
-  i.setAttribute("data-price", priceValue);
+for (i = 0; i < expandableListItems.length; i++) {
+    expandableListItems.item(i).setAttribute("data-option", i);
 }
 
 for (let i of productsListItems) {
-  const getNameData = i.querySelector(".product-card__header");
-  const getNameText = getNameData.textContent;
-  i.setAttribute("data-name", getNameText);
+    const getName = i.querySelector(".product-card__header");
+    const getPrice = i.querySelector(".product-card__price");
+    const priceValue = parseFloat(getPrice.textContent).toFixed(2);
+    const nameValue = getName.textContent;
+    i.setAttribute("data-price", priceValue);
+    i.setAttribute("data-name", nameValue)
 }
-
-window.addEventListener("mouseup", function (event) {
-  if (event.target == filterBtn || event.target.parentNode == filterBtn) {
-    filterList.classList.toggle("list-open");
-    iconBtn.classList.toggle("icon-rotate");
-  } else {
-    filterList.classList.remove("list-open");
-    iconBtn.classList.remove("icon-rotate");
-  }
-});
-
-filterListItems.forEach((item) => {
-  item.addEventListener("click", () => {
-    textBtn.textContent = item.textContent;
-    filterList.classList.remove("list-open");
-  });
-});
-
-filterListItems.forEach((item) => {
-  item.addEventListener("click", () => {
-    if (textBtn.textContent === "Najnowsze") {
-      sortNewest();
-      return;
-    }
-    if (textBtn.textContent === "Cena (od najwyższej do najniższej)") {
-      SortDataLow2High();
-      return;
-    }
-    if (textBtn.textContent === "Cena (od najniższej do najwyższej)") {
-      SortDataHigh2Low();
-      return;
-    }
-    if (textBtn.textContent === "Nazwa A-Z") {
-      alphabeticallySortAZ();
-      return;
-    }
-    if (textBtn.textContent === "Nazwa Z-A") {
-      alphabeticallySortZA();
+  window.addEventListener("click", (event) => {
+    if (event.target == sortingBtn) {
+      expandableList.classList.toggle("list-open");
+      sortingBtnIcon.classList.toggle("icon-rotate");
+    } else {
+      expandableList.classList.remove("list-open");
+      sortingBtnIcon.classList.remove("icon-rotate");
     }
   });
+
+expandableListItems.forEach((item) => {
+    item.addEventListener("click", () => {
+        sortingBtnText.textContent = item.textContent.trim();
+
+        if (item.getAttribute("data-option") == 0) {
+            let sorted = productsItems.sort(sortNewest);
+            sorted.forEach((e) => document.querySelector(".products").appendChild(e));
+                return;
+        } else if (item.getAttribute("data-option") == 1) {
+            let sorted = productsItems.sort(sortLowToHigh);
+            sorted.forEach((e) => document.querySelector(".products").appendChild(e));
+                return;
+        } else if (item.getAttribute("data-option") == 2) {
+            let sorted = productsItems.sort(sortHighToLow);
+            sorted.forEach((e) => document.querySelector(".products").appendChild(e));
+                return;
+        } else if (item.getAttribute("data-option") == 3) {
+            let sorted = productsItems.sort(sortAZ);
+            sorted.forEach((e) => document.querySelector(".products").appendChild(e));
+                return;
+        } else if (item.getAttribute("data-option") == 4) {
+            let sorted = productsItems.sort(sortZA);
+            sorted.forEach((e) => document.querySelector(".products").appendChild(e));  
+                return;
+        }
+    });
 });
 
-function low2High(a, b) {
-  return a.dataset.price - b.dataset.price;
+function sortLowToHigh(a, b) {
+    return a.dataset.price - b.dataset.price;
 }
 
-function high2Low(a, b) {
+function sortHighToLow(a, b) {
   return b.dataset.price - a.dataset.price;
 }
 
-function newest(a, b) {
+function sortNewest(a, b) {
   return a.dataset.newest - b.dataset.newest;
 }
 
@@ -78,41 +75,4 @@ function sortAZ(a, b) {
 
 function sortZA(a, b) {
   if (a.dataset.name.toString() > b.dataset.name.toString()) return -1;
-}
-
-function SortDataHigh2Low() {
-  var indexes = document.querySelectorAll("[data-price]");
-  var indexesArray = Array.from(indexes);
-  let sorted = indexesArray.sort(low2High);
-  sorted.forEach((e) => document.querySelector(".products").appendChild(e));
-}
-
-function SortDataLow2High() {
-  var indexes = document.querySelectorAll("[data-price]");
-  var indexesArray = Array.from(indexes);
-  let sorted = indexesArray.sort(high2Low);
-  sorted.forEach((e) => document.querySelector(".products").appendChild(e));
-}
-
-function sortNewest() {
-  var indexes = document.querySelectorAll("[data-newest]");
-  var indexesArray = Array.from(indexes);
-  let sorted = indexesArray.sort(newest);
-  sorted.forEach((e) => document.querySelector(".products").appendChild(e));
-}
-
-function alphabeticallySortAZ() {
-  var indexes = document.querySelectorAll("[data-name]");
-  var indexesArray = Array.from(indexes);
-  let sorted = indexesArray.sort(sortAZ);
-  sorted.forEach((e) =>
-    document.querySelector(".products-list-wrapper").appendChild(e)
-  );
-}
-
-function alphabeticallySortZA() {
-  var indexes = document.querySelectorAll("[data-name]");
-  var indexesArray = Array.from(indexes);
-  let sorted = indexesArray.sort(sortZA);
-  sorted.forEach((e) => document.querySelector(".products").appendChild(e));
 }

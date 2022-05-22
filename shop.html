@@ -193,17 +193,16 @@
                     
                     <div class="expandable-menu">              
                         <button class="button button--dropdown" id="sorting-button"> 
-                            <span id="button-text" class="button__text button__text--black button__text--margin-y button__text--hovered">Sortuj według</span>
-                            <svg id="button-icon" class="button__icon button__icon--margin-y" viewBox="0 0 24 24" width="24" height="24">
+                            <span id="sorting-btn-text" class="button__text button__text--black button__text--margin-y button__text--hovered">Sortuj według</span>
+                            <svg id="sorting-button-icon" class="button__icon button__icon--margin-y" viewBox="0 0 24 24" width="24" height="24">
                             <path
                                 d="M18.2546728,8.18171329 L18.9617796,8.88882007 L12.5952867,15.2537133 L12.5978964,15.2558012 L11.8907896,15.962908 
                                             L11.8882867,15.9607133 L11.8874628,15.9617796 L11.180356,15.2546728 L11.1812867,15.2527133 L4.81828671,8.88882007 L5.52539349,8.18171329 L11.8882867,14.5457133 L18.2546728,8.18171329 Z"
                                 fill-rule="evenodd"></path>
                             </svg>
                         </button>
-                        <ul class="expandable-menu__list" id="sorting-list">
-                            <li class="expandable-menu__item expandable-menu__item--hovered">
-                                <span class="expandable-menu__text">Najnowsze</span></li>
+                        <ul class="expandable-menu__list" id="expandable-sorting-list">
+                            <li class="expandable-menu__item expandable-menu__item--hovered"><span class="expandable-menu__text">Najnowsze</span></li>
                             <li class="expandable-menu__item expandable-menu__item--hovered" title="Cena (od najniższej do najwyższej)">
                                 <span class="expandable-menu__text">Cena (od najniższej do najwyższej)</span></li>
                             <li class="expandable-menu__item expandable-menu__item--hovered" title="Cena (od najwyższej do najniższej)">
@@ -215,7 +214,7 @@
                         </ul>
                     </div>
 
-                    <ul class="products">
+                    <ul class="products" id="products">
                         <li class="products__item" data-newest="3">
                             <div class="product-card product-card--small product-card--padding-around">
                                 <a href="" class="product-card__link">
@@ -327,8 +326,7 @@
                                         </div>
                                     </div>
                                     <div class="product-card__description product-card__description--small">
-                                        <p class="product-card__header">Pleciona bransoletka z Cytrynem i księżycową zawieszką
-                                        </p>
+                                        <p class="product-card__header">Pleciona bransoletka z Cytrynem i księżycową zawieszką</p>
                                         <hr class="product-card__line">
                                         <p class="product-card__price">120,00 zł</p>
                                     </div>
