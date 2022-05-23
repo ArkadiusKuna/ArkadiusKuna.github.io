@@ -1,0 +1,7 @@
+.navigation__inner {
+    height: 343px;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    background-color: #FFFFFF;
+}
