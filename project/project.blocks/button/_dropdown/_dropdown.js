@@ -12,22 +12,23 @@ for (i = 0; i < expandableListItems.length; i++) {
 }
 
 for (let i of productsListItems) {
-    const getName = i.querySelector(".product-card__header");
-    const getPrice = i.querySelector(".product-card__price");
-    const priceValue = parseFloat(getPrice.textContent).toFixed(2);
-    const nameValue = getName.textContent;
-    i.setAttribute("data-price", priceValue);
-    i.setAttribute("data-name", nameValue)
+  const getName = i.querySelector(".product-card__header");
+  const getPrice = i.querySelector(".product-card__price");
+  const priceValue = parseFloat(getPrice.textContent).toFixed(2);
+  const nameValue = getName.textContent;
+  i.setAttribute("data-price", priceValue);
+  i.setAttribute("data-name", nameValue);
 }
-  window.addEventListener("click", (event) => {
-    if (event.target == sortingBtn) {
-      expandableList.classList.toggle("list-open");
-      sortingBtnIcon.classList.toggle("icon-rotate");
-    } else {
-      expandableList.classList.remove("list-open");
-      sortingBtnIcon.classList.remove("icon-rotate");
-    }
-  });
+
+window.addEventListener("click", (event) => {
+  if (event.target != sortingBtn) {
+    expandableList.classList.remove("list-open");
+    sortingBtnIcon.classList.remove("icon-rotate");
+    return;
+  }  
+    expandableList.classList.toggle("list-open");
+    sortingBtnIcon.classList.toggle("icon-rotate");
+});
 
 expandableListItems.forEach((item) => {
     item.addEventListener("click", () => {
