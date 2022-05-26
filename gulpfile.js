@@ -51,7 +51,7 @@ function bundleCssIndex() {
         .pipe(concat("index.css"))
         .pipe(postcss([autoprefixer(), cssnano()]))
         .pipe(sourceMaps.write("."))
-        .pipe(dest("./dist/css/index/"));
+        .pipe(dest("./dist/css/"));
 }
 
 function bundleJsIndex() {
@@ -60,7 +60,7 @@ function bundleJsIndex() {
         .pipe(concat('index.js'))
         .pipe(terser())
         .pipe(sourceMaps.write('.'))
-        .pipe(dest('./dist/js/index/'))
+        .pipe(dest('./dist/js/'))
 }
 
 function watchTask() {
