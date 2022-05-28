@@ -16,7 +16,9 @@
   },
   "homepage": "https://github.com/ArkadiusKuna/ArkadiusKuna.github.io#readme",
   "devDependencies": {
+    "css": "^3.0.0",
     "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^8.0.0",
     "gulp-concat": "^2.6.1",
     "gulp-cssnano": "^2.1.3",
     "gulp-sourcemaps": "^3.0.0",

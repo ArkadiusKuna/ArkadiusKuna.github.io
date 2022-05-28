@@ -4,6 +4,7 @@ const concat = require('gulp-concat');
 const cssnano = require("gulp-cssnano");
 const sourceMaps = require('gulp-sourcemaps');
 const uglify = require('gulp-uglify');
+const autoprefixer = require('gulp-autoprefixer');
 const config = {
   paths: {
     src: {
@@ -181,8 +182,9 @@ const config = {
 
 function bundleIndexCss() {
   return src(config.paths.src.indexCss)
-    .pipe(concat('index.min.css'))
     .pipe(sourceMaps.init())
+    .pipe(concat('index.min.css'))
+    .pipe(autoprefixer())
     .pipe(cssnano())
     .pipe(sourceMaps.write('.'))
     .pipe(dest(config.paths.dist.css));
@@ -190,8 +192,9 @@ function bundleIndexCss() {
 
 function bundleShopCss() {
   return src(config.paths.src.shopCss)
-    .pipe(concat("shop.min.css"))
     .pipe(sourceMaps.init())
+    .pipe(concat("shop.min.css"))
+    .pipe(autoprefixer())
     .pipe(cssnano())
     .pipe(sourceMaps.write("."))
     .pipe(dest(config.paths.dist.css));
@@ -199,8 +202,9 @@ function bundleShopCss() {
 
 function bundleAboutCss() {
   return src(config.paths.src.aboutCss)
-    .pipe(concat("about.min.css"))
     .pipe(sourceMaps.init())
+    .pipe(concat("about.min.css"))
+    .pipe(autoprefixer())
     .pipe(cssnano())
     .pipe(sourceMaps.write("."))
     .pipe(dest(config.paths.dist.css));
@@ -208,8 +212,9 @@ function bundleAboutCss() {
 
 function bundleProcessCss() {
   return src(config.paths.src.processCss)
-    .pipe(concat("process.min.css"))
     .pipe(sourceMaps.init())
+    .pipe(concat("process.min.css"))
+    .pipe(autoprefixer())
     .pipe(cssnano())
     .pipe(sourceMaps.write("."))
     .pipe(dest(config.paths.dist.css));
@@ -217,8 +222,9 @@ function bundleProcessCss() {
 
 function bundleContactCss() {
   return src(config.paths.src.contactCss)
-    .pipe(concat("contact.min.css"))
     .pipe(sourceMaps.init())
+    .pipe(concat("contact.min.css"))
+    .pipe(autoprefixer())
     .pipe(cssnano())
     .pipe(sourceMaps.write("."))
     .pipe(dest(config.paths.dist.css));
@@ -226,8 +232,9 @@ function bundleContactCss() {
 
 function bundleFaqCss() {
   return src(config.paths.src.faqCss)
-    .pipe(concat("faq.min.css"))
     .pipe(sourceMaps.init())
+    .pipe(concat("faq.min.css"))
+    .pipe(autoprefixer())
     .pipe(cssnano())
     .pipe(sourceMaps.write("."))
     .pipe(dest(config.paths.dist.css));
@@ -235,8 +242,9 @@ function bundleFaqCss() {
 
 function bundleStorePolicyCss() {
   return src(config.paths.src.storePolicyCss)
-    .pipe(concat("storePolicy.min.css"))
     .pipe(sourceMaps.init())
+    .pipe(concat("storePolicy.min.css"))
+    .pipe(autoprefixer())
     .pipe(cssnano())
     .pipe(sourceMaps.write("."))
     .pipe(dest(config.paths.dist.css));
@@ -244,8 +252,8 @@ function bundleStorePolicyCss() {
 
 function bundleIndexJs() {
   return src(config.paths.src.indexJs)
-    .pipe(concat('index.min.js'))
     .pipe(sourceMaps.init())
+    .pipe(concat('index.min.js'))
     .pipe(uglify())
     .pipe(sourceMaps.write('.'))
     .pipe(dest(config.paths.dist.js))
@@ -253,8 +261,8 @@ function bundleIndexJs() {
 
 function bundleShopJs() {
   return src(config.paths.src.shopJs)
-    .pipe(concat("shop.min.js"))
     .pipe(sourceMaps.init())
+    .pipe(concat("shop.min.js"))
     .pipe(uglify())
     .pipe(sourceMaps.write("."))
     .pipe(dest(config.paths.dist.js));
@@ -262,8 +270,8 @@ function bundleShopJs() {
 
 function bundleAboutJs() {
   return src(config.paths.src.aboutJs)
-    .pipe(concat("about.min.js"))
     .pipe(sourceMaps.init())
+    .pipe(concat("about.min.js"))
     .pipe(uglify())
     .pipe(sourceMaps.write("."))
     .pipe(dest(config.paths.dist.js));
@@ -271,8 +279,8 @@ function bundleAboutJs() {
 
 function bundleProcessJs() {
   return src(config.paths.src.processJs)
-    .pipe(concat("process.min.js"))
     .pipe(sourceMaps.init())
+    .pipe(concat("process.min.js"))
     .pipe(uglify())
     .pipe(sourceMaps.write("."))
     .pipe(dest(config.paths.dist.js));
@@ -280,8 +288,8 @@ function bundleProcessJs() {
 
 function bundleContactJs() {
   return src(config.paths.src.contactJs)
-    .pipe(concat("contact.min.js"))
     .pipe(sourceMaps.init())
+    .pipe(concat("contact.min.js"))
     .pipe(uglify())
     .pipe(sourceMaps.write("."))
     .pipe(dest(config.paths.dist.js));
@@ -289,8 +297,8 @@ function bundleContactJs() {
 
 function bundleFaqJs() {
   return src(config.paths.src.faqJs)
-    .pipe(concat("faq.min.js"))
     .pipe(sourceMaps.init())
+    .pipe(concat("faq.min.js"))
     .pipe(uglify())
     .pipe(sourceMaps.write("."))
     .pipe(dest(config.paths.dist.js));
@@ -298,8 +306,8 @@ function bundleFaqJs() {
 
 function bundleStorePolicyJs() {
   return src(config.paths.src.storePolicyJs)
-    .pipe(concat("storePolicy.min.js"))
     .pipe(sourceMaps.init())
+    .pipe(concat("storePolicy.min.js"))
     .pipe(uglify())
     .pipe(sourceMaps.write("."))
     .pipe(dest(config.paths.dist.js));
