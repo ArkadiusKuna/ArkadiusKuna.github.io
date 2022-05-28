@@ -6,6 +6,7 @@ const products = document.querySelector(".products");
 let productsItems = Array.from(document.querySelectorAll(".products__item"));
 let sortingBtnText = document.getElementById("sorting-btn-text");
 let productsListItems = Array.from(products.children);
+let i;
 
 for (i = 0; i < expandableListItems.length; i++) {
     expandableListItems.item(i).setAttribute("data-option", i);
