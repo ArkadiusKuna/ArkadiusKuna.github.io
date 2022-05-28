@@ -137,8 +137,11 @@ const config = {
         "./project/project.blocks/form/form.js",
       ],
       shopJs: [
-        "node_modules/ion-rangeslider/js/ion.rangeSlider.js",
+        'node_modules/jquery/dist/jquery.js',
+        "node_modules/ion-rangeslider/js/ion.rangeSlider.min.js",
+        './project/library.blocks/range_slider/range_slider.js',
         "./project/project.blocks/form/form.js",
+        './project/project.blocks/button/_dropdown/dropdown.js',
         "./project/project.blocks/accordion/accordion.js",
         "./project/project.blocks/logo/logo.js",
       ],
