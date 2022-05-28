@@ -298,7 +298,7 @@ function bundleFaqJs() {
 
 function bundleStorePolicyJs() {
   return src(config.paths.src.storePolicyJs)
-    .pipe(concat("StorePolicy.min.js"))
+    .pipe(concat("storePolicy.min.js"))
     .pipe(sourceMaps.init())
     .pipe(uglify())
     .pipe(sourceMaps.write("."))
