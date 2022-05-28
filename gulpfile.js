@@ -152,7 +152,7 @@ const config = {
         "./project/project.blocks/logo/logo.js",
       ],
       processJs: [
-        "node_modules/jquery/src/jquery.js",
+        "node_modules/jquery/dist/jquery.js",
         "node_modules/jquery-parallax.js/parallax.js",
         "./project/project.blocks/form/form.js",
         "./project/project.blocks/logo/logo.js",
