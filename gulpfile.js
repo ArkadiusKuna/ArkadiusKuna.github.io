@@ -1,5 +1,5 @@
 const gulp = require("gulp");
-const { src, series, parallel, dest } = require("gulp");
+const { src, series, parallel, dest, watch } = require("gulp");
 const concat = require("gulp-concat");
 const cssnano = require("gulp-cssnano");
 const sourceMaps = require("gulp-sourcemaps");
@@ -11,6 +11,9 @@ const cache = require("gulp-cache");
 const config = {
   paths: {
     src: {
+      allCss: './src/**/*.css',
+      allJs: './src/**/*.js',
+      allImg: './src/**/*.+(png|jpeg|webp)',
       indexCss: [
         "node_modules/swiper/swiper-bundle.css",
         "./src/library.blocks/intro_slider/**/*.css",
@@ -174,8 +177,7 @@ const config = {
       storePolicyJs: [
         "./src/project.blocks/form/form.js",
         "./src/project.blocks/logo/logo.js",
-      ],
-      images: ['./src/**/*.+(png|jpeg|webp)'],
+      ]
     },
     dist: {
       css: "./css/",
@@ -193,7 +195,7 @@ function bundleIndexCss() {
     .pipe(cssnano())
     .pipe(sourceMaps.write("."))
     .pipe(dest(config.paths.dist.css));
-}
+};
 
 function bundleShopCss() {
   return src(config.paths.src.shopCss)
@@ -203,7 +205,7 @@ function bundleShopCss() {
     .pipe(cssnano())
     .pipe(sourceMaps.write("."))
     .pipe(dest(config.paths.dist.css));
-}
+};
 
 function bundleAboutCss() {
   return src(config.paths.src.aboutCss)
@@ -213,7 +215,7 @@ function bundleAboutCss() {
     .pipe(cssnano())
     .pipe(sourceMaps.write("."))
     .pipe(dest(config.paths.dist.css));
-}
+};
 
 function bundleProcessCss() {
   return src(config.paths.src.processCss)
@@ -223,7 +225,7 @@ function bundleProcessCss() {
     .pipe(cssnano())
     .pipe(sourceMaps.write("."))
     .pipe(dest(config.paths.dist.css));
-}
+};
 
 function bundleContactCss() {
   return src(config.paths.src.contactCss)
@@ -233,7 +235,7 @@ function bundleContactCss() {
     .pipe(cssnano())
     .pipe(sourceMaps.write("."))
     .pipe(dest(config.paths.dist.css));
-}
+};
 
 function bundleFaqCss() {
   return src(config.paths.src.faqCss)
@@ -243,7 +245,7 @@ function bundleFaqCss() {
     .pipe(cssnano())
     .pipe(sourceMaps.write("."))
     .pipe(dest(config.paths.dist.css));
-}
+};
 
 function bundleStorePolicyCss() {
   return src(config.paths.src.storePolicyCss)
@@ -253,7 +255,7 @@ function bundleStorePolicyCss() {
     .pipe(cssnano())
     .pipe(sourceMaps.write("."))
     .pipe(dest(config.paths.dist.css));
-}
+};
 
 function bundleIndexJs() {
   return src(config.paths.src.indexJs)
@@ -267,7 +269,7 @@ function bundleIndexJs() {
     .pipe(uglify())
     .pipe(sourceMaps.write("."))
     .pipe(dest(config.paths.dist.js));
-}
+};
 
 function bundleShopJs() {
   return src(config.paths.src.shopJs)
@@ -281,7 +283,7 @@ function bundleShopJs() {
     .pipe(uglify())
     .pipe(sourceMaps.write("."))
     .pipe(dest(config.paths.dist.js));
-}
+};
 
 function bundleAboutJs() {
   return src(config.paths.src.aboutJs)
@@ -295,7 +297,7 @@ function bundleAboutJs() {
     .pipe(uglify())
     .pipe(sourceMaps.write("."))
     .pipe(dest(config.paths.dist.js));
-}
+};
 
 function bundleProcessJs() {
   return src(config.paths.src.processJs)
@@ -309,7 +311,7 @@ function bundleProcessJs() {
     .pipe(uglify())
     .pipe(sourceMaps.write("."))
     .pipe(dest(config.paths.dist.js));
-}
+};
 
 function bundleContactJs() {
   return src(config.paths.src.contactJs)
@@ -323,7 +325,7 @@ function bundleContactJs() {
     .pipe(uglify())
     .pipe(sourceMaps.write("."))
     .pipe(dest(config.paths.dist.js));
-}
+};
 
 function bundleFaqJs() {
   return src(config.paths.src.faqJs)
@@ -337,7 +339,7 @@ function bundleFaqJs() {
     .pipe(uglify())
     .pipe(sourceMaps.write("."))
     .pipe(dest(config.paths.dist.js));
-}
+};
 
 function bundleStorePolicyJs() {
   return src(config.paths.src.storePolicyJs)
@@ -351,15 +353,33 @@ function bundleStorePolicyJs() {
     .pipe(uglify())
     .pipe(sourceMaps.write("."))
     .pipe(dest(config.paths.dist.js));
-}
+};
 
 function imageOptimizer() {
-  return src(config.paths.src.images)
+  return src(config.paths.src.allImg)
     .pipe(cache(imagemin({
       verbose: true
     })))
     .pipe(dest(config.paths.dist.img))
-}
+};
+
+function watchTask() {
+  watch([config.paths.src.allCss, config.paths.src.allJs, config.paths.src.allImg], { interval: 1000 }, parallel([bundleIndexCss,
+bundleIndexJs,
+bundleShopCss,
+bundleShopJs,
+bundleAboutCss,
+bundleAboutJs,
+bundleProcessCss,
+bundleProcessJs,
+bundleContactCss,
+bundleContactJs,
+bundleFaqCss,
+bundleFaqJs,
+bundleStorePolicyCss,
+bundleStorePolicyJs,
+imageOptimizer]))
+};
 
 exports.bundleIndexCss = bundleIndexCss;
 exports.bundleIndexJs = bundleIndexJs;
@@ -376,6 +396,7 @@ exports.bundleFaqJs = bundleFaqJs;
 exports.bundleStorePolicyCss = bundleStorePolicyCss;
 exports.bundleStorePolicyJs = bundleStorePolicyJs;
 exports.imageOptimizer = imageOptimizer;
+exports.watchTask = watchTask;
 exports.default = series(
   parallel(
     imageOptimizer,
@@ -393,5 +414,5 @@ exports.default = series(
     bundleFaqJs,
     bundleStorePolicyCss,
     bundleStorePolicyJs
-  )
+  ), watchTask
 );
