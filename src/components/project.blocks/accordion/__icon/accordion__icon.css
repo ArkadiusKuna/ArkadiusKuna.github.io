@@ -1,7 +1,0 @@
-.accordion__icon {
-    transition: transform 0.4s ease;
-}
-
-.accordion__card.accord-drop svg {
-    transform: rotate(45deg);
-}

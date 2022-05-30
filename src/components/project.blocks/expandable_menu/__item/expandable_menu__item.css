@@ -1,8 +1,0 @@
-.expandable-menu__item {
-    padding: 8px 12px;
-    text-overflow: ellipsis;
-    overflow: hidden;
-    white-space: nowrap;
-    cursor: pointer;
-    transition: 0.3s;
-}
