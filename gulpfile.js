@@ -8,6 +8,8 @@ const autoprefixer = require("gulp-autoprefixer");
 const babel = require("gulp-babel");
 const imagemin = require("gulp-imagemin");
 const cache = require("gulp-cache");
+const plumber = require('gulp-plumber');
+const notifier = require('gulp-notifier');
 const config = {
   paths: {
     src: {
@@ -189,6 +191,7 @@ const config = {
 
 function bundleIndexCss() {
   return src(config.paths.src.indexCss)
+    .pipe(plumber({errorHandler: notifier.error}))
     .pipe(sourceMaps.init())
     .pipe(concat("index.min.css"))
     .pipe(autoprefixer())
@@ -199,6 +202,7 @@ function bundleIndexCss() {
 
 function bundleShopCss() {
   return src(config.paths.src.shopCss)
+  .pipe(plumber({errorHandler: notifier.error}))
     .pipe(sourceMaps.init())
     .pipe(concat("shop.min.css"))
     .pipe(autoprefixer())
@@ -209,6 +213,7 @@ function bundleShopCss() {
 
 function bundleAboutCss() {
   return src(config.paths.src.aboutCss)
+  .pipe(plumber({errorHandler: notifier.error}))
     .pipe(sourceMaps.init())
     .pipe(concat("about.min.css"))
     .pipe(autoprefixer())
@@ -219,6 +224,7 @@ function bundleAboutCss() {
 
 function bundleProcessCss() {
   return src(config.paths.src.processCss)
+  .pipe(plumber({errorHandler: notifier.error}))
     .pipe(sourceMaps.init())
     .pipe(concat("process.min.css"))
     .pipe(autoprefixer())
@@ -229,6 +235,7 @@ function bundleProcessCss() {
 
 function bundleContactCss() {
   return src(config.paths.src.contactCss)
+  .pipe(plumber({errorHandler: notifier.error}))
     .pipe(sourceMaps.init())
     .pipe(concat("contact.min.css"))
     .pipe(autoprefixer())
@@ -239,6 +246,7 @@ function bundleContactCss() {
 
 function bundleFaqCss() {
   return src(config.paths.src.faqCss)
+  .pipe(plumber({errorHandler: notifier.error}))
     .pipe(sourceMaps.init())
     .pipe(concat("faq.min.css"))
     .pipe(autoprefixer())
@@ -249,6 +257,7 @@ function bundleFaqCss() {
 
 function bundleStorePolicyCss() {
   return src(config.paths.src.storePolicyCss)
+  .pipe(plumber({errorHandler: notifier.error}))
     .pipe(sourceMaps.init())
     .pipe(concat("storePolicy.min.css"))
     .pipe(autoprefixer())
@@ -259,6 +268,7 @@ function bundleStorePolicyCss() {
 
 function bundleIndexJs() {
   return src(config.paths.src.indexJs)
+  .pipe(plumber({errorHandler: notifier.error}))
     .pipe(
       babel({
         presets: ["@babel/env"],
@@ -273,6 +283,7 @@ function bundleIndexJs() {
 
 function bundleShopJs() {
   return src(config.paths.src.shopJs)
+  .pipe(plumber({errorHandler: notifier.error}))
     .pipe(
       babel({
         presets: ["@babel/env"],
@@ -287,6 +298,7 @@ function bundleShopJs() {
 
 function bundleAboutJs() {
   return src(config.paths.src.aboutJs)
+  .pipe(plumber({errorHandler: notifier.error}))
     .pipe(
       babel({
         presets: ["@babel/env"],
@@ -301,6 +313,7 @@ function bundleAboutJs() {
 
 function bundleProcessJs() {
   return src(config.paths.src.processJs)
+  .pipe(plumber({errorHandler: notifier.error}))
     .pipe(
       babel({
         presets: ["@babel/env"],
@@ -315,6 +328,7 @@ function bundleProcessJs() {
 
 function bundleContactJs() {
   return src(config.paths.src.contactJs)
+  .pipe(plumber({errorHandler: notifier.error}))
     .pipe(
       babel({
         presets: ["@babel/env"],
@@ -329,6 +343,7 @@ function bundleContactJs() {
 
 function bundleFaqJs() {
   return src(config.paths.src.faqJs)
+  .pipe(plumber({errorHandler: notifier.error}))
     .pipe(
       babel({
         presets: ["@babel/env"],
@@ -343,6 +358,7 @@ function bundleFaqJs() {
 
 function bundleStorePolicyJs() {
   return src(config.paths.src.storePolicyJs)
+  .pipe(plumber({errorHandler: notifier.error}))
     .pipe(
       babel({
         presets: ["@babel/env"],
@@ -357,28 +373,37 @@ function bundleStorePolicyJs() {
 
 function imageOptimizer() {
   return src(config.paths.src.allImg)
+  .pipe(plumber({errorHandler: notifier.error}))
     .pipe(cache(imagemin({
       verbose: true
     })))
     .pipe(dest(config.paths.dist.img))
 };
 
+function builder(cb) {
+  parallel([
+    bundleIndexCss,
+    bundleIndexJs,
+    bundleShopCss,
+    bundleShopJs,
+    bundleAboutCss,
+    bundleAboutJs,
+    bundleProcessCss,
+    bundleProcessJs,
+    bundleContactCss,
+    bundleContactJs,
+    bundleFaqCss,
+    bundleFaqJs,
+    bundleStorePolicyCss,
+    bundleStorePolicyJs,
+    imageOptimizer,])
+  ;
+  cb()
+}
+
+
 function watchTask() {
-  watch([config.paths.src.allCss, config.paths.src.allJs, config.paths.src.allImg], { interval: 1000 }, parallel([bundleIndexCss,
-bundleIndexJs,
-bundleShopCss,
-bundleShopJs,
-bundleAboutCss,
-bundleAboutJs,
-bundleProcessCss,
-bundleProcessJs,
-bundleContactCss,
-bundleContactJs,
-bundleFaqCss,
-bundleFaqJs,
-bundleStorePolicyCss,
-bundleStorePolicyJs,
-imageOptimizer]))
+  watch([config.paths.src.allCss, config.paths.src.allJs, config.paths.src.allImg], { interval: 1000 }, builder)
 };
 
 exports.bundleIndexCss = bundleIndexCss;
