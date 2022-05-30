@@ -25,7 +25,7 @@ const config = {
         "./src/components/library.blocks/products_slider/**/*css",
         "./src/components/library.blocks/modal_slider/**/*.css",
         "./src/components/library.blocks/parallax/**/*.css",
-        "./src/components/library.blocks/instafeed-slider/*.css",
+        "./src/components/library.blocks/instafeed_slider/**/*.css",
         "./src/components/project.blocks/body/body.css",
         "./src/components/project.blocks/all_blocks/all_blocks.css",
         "./src/components/project.blocks/form/**/*.css",
