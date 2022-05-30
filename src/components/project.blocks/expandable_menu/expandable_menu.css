@@ -1,9 +1,0 @@
-.expandable-menu {
-    height: 87px;
-    max-width: 300px;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    align-items: flex-end;
-    position: relative;
-}
