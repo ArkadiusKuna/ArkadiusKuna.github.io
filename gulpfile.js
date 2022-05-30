@@ -58,7 +58,7 @@ const config = {
         "./src/components/project.blocks/tab/**/*.css",
         "./src/components/project.blocks/accordion/**/*.css",
         "./src/components/project.blocks/checkbox/**/*.css",
-        "./src/components/project.blocks/expandable-menu/**/*.css",
+        "./src/components/project.blocks/expandable_menu/**/*.css",
         "./src/components/project.blocks/products/**/*.css",
         "./src/components/project.blocks/product_card/**/*.css",
         "./src/components/project.blocks/social_media_icons/**/*.css",
