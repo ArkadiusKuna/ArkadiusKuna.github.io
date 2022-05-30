@@ -1,8 +1,0 @@
-.product-card {
-    height: 430px;
-    width: 270px;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    align-items: center;
-}

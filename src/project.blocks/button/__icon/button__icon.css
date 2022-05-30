@@ -1,8 +1,0 @@
-.button__icon {
-    transition: transform 0.4s ease;
-    pointer-events: none;
-}
-
-.icon-rotate {
-    transform: rotate(180deg);
-}
