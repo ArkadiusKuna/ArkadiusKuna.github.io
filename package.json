@@ -37,9 +37,11 @@
     "gulp-imagemin": "^7.1.0",
     "gulp-notifier": "^1.0.6",
     "gulp-plumber": "^1.2.1",
+    "gulp-sass": "^5.1.0",
     "gulp-sourcemaps": "^3.0.0",
     "gulp-uglify": "^3.0.2",
     "i": "^0.3.7",
-    "npm": "^8.11.0"
+    "npm": "^8.11.0",
+    "sass": "^1.52.3"
   }
 }
