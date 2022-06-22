@@ -1,0 +1,21 @@
+.parallax {
+    position: relative;
+
+    &-window {
+        height: 60rem;
+    }
+
+    &__link { 
+        &:link {
+        @include absCenter;
+        text-decoration: underline;
+        color: $color-white;
+        }
+    }
+
+    &__title {
+        font-family: 'Poppins', sans-serif;
+        font-size: $default-font-size;
+        letter-spacing: 0.3rem;
+    }
+}

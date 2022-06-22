@@ -1,0 +1,59 @@
+.product-card { 
+    position: relative;
+    height: 62rem;
+    width: 100%;
+    display: inline-block;
+    border-radius: 5px;
+    background-color: $color-primary-dark;
+
+    &__link {
+        text-decoration: none;
+        color: $color-grey-dark;
+    }
+
+    &__image {
+        height: 25rem;
+        width: 100%;
+        display: none;
+        object-fit: cover;
+        border-radius: 3px;
+
+        &--hover {
+            display: block;
+        }
+    }
+
+    &__overlay-text {
+        display: none;
+    }
+
+    &__description {
+        display: block;
+        text-align: center;
+        padding: 5rem 6rem 3rem 6rem;
+
+        &--small {
+            padding: 1rem 6rem 3rem 7rem;
+        }
+    }
+
+    &__header {
+        font-size: $default-font-size;
+        word-wrap: break-word;
+        color: $color-grey-dark;
+        margin-bottom: 1rem;
+    }
+
+    &__line {
+        height: 0.1rem;
+        width: 80%;
+        background-color: $color-black;
+        display: inline-block;
+    }
+
+    &__price {
+        font-family: 'Water Brush', cursive;
+        font-size: 4rem;
+        line-height: 3;
+    }
+}

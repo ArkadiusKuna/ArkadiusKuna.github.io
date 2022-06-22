@@ -1,0 +1,32 @@
+.footer {
+    background-color: $color-white;
+    text-align: center;
+
+    &__logo-box {
+
+    }
+
+    &__logo {
+        height: 20rem;
+    }
+
+    &__list {
+        height: 40rem;
+    }
+
+    &__item {
+
+        &:not(:last-child) {
+            margin: 1rem;
+        }
+    }
+
+    &__link {
+        display: inline-block;
+        font-size: $default-font-size;
+        font-weight: 400;
+        padding: 1rem 2rem;
+        color: $color-grey-dark;
+        text-decoration: none;
+    }
+}

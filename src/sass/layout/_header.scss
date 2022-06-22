@@ -1,0 +1,39 @@
+.header {
+  &__bar {
+    height: 10rem;
+    position: relative;
+    background-color: $color-primary-light;
+  }
+
+  &__logo-box {
+    position: absolute;
+    top: 0;
+    left: 10.4rem;  
+  }
+
+  &__logo {
+    height: 10rem;
+  } 
+
+  &__cart {
+    height: 3rem;
+    width: 3rem;
+    position: absolute;
+    top: 1.6rem;
+    left: 1.6rem;
+  }
+
+  &__image {
+    height: 55vh;
+    background-image: linear-gradient(rgba($color-black, .2), rgba($color-black, .2)) ,url(../img/header/header.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    text-align: center;
+  }
+
+  &__text-box {
+    text-align: center;
+  }
+}

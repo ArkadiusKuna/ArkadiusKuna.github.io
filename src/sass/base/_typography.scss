@@ -1,0 +1,37 @@
+body {
+  font-family: 'Barlow', sans-serif;
+  font-weight: 400;
+  line-height: 1.5;
+  color: $color-grey-dark;
+}
+
+.heading-primary {
+  display: block;
+  text-align: center;
+  font-size: 12rem;
+  line-height: 1.7;
+  letter-spacing: 1rem;
+  color: $color-primary-light;
+  text-shadow: 5px 5px $color-black;
+  -webkit-text-stroke: 2px $color-black;
+
+  &--animated {
+    animation: moveInLeft 1.5s linear;
+  }
+}
+
+.heading-secondary {
+  display: block;
+  font-size: 6.5rem;
+  letter-spacing: 1rem;
+  font-weight: 200;
+  color: $color-grey-dark;
+  text-transform: uppercase;
+
+  &__line {
+    height: 0.3rem;
+    width: 5rem;
+    background-color: $color-grey-dark;
+    display: inline-block;
+  }
+}

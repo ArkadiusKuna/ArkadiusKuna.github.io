@@ -11,8 +11,11 @@ const introSwiper = new Swiper(".intro-slider", {
     el: ".swiper-pagination",
     type: "bullets",
     clickable: true,
+    dynamicBullets: true,
+    dynamicMainBullets: 2,
   },
   autoplay: {
-    delay: 500,
+    delay: 3000,
+    disableOnInteraction: false,
   },
 });
