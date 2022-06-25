@@ -1,16 +1,14 @@
 body {
   font-family: 'Barlow', sans-serif;
   font-weight: 400;
-  line-height: 1.5;
   color: $color-grey-dark;
 }
 
 .heading-primary {
   display: block;
   text-align: center;
-  font-size: 12rem;
-  line-height: 1.7;
-  letter-spacing: 1rem;
+  font-size: 8rem;
+  letter-spacing: 10px;
   color: $color-primary-light;
   text-shadow: 5px 5px $color-black;
   -webkit-text-stroke: 2px $color-black;
@@ -22,16 +20,22 @@ body {
 
 .heading-secondary {
   display: block;
-  font-size: 6.5rem;
-  letter-spacing: 1rem;
-  font-weight: 200;
+  font-size: 3.5rem;
+  letter-spacing: 5px;
+  font-weight: 600;
   color: $color-grey-dark;
   text-transform: uppercase;
+  margin-bottom: 2rem;
 
   &__line {
-    height: 0.3rem;
-    width: 5rem;
+    display: inline-block;
+    height: 3px;
+    width: 20%;
     background-color: $color-grey-dark;
     display: inline-block;
+  }
+
+  &--small {
+    font-size: 2.8rem;
   }
 }

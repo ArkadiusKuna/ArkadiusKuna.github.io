@@ -1,26 +1,24 @@
 .header {
   &__bar {
-    height: 10rem;
+    height: 12rem;
     position: relative;
-    background-color: $color-primary-light;
+    background-color: $color-grey-light;
   }
 
   &__logo-box {
-    position: absolute;
-    top: 0;
-    left: 10.4rem;  
+    @include absCenter;  
   }
 
   &__logo {
-    height: 10rem;
+    height: 12rem;
   } 
 
   &__cart {
     height: 3rem;
     width: 3rem;
     position: absolute;
-    top: 1.6rem;
-    left: 1.6rem;
+    top: 16px;
+    left: 16px;
   }
 
   &__image {
@@ -34,6 +32,8 @@
   }
 
   &__text-box {
+    @include absCenter;
+    width: 100%;
     text-align: center;
   }
 }

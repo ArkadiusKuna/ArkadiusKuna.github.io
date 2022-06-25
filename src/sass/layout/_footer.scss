@@ -1,32 +1,32 @@
 .footer {
-    background-color: $color-white;
+    background-color: $color-grey-light;
     text-align: center;
 
-    &__logo-box {
-
-    }
-
     &__logo {
-        height: 20rem;
+        height: 16rem;
     }
 
     &__list {
-        height: 40rem;
+        height: 25rem;
+        list-style: none;
     }
 
     &__item {
 
         &:not(:last-child) {
-            margin: 1rem;
+            margin: .8rem;
         }
     }
 
     &__link {
+        &:link,
+        &:visited {
         display: inline-block;
         font-size: $default-font-size;
         font-weight: 400;
         padding: 1rem 2rem;
         color: $color-grey-dark;
         text-decoration: none;
+        }
     }
 }

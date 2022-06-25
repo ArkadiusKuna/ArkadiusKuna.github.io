@@ -19,7 +19,7 @@ const config = {
             allHtml: "./src/*.html",
             sass: "./src/sass/**/*.scss",
             allJs: "./src/scripts/*.js",
-            allImg: "./src/img/**/*.+(png|jpeg|webp|jpg)",
+            allImg: "./src/img/**/*.+(png|jpeg|webp|jpg|svg)",
             singleJs: {
                 index: [
                     "src/scripts/jquery.js",

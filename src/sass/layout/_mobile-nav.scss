@@ -4,13 +4,13 @@
   }
 
   &__button {
-    height: 6rem;
-    width: 6rem;
-    background-color: $color-primary-dark;
+    height: 5rem;
+    width: 5rem;
+    background-color: $color-light-orange;
     border-radius: 50%;
     position: fixed;
-    top: 2rem;
-    right: 2rem;
+    top: 10px;
+    right: 10px;
     z-index: 100;
     box-shadow: 0 2rem 3rem rgba($color-black, 0.3);
     text-align: center;
@@ -18,12 +18,12 @@
   }
 
   &__background {
-    height: 5rem;
-    width: 5rem;
+    height: 4rem;
+    width: 4rem;
     position: fixed;
     border-radius: 50%;
-    top: 2.5rem;
-    right: 2.5rem;
+    top: 15px;
+    right: 15px;
     z-index: 98;
     background-image: radial-gradient($color-primary-light, $color-primary-dark);
     transition: transform .8s cubic-bezier(0.86, 0, 0.07, 1);
@@ -42,7 +42,6 @@
   }
 
   &__list {
-    height: 90%;
     width: 100%;
     position: absolute;
     top: 50%;
@@ -50,6 +49,7 @@
     transform: translate(-50%, -50%);
     list-style: none;
     text-align: center;
+    margin: auto  0;
   }
 
   &__item {
@@ -60,7 +60,7 @@
     &:link, 
     &:visited {
       display: inline-block;
-      font-size: $default-font-size;
+      font-size: 2rem;
       padding: 1rem 2rem;
       color: $color-grey-dark;
       text-decoration: none;
@@ -69,12 +69,12 @@
       transition: all .4s;
     }
 
-    &:hover,
-    &:active {
-      background-position: 100%;
-      color: $color-grey-dark;
-      transform: translateX(1rem);
-    }
+    // &:hover,
+    // &:active {
+    //   background-position: 100%;
+    //   color: $color-grey-dark;
+    //   transform: translateX(1rem);
+    // }
   }
 
   &__checkbox:checked ~ &__background {
@@ -89,12 +89,12 @@
 
   &__icon {
     position: relative;
-    margin-top: 3rem;
+    margin-top: 2.5rem;
 
     &,
     &::before,
     &::after {
-      width: 3rem;
+      width: 2.5rem;
       height: 2px;
       background-color: $color-black;
       display: inline-block;
@@ -112,13 +112,13 @@
     &::after {top: .8rem; }
   }
 
-  &__button:hover &__icon::before {
-    top: -1rem;
-  }
+  // &__button:hover &__icon::before {
+  //   top: -1rem;
+  // }
 
-  &__button:hover &__icon::after {
-    top: 1rem;
-  }
+  // &__button:hover &__icon::after {
+  //   top: 1rem;
+  // }
 
   &__checkbox:checked + &__button &__icon {
     background-color: transparent;
@@ -135,6 +135,6 @@
   }
 
   &__checkbox:checked + &__button {
-    background-color: $color-white;
+    background-color: $color-light-orange;
   }
 }
