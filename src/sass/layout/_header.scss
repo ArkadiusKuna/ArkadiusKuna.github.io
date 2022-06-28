@@ -1,4 +1,5 @@
 .header {
+
   &__bar {
     height: 12rem;
     position: relative;
@@ -10,25 +11,32 @@
   }
 
   &__logo {
-    height: 12rem;
+    height: 120px;
   } 
 
   &__cart {
-    height: 3rem;
-    width: 3rem;
+    height: 30px;
+    width: 30px;
     position: absolute;
-    top: 16px;
+    top: 20px;
     left: 16px;
   }
 
   &__image {
     height: 55vh;
-    background-image: linear-gradient(rgba($color-black, .2), rgba($color-black, .2)) ,url(../img/header/header.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     position: relative;
     text-align: center;
+
+    &--index {
+      background-image: linear-gradient(rgba($color-black, .2), rgba($color-black, .2)) ,url(../img/header/index-header-bg.jpg);
+    }
+
+    &--shop {
+      background-image: linear-gradient(rgba($color-black, .2), rgba($color-black, .2)) ,url(../img/header/shop-header-bg.jpg);
+    }
   }
 
   &__text-box {

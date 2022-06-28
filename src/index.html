@@ -6,11 +6,13 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Biżuteria | Måne</title>
-  <link rel="stylesheet" type="text/css" href="./css/main.css">
-  <script src="js/index.min.js" defer="defer"></script>
+  <link rel="stylesheet" type="text/css" href="index.min.css">
+  <script src="index.min.js" defer="defer"></script>
   <link
     href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;1,400&family=Cinzel:wght@400;700&family=Poppins:wght@600&family=Water+Brush&display=swap"
     rel="stylesheet">
+    <link rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
   <link rel="icon" href="img/logo/logo_mane_black.webp" type="logo Mane">
 </head>
 
@@ -23,8 +25,8 @@
     <nav class="mobile-nav__navigation">
       <ul class="mobile-nav__list">
         <li class="mobile-nav__item"><a href="#" class="mobile-nav__link u-margin-bottom-small">zaloguj</a></li>
-        <li class="mobile-nav__item"><a href="#" class="mobile-nav__link">strona główna</a></li>
-        <li class="mobile-nav__item"><a href="#" class="mobile-nav__link">sklep</a></li>
+        <li class="mobile-nav__item"><a href="index.html" class="mobile-nav__link">strona główna</a></li>
+        <li class="mobile-nav__item"><a href="shop/shop.html" class="mobile-nav__link">sklep</a></li>
         <li class="mobile-nav__item"><a href="#" class="mobile-nav__link">o mnie</a></li>
         <li class="mobile-nav__item"><a href="#" class="mobile-nav__link">proces</a></li>
         <li class="mobile-nav__item"><a href="#" class="mobile-nav__link">kontakt</a></li>
@@ -32,22 +34,35 @@
     </nav>
   </div>
 
-  <header class="header">
+  <div class="scroll-top">
+    <a href="index.html#top" class="scroll-top__link">
+      <span class="scroll-top__icon material-symbols-outlined">
+        north
+      </span>
+    </a>
+  </div>
+  
+  <header class="header" id="top">
     <div class="header__bar">
+
       <div class="header__logo-box">
         <img src="img/logo/logo_nav_bar.webp" alt="Logo Mane-Bizu" class="header__logo">
       </div>
+
       <div class="header__cart">
-        <svg xmlns="http://www.w3.org/2000/svg" class="cart-icon" viewBox="0 0 20 20" fill="currentColor">
-          <path fill-rule="evenodd"
-            d="M10 2a4 4 0 00-4 4v1H5a1 1 0 00-.994.89l-1 9A1 1 0 004 18h12a1 1 0 00.994-1.11l-1-9A1 1 0 0015 7h-1V6a4 4 0 00-4-4zm2 5V6a2 2 0 10-4 0v1h4zm-6 3a1 1 0 112 0 1 1 0 01-2 0zm7-1a1 1 0 100 2 1 1 0 000-2z"
-            clip-rule="evenodd" />
-          <text x="0" y="0" class="navigation__icon" fill="#FFFFFF">20</text>
-        </svg>
-      </div>
+        <img src="img/header/shopping-bag.svg" alt="shopping-bag-image">
+        </div>
+        
+        <div class="social-media-icons">
+          <a href="https://www.facebook.com/M%C3%A5ne-103075501648613" target="_blank">
+            <img src="img/header/icons8-facebook.svg" class="social-media-icons social-media-icons--facebook" alt="fb-logo"></a>
+          <a href="https://www.instagram.com/bizuteria_mane/" target="_blank">
+            <img src="img/header/icons8-instagram.svg" class="social-media-icons social-media-icons--instagram"
+              alt="insta-logo"></a>
+        </div>
     </div>
 
-    <div class="header__image">
+    <div class="header__image header__image--index">
       <div class="header__text-box">
         <h1 class="heading-primary heading-primary--animated u-margin-bottom-small">måne</h1>
         <a href="#" class="btn btn--wide btn--animated btn--orange-light">kolekcja</a>
@@ -69,9 +84,9 @@
   
           <div class="products-slider__swiper-slide swiper-slide">
             <div class="product-card">
-              <a href="dupa" class="product-card__link">
+              <a href="#" class="product-card__link">
                 <div class="product-card__image">
-                  <img src="img/product-card/box-1-img-2.jpg" class="product-card__image" alt="product-img">
+                  <img src="img/product-card/box-1-img-1.webp" class="product-card__image" alt="product-img">
                 </div>
                 <div class="product-card__description">
                   <h3 class="product-card__header">Pleciona bransoletka z Agatem</h3>
@@ -87,7 +102,7 @@
             <div class="product-card">
               <a href="#" class="product-card__link">
                 <div class="product-card__image">
-                  <img src="img/product-card/box-2-img-1.jpg" class="product-card__image product-card__image--2" alt="product-img">
+                  <img src="img/product-card/box-2-img-1.webp" class="product-card__image product-card__image--2" alt="product-img">
                 </div>
                 <div class="product-card__description">
                   <h3 class="product-card__header">Pleciona bransoletka z Turmalinem</h3>
@@ -180,6 +195,9 @@
           </div>
         </div>
 
+        <div class="products-slider__swiper-navigation swiper-button-prev"></div>
+        <div class="products-slider__swiper-navigation swiper-button-next"></div>
+
       </div>
     </section>
   
@@ -269,7 +287,7 @@
             <span class="info-card__title--sub">plecionki</span>
           </h3>
           <span class="info-card__line">&nbsp;</span>
-          <a href="/about.html#making" target="_self" class="info-card__link">design</a>
+          <a href="#" target="_self" class="info-card__link">design</a>
         </div>
       </div>
   
@@ -297,7 +315,7 @@
   
   <footer class="footer">
     <div class="footer__logo-box">
-      <img src="img/logo/logo_nav_bar.webp" alt="" class="footer__logo">
+      <img src="img/logo/logo_nav_bar.webp" alt="" class="footer__logo" id="elevator">
     </div>
   
     <ul class="footer__list">
@@ -317,16 +335,6 @@
     </ul>
   
   </footer>
-    <div class="social-media-icons">
-    
-      <a href="https://www.facebook.com/M%C3%A5ne-103075501648613" target="_blank">
-        <img src="img/social-media-icons/icons8-facebook.svg"
-          class="social-media-icons__image social-media-icons__image--facebook" alt="fb-logo"></a>
-      <a href="https://www.instagram.com/bizuteria_mane/" target="_blank"><img
-          src="img/social-media-icons/icons8-instagram.svg"
-          class="social-media-icons__image social-media-icons__image--instagram" alt="insta-logo"></a>
-    
-    </div>
 </body>
 
 </html>

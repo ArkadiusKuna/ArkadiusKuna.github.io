@@ -1,0 +1,240 @@
+.section-news {
+    background-color: $color-grey-light;
+    padding: 10rem 0;
+}
+
+.products-slider {
+    position: relative;
+
+    &__swiper-slide {
+        text-align: center;
+    }
+
+    &__swiper-navigation {
+        position: absolute;
+        color: $color-black;
+        --swiper-navigation-size: 3rem;
+        top: 360px;
+        background-color: $color-orange-light;
+        height: 35px;
+        width: 35px;
+        border: 1px solid $color-black;
+        border-radius: 50%;
+
+        &.swiper-button-next {
+            right: 25px;
+        }
+
+        &.swiper-button-prev {
+            left: 25px;
+        }
+
+        &::after {
+            font-size: 20px;
+        }
+    }
+}
+
+.section-widget {
+    border-bottom: 2px solid $color-black;
+    padding-bottom: 2rem;
+}
+
+.widget {
+    position: relative;
+    width: 90%;
+    max-width: 40rem;
+    border: 2px solid $color-black;
+    border-radius: 10px;
+    margin: 2rem auto;
+    box-shadow: 0 2rem 4rem rgba($color-black, .6);
+    overflow: hidden;
+
+    &__ribbon {
+        position: absolute;
+        height: 3rem;
+        width: 23rem;
+        top: 3.5rem;
+        left: -5rem;
+        font-size: 2rem;
+        letter-spacing: 5px;
+        line-height: 1.4;
+        text-transform: uppercase;
+        text-align: center;
+        background-color: $color-orange-light;
+        transform: rotate(-40deg);
+    }
+
+    &__image {
+        display: block;
+        height: 44rem;
+        width: 100%;
+    }
+
+    &__description {
+        height: fit-content;
+        padding: 2rem 0;
+        text-align: center;
+        background-image: linear-gradient(to right bottom, rgba($color-white, .5), rgba($color-grey-dark, .5));
+    }
+
+    &__text {
+        font-size: 2.5rem;
+    }
+
+    &__price {
+        font-family: 'Water Brush', cursive;
+        font-size: 2.5rem;
+        margin: 2rem 0;
+    }
+}
+
+.section-info {
+    padding: 6rem 0 10rem 0;
+    background-color: $color-grey-light;
+    text-align: center;
+}
+
+.info-card {
+    position: relative;
+
+    &:not(:last-child) {
+        margin-bottom: 3rem
+    }
+
+    &__image {
+        height: 18rem;
+        width: 90%;
+        max-width: 40rem;
+        object-fit: cover;
+        opacity: .8;
+        border: 2px solid $color-black;
+        border-radius: 10px;
+        box-shadow: 0 2rem 4rem rgba($color-black, .6);
+
+        &--1 {
+            object-position: 50% 46%;
+        }
+
+        &--2 {
+            object-position: 50% 46%;
+        }
+
+        &--3 {
+            object-position: 50% 46%;
+        }
+    }
+
+    &__content {
+        @include absCenter;
+        width: 100%;
+        display: block;
+        text-align: center;
+
+    }
+
+    &__title {
+        color: $color-white;
+        text-transform: uppercase;
+
+        &--main {
+            font-size: 1.9rem;
+            line-height: 2;
+            font-weight: 400;
+        }
+
+        &--sub {
+            font-family: 'Poppins', sans-serif;
+            font-size: 1.8rem;
+            font-weight: 600;
+            letter-spacing: 0.7rem;
+        }
+    }
+
+    &__line {
+        display: block;
+        height: 3px;
+        width: 3rem;
+        background-color: $color-primary-light;
+        margin: 1rem auto;
+        margin-bottom: 2rem;
+    }
+
+    &__link {
+        &:link,
+        &:visited {
+        text-decoration: underline;
+        font-size: 1.5rem;
+        font-weight: 400;
+        letter-spacing: 0.3rem;
+        color: $color-primary-light;
+        }
+    }
+}
+
+.section-instagram {
+    background-color: $color-grey-light;
+    padding: 2rem 0 15rem 0;
+}
+
+.instafeed {
+    &__link {
+        &:link,
+        &:visited {
+        display: block;
+        font-family: 'Poppins', sans-serif;
+        font-size: $default-font-size;
+        line-height: 3;
+        text-decoration: none;
+        color: $color-grey-dark;
+        }
+    }
+}
+
+.instafeed-slider {
+    position: relative;
+
+    &__swiper-slide {
+        display: flex;
+        justify-content: center;
+    }
+
+    &__image {
+        height: 30rem;
+        max-height: 40rem;
+        width: 80%;
+        min-width: 10%;
+        max-width: 40rem;
+        border: 2px solid $color-black;
+        border-radius: 10px;
+        box-shadow: 0 2rem 4rem rgba($color-black, .6);
+    }
+
+    &__caption {
+        display: none;
+    }
+
+    &__swiper-navigation {
+        position: absolute;
+        color: $color-black;
+        --swiper-navigation-size: 3rem;
+        top: 50%;
+        background-color: $color-white;
+        height: 30px;
+        width: 30px;
+        border: 1px solid $color-black;
+        border-radius: 50%;
+
+        &.swiper-button-next {
+            right: 4px;
+        }
+
+        &.swiper-button-prev {
+            left: 4px;
+        }
+
+        &::after {
+            font-size: 20px;
+        }
+    }
+}

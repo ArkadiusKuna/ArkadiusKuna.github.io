@@ -1,184 +1,84 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="pl">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Biżuteria | Måne</title>
-    <script type="text/javascript" defer="defer" src="./js/shop.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="./css/shop.min.css">
-    <link rel="icon" href="./assets/img/project.blocks/all_blocks/logo_nav_bar.webp" type="logo-img">
+    <link rel="stylesheet" type="text/css" href="shop.min.css">
+    <script src="shop.min.js" defer="defer"></script>
     <link
-        href="https://fonts.googleapis.com/css2?family=Barlow:wght@200;300;400;500;600;700&family=Cinzel:wght@400;500&family=Open+Sans:wght@300;400;500&family=Poppins:wght@200;400;600&family=Work+Sans:wght@200;300;400&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;1,400&family=Cinzel:wght@400;700&family=Poppins:wght@600&family=Water+Brush&display=swap"
         rel="stylesheet">
+    <link rel="icon" href="../img/logo/logo_mane_black.webp" type="logo Mane">
 </head>
 
-<body class="body">
-    <!-- ------------------------------------------------  LOGIN, REGISTER AND MISSING EMAIL FORMS  -------------------------------------------------------------- -->
-    <div class="form" id="login-form">
-        <form action="" class="form__inner">
-            <img src="./assets/img/project.blocks/form/close.png" class="form__close-icon" id="login-form-close"
-                alt="close-icon">
-            <h1 class="form__title form__title--margin-top">Zaloguj się</h1>
-            <p class="form__text">Nowy na stronie?
-                <a href="#" class="form__link">
-                    <span class="form__text form__text--bold" id="register"> Zarejestruj się</span></a>
-            </p>
-            <input class="input input--form input--hovered input--focused" type="e-mail" name="login-email"
-                id="login-e-mail" placeholder="E-mail" required>
-            <input class="input input--form input--hovered input--focused" type="password" name="login-password"
-                id="login-password" placeholder="Hasło" required>
-            <p class="form__text form__text--bold">
-                <a class="form__link" id="forgotten-password" href="#">Zapomniałeś hasła?</a>
-            </p>
-            <button class="button button--form button--hovered"><span class="button__text">Zaloguj się</span></button>
-            <p class="form__text">albo</p>
-            <div class="social-media-login">
-                <img class="social-media-login__image" src="./assets/img/project.blocks/social_media_login/facebook.png"
-                    alt="facebook-login">
-                <img class="social-media-login__image" src="./assets/img/project.blocks/social_media_login/google.png"
-                    alt="google-login">
+<body>
+
+    <div class="mobile-nav">
+        <input type="checkbox" class="mobile-nav__checkbox" id="navigation-toggle">
+        <label for="navigation-toggle" class="mobile-nav__button"><span class="mobile-nav__icon">&nbsp;</span></label>
+        <div class="mobile-nav__background">&nbsp;</div>
+        <nav class="mobile-nav__navigation">
+            <ul class="mobile-nav__list">
+                <li class="mobile-nav__item"><a href="#" class="mobile-nav__link u-margin-bottom-small">zaloguj</a></li>
+                <li class="mobile-nav__item"><a href="../index.html" class="mobile-nav__link">strona główna</a></li>
+                <li class="mobile-nav__item"><a href="shop.html" class="mobile-nav__link">sklep</a></li>
+                <li class="mobile-nav__item"><a href="#" class="mobile-nav__link">o mnie</a></li>
+                <li class="mobile-nav__item"><a href="#" class="mobile-nav__link">proces</a></li>
+                <li class="mobile-nav__item"><a href="#" class="mobile-nav__link">kontakt</a></li>
+            </ul>
+        </nav>
+    </div>
+    <header class="header" id="top">
+        <div class="header__bar">
+            <div class="header__logo-box">
+                <img src="../img/logo/logo_nav_bar.webp" alt="Logo Mane-Bizu" class="header__logo">
             </div>
-        </form>
-    </div>
-
-    <div class="form" id="register-form">
-        <form action="" class="form__inner form__inner--wider">
-            <img src="./assets/img/project.blocks/form/close.png" class="form__close-icon" id="register-form-close"
-                alt="close-icon">
-            <h1 class="form__title form__title--margin-bottom form__title--margin-top form__title--margin-bottom">
-                Zarejestruj się</h1>
-            <input class="input input--form input--hovered input--focused" type="text" name="name" placeholder="Imię">
-            <input class="input input--form input--hovered input--focused" type="text" name="last-name"
-                placeholder="Nazwisko">
-            <input class="input input--form input--hovered input--focused" type="email" name="email"
-                placeholder="E-mail">
-            <input class="input input--form input--hovered input--focused input--extended-margin-bottom" type="password"
-                name="password" placeholder="Hasło">
-            <button class="button button--form button--hovered"><span class="button__text">Zaloguj się</span></button>
-            <p class="form__text">Jesteś już zarejestrowany?
-                <a href="#" class="form__link"><span class="form__text--bold" id="login"> Zaloguj się</span></a>
-            </p>
-        </form>
-    </div>
-
-    <div class="form" id="lost-email">
-        <form action="" class="form__inner form__inner--wider form__inner--flex-justify-center">
-            <img src="./assets/img/project.blocks/form/close.png" class="form__close-icon" id="missing-email-form-close"
-                alt="close-icon">
-            <h1 class="form__title form__title--margin-bottom form__title--margin-bottom">Stwórz nowe hasło</h1>
-            <p class="form__text">Wpisz swój adres email</p>
-            <input class="input input--form input--hovered input--focused input--extended-margin-bottom" type="email"
-                name="email" placeholder="E-mail">
-            <button class="button button--form button--hovered"><span class="button__text">Zaloguj się</span></button>
-        </form>
-    </div>
-    <!-- -------------------------------------------------  HEADER NAVIGATION BARS  ------------------------------------------------------------------------------ -->
-    <header class="navigation navigation--flex-justify-center">
-
-        <nav class="navigation__menu" id="top">
-            <ul class="navigation__list">
-                <li class="navigation__item navigation__item--wider">
-                    <div class="logo">
-                        <a class="logo__link" href="./index.html" target="_self">
-                            <img src="./assets/img/project.blocks/logo/logo_mane_black.webp" class="logo__image"
-                                id="header-img" alt="logo-img">
-                        </a>
-                    </div>
-                </li>
-                <li class="navigation__item">
-                    <a class="navigation__link" href="./index.html" target="_self"><span
-                            class="navigation__text navigation__text--hovered">strona główna</span></a>
-                </li>
-                <li class="navigation__item">
-                    <a class="navigation__link" href="./shop.html" target="_self"><span
-                            class="navigation__text navigation__text--hovered">sklep</span></a>
-                </li>
-                <li class="navigation__item">
-                    <a class="navigation__link" href="./about.html" target="_self"><span
-                            class="navigation__text navigation__text--hovered">o mnie</span></a>
-                </li>
-                <li class="navigation__item">
-                    <a class="navigation__link" href="./process.html" target="_self"><span
-                            class="navigation__text navigation__text--hovered">proces</span></a>
-                </li>
-                <li class="navigation__item">
-                    <a class="navigation__link" href="./contact.html" target="_self"><span
-                            class="navigation__text navigation__text--hovered">kontakt</span></a>
-                </li>
-            </ul>
-        </nav>
-
-        <nav class="navigation__menu navigation__menu--side">
-            <ul class="navigation__list navigation__list--side">
-                <li class="navigation__item navigation__item--side">
-                    <a href="#" class="navigation__link" id="log-in-button"><span
-                            class="navigation__text navigation__text--hovered">Zaloguj</span></a>
-                </li>
-                <li class="navigation__item navigation__item--side">
-                    <svg class="navigation__item--icon navigation__item--hovered" xmlns="http://www.w3.org/2000/svg"
-                        version="1.1" width="100%" height="100%" viewBox="5.7 0 105.5 126.1">
-                        <path d="M99.8 28.4c0-1.2-0.9-2-2.1-2h-15c0 3.2 0 7.6 0 8.2 0 1.5-1.2 2.6-2.6 2.9 -1.5 0.3-2.9-0.9-3.2-2.3 0-0.3 0-0.3 0-0.6 0-0.9 0-4.7 
-                                        0-8.2H40.1c0 3.2 0 7.3 0 8.2 0 1.5-1.2 2.9-2.6 2.9 -1.5 0-2.9-0.9-3.2-2.3 0-0.3 0-0.3 0-0.6 0-0.6 0-5 0-8.2h-15c-1.2 0-2 0.9-2 2L8.3 
-                                        124c0 1.2 0.9 2.1 2.1 2.1h96.3c1.2 0 2.1-0.9 2.1-2.1L99.8 28.4z"
-                            fill="#797767">
-                        </path>
-                        <path d="M59.1 5.9c-2.9 0-2 0-2.9 0 -2 0-4.4 0.6-6.4 1.5 -3.2 1.5-5.9 4.1-7.6 7.3 -0.9 1.8-1.5 3.5-1.8 5.6 0 0.9-0.3 1.5-0.3 2.3 0 1.2 0 2.1 0 
-                                        3.2 0 1.5-1.2 2.9-2.6 2.9 -1.5 0-2.9-0.9-3.2-2.3 0-0.3 0-0.3 0-0.6 0-1.2 0-2.3 0-3.5 0-3.2 0.9-6.4 2-9.4 1.2-2.3 2.6-4.7 4.7-6.4 3.2-2.9 
-                                        6.7-5 11.1-5.9C53.5 0.3 55 0 56.7 0c1.5 0 2.9 0 4.4 0 2.9 0 5.6 0.6 7.9 1.8 2.6 1.2 5 2.6 6.7 4.4 3.2 3.2 5.3 6.7 6.4 11.1 0.3 1.5 0.6 3.2 
-                                        0.6 4.7 0 1.2 0 2.3 0 3.2 0 1.5-1.2 2.6-2.6 2.9s-2.9-0.9-3.2-2.3c0-0.3 0-0.3 0-0.6 0-1.2 0-2.6 0-3.8 0-2.3-0.6-4.4-1.8-6.4 -1.5-3.2-4.1-5.9-7.3-7.3 
-                                        -1.8-0.9-3.5-1.8-5.9-1.8C61.1 5.9 59.1 5.9 59.1 5.9L59.1 5.9z">
-                        </path>
-                        <text x="58.5" y="77" dy=".35em" text-anchor="middle" class="navigation__icon"
-                            fill="#FFFFFF">0</text>
-                    </svg>
-                </li>
-            </ul>
-        </nav>
-
+            <div class="header__cart">
+                <img src="../img/header/shopping-bag.svg" alt="shopping-bag-image">
+            </div>
+            <div class="social-media-icons">
+                <a href="https://www.facebook.com/M%C3%A5ne-103075501648613" target="_blank">
+                    <img src="../img/header/icons8-facebook.svg" class="social-media-icons social-media-icons--facebook"
+                        alt="fb-logo"></a>
+                <a href="https://www.instagram.com/bizuteria_mane/" target="_blank">
+                    <img src="../img/header/icons8-instagram.svg" class="social-media-icons social-media-icons--instagram"
+                        alt="insta-logo"></a>
+            </div>
+            </div>
+        <div class="header__image header__image--shop">
+            <div class="header__text-box">
+                <h1 class="heading-primary heading-primary--animated u-margin-bottom-small">sklep</h1>
+            </div>
+        </div>
     </header>
-    <!-- -------------------------------------------------  PAGE HEADER  ------------------------------------------------------------------------------ -->
-    <section class="header">
+    
+    <main>
 
-        <h1 class="header__title">SKLEP</h1>
-
-    </section>
-    <!-- -------------------------------------------------  SHOP CONTENT  ------------------------------------------------------------------------------ -->
-    <main class="tab tab--white">
-
-        <section class="tab__inner tab__inner--width-1250">
-            <aside class="accordion accordion--small">
-
-                <div class="accordion__card accordion__card--small">
+        <section class="section-shop">
+            <aside class="accordion">
+                <div class="accordion__card">
                     <div
-                        class="accordion__header accordion__header--no-top-padding accordion__header--default-cursor accordion__header--shop">
-                        <h3 class="accordion__title accordion__title--large">Cena rosnąco</h3>
+                        class="accordion__header">
+                        <h3 class="accordion__title">Cena rosnąco</h3>
                     </div>
                 </div>
-                <div class="accordion__card accordion__card--small accordion__card--shop">
-                    <div class="accordion__header accordion__header--hovered accordion__header--shop">
-                        <h3 class="accordion__title accordion__title--small">Kolekcja</h3>
-                        <svg class="accordion__icon" xmlns="http://www.w3.org/2000/svg" height="20" width="20">
-                            <path d="M9.375 15.5V10.625H4.5V9.375H9.375V4.5H10.625V9.375H15.5V10.625H10.625V15.5Z"
-                                fill="#6E775D" />
-                        </svg>
+                <div class="accordion__card">
+                    <div class="accordion__header">
+                        <h3 class="accordion__title">Kolekcja</h3>
+                        <img src="../img/accordion/plus-icon.svg" alt="plus-icon">
                     </div>
                     <div class="accordion__content">
-                        <p class="accordion__text accordion__text--small accordion__text--hovered">Wszystie</p>
-                        <p
-                            class="accordion__text accordion__text--small accordion__text--hovered accordion__text--padding-bottom">
-                            Bransoletki</p>
+                        <p class="accordion__text">Wszystie</p>
+                        <p class="accordion__text">Bransoletki</p>
                     </div>
                 </div>
-
-                <div class="accordion__card accordion__card--small accordion__card--shop">
-                    <div class="accordion__header accordion__header--hovered accordion__header--shop">
-                        <h3 class="accordion__title accordion__title--small">Cena</h3>
-                        <svg class="accordion__icon" xmlns="http://www.w3.org/2000/svg" height="20" width="20">
-                            <path d="M9.375 15.5V10.625H4.5V9.375H9.375V4.5H10.625V9.375H15.5V10.625H10.625V15.5Z"
-                                fill="#6E775D" />
-                        </svg>
+                
+                <div class="accordion__card">
+                    <div class="accordion__header">
+                        <h3 class="accordion__title">Cena</h3>
+                        <img src="../img/accordion/plus-icon.svg" alt="plus-icon">
                     </div>
                     <div class="accordion__content">
                         <div class="range-slider">
@@ -190,313 +90,30 @@
                         </div>
                     </div>
                 </div>
-
-                <div class="accordion__card accordion__card--small accordion__card--shop">
-                    <div class="accordion__header accordion__header--hovered accordion__header--shop">
-                        <h3 class="accordion__title accordion__title--small">Rozmiar</h3>
-                        <svg class="accordion__icon" xmlns="http://www.w3.org/2000/svg" height="20" width="20">
-                            <path d="M9.375 15.5V10.625H4.5V9.375H9.375V4.5H10.625V9.375H15.5V10.625H10.625V15.5Z"
-                                fill="#6E775D" />
-                        </svg>
+                
+                <div class="accordion__card">
+                    <div class="accordion__header">
+                        <h3 class="accordion__title">Rozmiar</h3>
+                        <img src="../img/accordion/plus-icon.svg" alt="plus-icon">
                     </div>
                     <div class="accordion__content">
                         <input class="checkbox" type="checkbox" id="14cm" name="S">
-                        <label class="checkbox__label" for="14cm"><span
-                                class="checkbox__text checkbox__text--hovered">Obwód nadgarstka - 14-15
+                        <label class="checkbox__label" for="14cm"><span class="checkbox__text checkbox__text--hovered">Obwód nadgarstka
+                                - 14-15
                                 cm</span></label>
                         <input class="checkbox" type="checkbox" id="16cm" name="M">
-                        <label class="checkbox__label" for="16cm"><span
-                                class="checkbox__text checkbox__text--hovered">Obwód nadgarstka - 16-17
+                        <label class="checkbox__label" for="16cm"><span class="checkbox__text checkbox__text--hovered">Obwód nadgarstka
+                                - 16-17
                                 cm</span></label>
                         <input class="checkbox" type="checkbox" id="18cm" name="L">
-                        <label class="checkbox__label" for="18cm"><span
-                                class="checkbox__text checkbox__text--hovered">Obwód nadgarstka - 18-19
+                        <label class="checkbox__label" for="18cm"><span class="checkbox__text checkbox__text--hovered">Obwód nadgarstka
+                                - 18-19
                                 cm</span></label>
                     </div>
                 </div>
-
             </aside>
-
-            <section
-                class="tab__inner tab__inner--flex-dir-column tab__inner--flex-align-items-end tab__inner--width-1000">
-
-                <div class="expandable-menu">
-                    <button class="button button--dropdown" id="sorting-button">
-                        <span id="sorting-btn-text"
-                            class="button__text button__text--black button__text--margin-y button__text--hovered">Sortuj
-                            według</span>
-                        <svg id="sorting-button-icon" class="button__icon button__icon--margin-y" viewBox="0 0 24 24"
-                            width="24" height="24">
-                            <path
-                                d="M18.2546728,8.18171329 L18.9617796,8.88882007 L12.5952867,15.2537133 L12.5978964,15.2558012 L11.8907896,15.962908 
-                                            L11.8882867,15.9607133 L11.8874628,15.9617796 L11.180356,15.2546728 L11.1812867,15.2527133 L4.81828671,8.88882007 L5.52539349,8.18171329 L11.8882867,14.5457133 L18.2546728,8.18171329 Z"
-                                fill-rule="evenodd"></path>
-                        </svg>
-                    </button>
-                    <ul class="expandable-menu__list" id="expandable-sorting-list">
-                        <li class="expandable-menu__item expandable-menu__item--hovered"><span
-                                class="expandable-menu__text">Najnowsze</span></li>
-                        <li class="expandable-menu__item expandable-menu__item--hovered"
-                            title="Cena (od najniższej do najwyższej)">
-                            <span class="expandable-menu__text">Cena (od najniższej do najwyższej)</span>
-                        </li>
-                        <li class="expandable-menu__item expandable-menu__item--hovered"
-                            title="Cena (od najwyższej do najniższej)">
-                            <span class="expandable-menu__text">Cena (od najwyższej do najniższej)</span>
-                        </li>
-                        <li class="expandable-menu__item expandable-menu__item--hovered">
-                            <span class="expandable-menu__text">Nazwa A-Z</span>
-                        </li>
-                        <li class="expandable-menu__item expandable-menu__item--hovered">
-                            <span class="expandable-menu__text">Nazwa Z-A</span>
-                        </li>
-                    </ul>
-                </div>
-
-                <ul class="products" id="products">
-                    <li class="products__item" data-newest="3">
-                        <div class="product-card product-card--small product-card--padding-around">
-                            <a href="" class="product-card__link">
-                                <div class="product-card__image-swap product-card__image-swap--small">
-                                    <img src="./assets/img/project.blocks/product_card/box_1_img_1_shop.webp"
-                                        class="product-card__image product-card__image--small" alt="product-img">
-                                    <img src="./assets/img/project.blocks/product_card/box_1_img_2_shop.webp"
-                                        class="product-card__image product-card__image--hover-small" alt="">
-                                    <div class="product-card__overlay">
-                                        <div class="product-card__overlay-text">Podgląd</div>
-                                    </div>
-                                </div>
-                                <div class="product-card__description product-card__description--small">
-                                    <p class="product-card__header">Pleciona bransoletka z Agatem</p>
-                                    <hr class="product-card__line">
-                                    <p class="product-card__price">80,00 zł</p>
-                                </div>
-                            </a>
-                            <button class="button button--hovered"><span class="button__text">Dodaj do
-                                    koszyka</span></button>
-                        </div>
-                    </li>
-
-                    <li class="products__item" data-newest="6">
-                        <div class="product-card product-card--small product-card--padding-around">
-                            <a href="" class="product-card__link">
-                                <div class="product-card__image-swap product-card__image-swap--small">
-                                    <img src="./assets/img/project.blocks/product_card/box_3_img_1_shop.webp"
-                                        class="product-card__image product-card__image--small" alt="product-img">
-                                    <img src="./assets/img/project.blocks/product_card/box_3_img_2_shop.webp"
-                                        class="product-card__image product-card__image--hover-small" alt="">
-                                    <div class="product-card__overlay">
-                                        <div class="product-card__overlay-text">Podgląd</div>
-                                    </div>
-                                </div>
-                                <div class="product-card__description product-card__description--small">
-                                    <p class="product-card__header">Pleciona bransoletka z Turmalinem</p>
-                                    <hr class="product-card__line">
-                                    <p class="product-card__price">90,00 zł</p>
-                                </div>
-                            </a>
-                            <button class="button button--hovered"><span class="button__text">Dodaj do
-                                    koszyka</span></button>
-                        </div>
-                    </li>
-
-                    <li class="products__item" data-newest="1">
-                        <div class="product-card product-card--small product-card--padding-around">
-                            <a href="" class="product-card__link">
-                                <div class="product-card__image-swap product-card__image-swap--small">
-                                    <img src="./assets/img/project.blocks/product_card/box_5_img_1_shop.webp"
-                                        class="product-card__image product-card__image--small" alt="product-img">
-                                    <img src="./assets/img/project.blocks/product_card/box_5_img_2_shop.webp"
-                                        class="product-card__image product-card__image--hover-small" alt="">
-                                    <div class="product-card__overlay">
-                                        <div class="product-card__overlay-text">Podgląd</div>
-                                    </div>
-                                </div>
-                                <div class="product-card__description product-card__description--small">
-                                    <p class="product-card__header">Pleciona bransoletka z Rodonitem</p>
-                                    <hr class="product-card__line">
-                                    <p class="product-card__price">100,00 zł</p>
-                                </div>
-                            </a>
-                            <button class="button button--hovered"><span class="button__text">Dodaj do
-                                    koszyka</span></button>
-                        </div>
-                    </li>
-
-                    <li class="products__item" data-newest="4">
-                        <div class="product-card product-card--small product-card--padding-around">
-                            <a href="" class="product-card__link">
-                                <div class="product-card__image-swap product-card__image-swap--small">
-                                    <img src="./assets/img/project.blocks/product_card/box_7_img_1_shop.webp"
-                                        class="product-card__image product-card__image--small" alt="product-img">
-                                    <img src="./assets/img/project.blocks/product_card/box_7_img_2_shop.webp"
-                                        class="product-card__image product-card__image--hover-small" alt="">
-                                    <div class="product-card__overlay">
-                                        <div class="product-card__overlay-text">Podgląd</div>
-                                    </div>
-                                </div>
-                                <div class="product-card__description product-card__description--small">
-                                    <p class="product-card__header">Pleciona bransoletka z Jaspisem</p>
-                                    <hr class="product-card__line">
-                                    <p class="product-card__price">80,00 zł</p>
-                                </div>
-                            </a>
-                            <button class="button button--hovered"><span class="button__text">Dodaj do
-                                    koszyka</span></button>
-                        </div>
-                    </li>
-
-                    <li class="products__item" data-newest="2">
-                        <div class="product-card product-card--small product-card--padding-around">
-                            <a href="" class="product-card__link">
-                                <div class="product-card__image-swap product-card__image-swap--small">
-                                    <img src="./assets/img/project.blocks/product_card/box_2_img_1_shop.webp"
-                                        class="product-card__image product-card__image--small" alt="product-img">
-                                    <img src="./assets/img/project.blocks/product_card/box_2_img_2_shop.webp"
-                                        class="product-card__image product-card__image--hover-small" alt="">
-                                    <div class="product-card__overlay">
-                                        <div class="product-card__overlay-text">Podgląd</div>
-                                    </div>
-                                </div>
-                                <div class="product-card__description product-card__description--small">
-                                    <p class="product-card__header">Pleciona bransoletka z Cytrynem</p>
-                                    <hr class="product-card__line">
-                                    <p class="product-card__price">90,00 zł</p>
-                                </div>
-                            </a>
-                            <button class="button button--hovered"><span class="button__text">Dodaj do
-                                    koszyka</span></button>
-                        </div>
-                    </li>
-
-                    <li class="products__item" data-newest="7">
-                        <div class="product-card product-card--small product-card--padding-around">
-                            <a href="" class="product-card__link">
-                                <div class="product-card__image-swap product-card__image-swap--small">
-                                    <img src="./assets/img/project.blocks/product_card/box_4_img_1_shop.webp"
-                                        class="product-card__image product-card__image--small" alt="product-img">
-                                    <img src="./assets/img/project.blocks/product_card/box_4_img_2_shop.webp"
-                                        class="product-card__image product-card__image--hover-small" alt="">
-                                    <div class="product-card__overlay">
-                                        <div class="product-card__overlay-text">Podgląd</div>
-                                    </div>
-                                </div>
-                                <div class="product-card__description product-card__description--small">
-                                    <p class="product-card__header">Pleciona bransoletka z Cytrynem i księżycową
-                                        zawieszką</p>
-                                    <hr class="product-card__line">
-                                    <p class="product-card__price">120,00 zł</p>
-                                </div>
-                            </a>
-                            <button class="button button--hovered"><span class="button__text">Dodaj do
-                                    koszyka</span></button>
-                        </div>
-                    </li>
-
-                    <li class="products__item" data-newest="5">
-                        <div class="product-card product-card--small product-card--padding-around">
-                            <a href="" class="product-card__link">
-                                <div class="product-card__image-swap product-card__image-swap--small">
-                                    <img src="./assets/img/project.blocks/product_card/box_6_img_1_shop.webp"
-                                        class="product-card__image product-card__image--small" alt="product-img">
-                                    <img src="./assets/img/project.blocks/product_card/box_6_img_2_shop.webp"
-                                        class="product-card__image product-card__image--hover-small" alt="">
-                                    <div class="product-card__overlay">
-                                        <div class="product-card__overlay-text">Podgląd</div>
-                                    </div>
-                                </div>
-                                <div class="product-card__description product-card__description--small">
-                                    <p class="product-card__header">Pleciona bransoletka z Azurytem</p>
-                                    <hr class="product-card__line">
-                                    <p class="product-card__price">100,00 zł</p>
-                                </div>
-                            </a>
-                            <button class="button button--hovered"><span class="button__text">Dodaj do
-                                    koszyka</span></button>
-                        </div>
-                    </li>
-                </ul>
-
-            </section>
         </section>
+
     </main>
-    <!-- ------------------------------------------------------  SOCIAL MEDIA FIXED ICONS  ----------------------------------------------------------------------------- -->
-    <div class="social-media-icons">
-
-        <a href="https://www.facebook.com/M%C3%A5ne-103075501648613" target="_blank"><img
-                src="./assets/img/project.blocks/social_media_icons/facebook.webp" class="social-media-icons__image"
-                alt="fb-logo"></a>
-        <a href="https://www.instagram.com/bizuteria_mane/" target="_blank"><img
-                src="./assets/img/project.blocks/social_media_icons/instagram.webp" class="social-media-icons__image"
-                alt="insta-logo"></a>
-
-    </div>
-    <!-- --------------------------------------------------------  FOOTER SECTION  ------------------------------------------------------------------------------- -->
-    <footer
-        class="navigation navigation--higher navigation--flex-justify-center navigation--flex-align-end navigation--cream">
-
-        <div class="navigation__inner">
-            <nav class="navigation__menu navigation__menu--relative navgation__menu--footer">
-
-                <div class="logo logo--footer">
-                    <img src="./assets/img/project.blocks/logo/logo_mane_black.webp"
-                        class="logo__image logo__image--small" id="elevator" alt="logo-img">
-                </div>
-
-                <ul class="navigation__list navigation__list--vertical">
-                    <li class="navigation__item">
-                        <a href="./index.html" target="_self" class="navigation__link"><span
-                                class="navigation__text navigation__text--hovered">strona
-                                główna</span></a>
-                    </li>
-                    <li class="navigation__item">
-                        <a href="./shop.html" target="_self" class="navigation__link"><span
-                                class="navigation__text navigation__text--hovered">sklep</span></a>
-                    </li>
-                    <li class="navigation__item">
-                        <a href="./about.html" target="_self" class="navigation__link"><span
-                                class="navigation__text navigation__text--hovered">o
-                                nas</span></a>
-                    </li>
-                    <li class="navigation__item">
-                        <a href="./process.html" target="_self" class="navigation__link"><span
-                                class="navigation__text navigation__text--hovered">design</span></a>
-                    </li>
-                    <li class="navigation__item">
-                        <a href="./contact.html" target="_self" class="navigation__link"><span
-                                class="navigation__text navigation__text--hovered">kontakt</span></a>
-                    </li>
-                </ul>
-            </nav>
-
-            <nav class="navigation__menu navgation__menu--footer">
-                <ul class="navigation__list navigation__list--vertical navigation__list--text-align-end">
-                    <li class="navigation__item navigation__item--wider">
-                        <a href="./FAQ.html" target="_self" class="navigation__link"><span
-                                class="navigation__text navigation__text--hovered">FAQ</span></a>
-                    </li>
-                    <li class="navigation__item navigation__item--wider">
-                        <a href="" class="navigation__link"><span
-                                class="navigation__text navigation__text--hovered">wysyłka
-                                i zwroty</span></a>
-                    </li>
-                    <li class="navigation__item navigation__item--wider">
-                        <a href="./store-policy.html#policy" target="_self" class="navigation__link"><span
-                                class="navigation__text navigation__text--hovered">polityka sklepu</span></a>
-                    </li>
-                    <li class="navigation__item navigation__item--wider">
-                        <a href="./store-policy.html#payments" target="_self" class="navigation__link"><span
-                                class="navigation__text navigation__text--hovered">metoda płatności</span></a>
-                    </li>
-                    <li class="navigation__item navigation__item--wider">
-                        <a href="mailto:bizuteria.mane@gmail.com" class="navigation__link"><span
-                                class="navigation__text navigation__text--hovered">bizuteria.mane@gmail.com</span></a>
-                    </li>
-                </ul>
-            </nav>
-        </div>
-    </footer>
-    <!-- --------------------------------------------------------  JS SCRIPTS LINKS  ------------------------------------------------------------------------------- -->
 </body>
-
 </html>

@@ -1,0 +1,19 @@
+.social-media-icons {
+    position: absolute;
+    @include clearFix;
+    bottom: 0;
+    left: 0;
+
+    &--facebook {
+        height: 30px;
+        bottom: 5px;
+        left: 10px;
+    }
+
+    &--instagram {
+        height: 25px;
+        bottom: 7px;
+        left: 30px;
+        margin-left: 25px;
+    }
+}

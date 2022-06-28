@@ -13,14 +13,64 @@ const sass = require("gulp-sass")(require("sass"));
 const cache = require("gulp-cache");
 const plumber = require("gulp-plumber");
 const notifier = require("gulp-notifier");
+const webp = require("gulp-webp");
+const imageminWebp = require("imagemin-webp");
+const clone = require("gulp-clone");
+const clonesink = clone.sink();
 const config = {
     paths: {
         src: {
-            allHtml: "./src/*.html",
-            sass: "./src/sass/**/*.scss",
-            allJs: "./src/scripts/*.js",
-            allImg: "./src/img/**/*.+(png|jpeg|webp|jpg|svg)",
-            singleJs: {
+            html: {
+                allHtml: "src/*.html",
+                index: "src/index.html",
+                shop: "src/shop.html",
+                about: "src/about.html",
+                process: "src/process.html",
+                contact: "src/contact.html",
+                faq: "src/FAQ.html",
+                storePolicy: "src/store-policy.html",
+            },
+            scss: {
+                allScss: "src/sass/**/*.scss",
+                index: [
+                    "src/sass/index.scss",
+                    "src/sass/base/_animations.scss",
+                    "src/sass/base/_base.scss",
+                    "src/sass/base/_typography.scss",
+                    "src/sass/components/_button.scss",
+                    "src/sass/components/_parrallax.scss",
+                    "src/sass/components/_product-card.scss",
+                    "src/sass/layout/_footer.scss",
+                    "src/sass/layout/_header.scss",
+                    "src/sass/layout/_mobile-nav.scss",
+                    "src/sass/layout/_scroll-top.scss",
+                    "src/sass/layout/_social-media-icons.scss",
+                    "src/sass/pages/_index.scss",
+                    "src/sass/utils/_functions.scss",
+                    "src/sass/utils/_mixins.scss",
+                    "src/sass/utils/_utilities.scss",
+                    "src/sass/utils/_variables.scss",
+                ],
+                shop: [
+                    "src/sass/shop.scss",
+                    "src/sass/base/_animations.scss",
+                    "src/sass/base/_base.scss",
+                    "src/sass/base/_typography.scss",
+                    "src/sass/components/_product-card.scss",
+                    "src/sass/components/_accordion.scss",
+                    "src/sass/layout/_footer.scss",
+                    "src/sass/layout/_header.scss",
+                    "src/sass/layout/_mobile-nav.scss",
+                    "src/sass/layout/_social-media-icons.scss",
+                    "src/sass/pages/_shop.scss",
+                    "src/sass/utils/_functions.scss",
+                    "src/sass/utils/_mixins.scss",
+                    "src/sass/utils/_utilities.scss",
+                    "src/sass/utils/_variables.scss",
+                ],
+            },
+            javaScript: {
+                allJs: "src/scripts/*.js",
                 index: [
                     "src/scripts/jquery.js",
                     "src/scripts/instafeed-node.js",
@@ -29,45 +79,123 @@ const config = {
                     "src/scripts/parallax.js",
                     "src/scripts/instafeed.js",
                 ],
+                shop: [
+                    "src/scripts/jquery.js",
+                    "src/scripts/ion.rangeSlider.js",
+                    // "src/scripts/dropdown.js",
+                    // "src/scripts/accordion.js",
+                    "src/scripts/range_slider.js",
+                ],
             },
+            allImg: "./src/img/**/*.+(png|jpg|svg|)",
         },
         dist: {
-            html: "./dist/",
-            css: "./dist/css/",
-            js: "./dist/js/",
-            img: "./dist/img/",
+            html: {
+                index: "dist/",
+                shop: "dist/shop/",
+                about: "dist/about/",
+                process: "dist/process/",
+                contact: "dist/contact/",
+                faq: "dist/faq/",
+                storePolicy: "dist/store-policy/",
+            },
+            scss: {
+                index: "dist/",
+                shop: "dist/shop/",
+                about: "dist/about/",
+                process: "dist/process/",
+                contact: "dist/contact/",
+                faq: "dist/faq/",
+            },
+            javaScript: {
+                index: "dist/",
+                shop: "dist/shop/",
+            },
+            img: "dist/img/",
         },
     },
 };
 
-// //HTML MINIFY TASK
+//HTML MINIFY TASKS
 
-function HTMLminify() {
-    return src(config.paths.src.allHtml)
+function htmlMinify(htmlName) {
+    return src(config.paths.src.html[htmlName])
         .pipe(htmlmin({ collapseWhitespace: true, removeComments: true }))
-        .pipe(dest(config.paths.dist.html))
+        .pipe(dest(config.paths.dist.html[htmlName]))
         .pipe(browserSync.stream());
+}
+
+function minifyIndexHtml() {
+    return htmlMinify("index");
+}
+
+function minifyShopHtml() {
+    return htmlMinify("shop");
+}
+
+function minifyAboutHtml() {
+    return htmlMinify("about");
+}
+
+function minifyProcessHtml() {
+    return htmlMinify("process");
+}
+
+function minifyContactHtml() {
+    return htmlMinify("contact");
+}
+
+function minifyFaqHtml() {
+    return htmlMinify("faq");
+}
+
+function minifyStorePolicyHtml() {
+    return htmlMinify("storePolicy");
 }
 
 // //CSS BUNDLE AND MINIFY TASKS
 
-function bundleCss() {
-    return src(config.paths.src.sass)
+function bundleScss(scssName) {
+    return src(config.paths.src.scss[scssName])
         .pipe(plumber({ errorHandler: notifier.error }))
         .pipe(sass({ outputStyle: "compressed" }).on("error", sass.logError))
         .pipe(sourceMaps.init())
-        .pipe(concat("main.css"))
+        .pipe(concat(`${scssName}.min.css`))
         .pipe(autoprefixer())
         .pipe(cssnano())
         .pipe(sourceMaps.write("."))
-        .pipe(dest(config.paths.dist.css))
+        .pipe(dest(config.paths.dist.scss[scssName]))
         .pipe(browserSync.stream());
+}
+
+function bundleIndexScss() {
+    return bundleScss("index");
+}
+
+function bundleShopScss() {
+    return bundleScss("shop");
+}
+
+function bundleAboutScss() {
+    return bundleScss("about");
+}
+
+function bundleProcessScss() {
+    return bundleScss("process");
+}
+
+function bundleContactScss() {
+    return bundleScss("contact");
+}
+
+function bundleFaqScss() {
+    return bundleScss("faq");
 }
 
 // //JS BUNDLE AND MINIFY TASKS
 
 function bundleJs(jsName) {
-    return src(config.paths.src.singleJs.index)
+    return src(config.paths.src.javaScript[jsName])
         .pipe(plumber({ errorHandler: notifier.error }))
         .pipe(
             babel({
@@ -78,26 +206,27 @@ function bundleJs(jsName) {
         .pipe(concat(`${jsName}.min.js`))
         .pipe(uglify())
         .pipe(sourceMaps.write("."))
-        .pipe(dest(config.paths.dist.js));
+        .pipe(dest(config.paths.dist.javaScript[jsName]))
+        .pipe(browserSync.stream());
 }
 
 function bundleIndexJs() {
     return bundleJs("index");
 }
 
+function bundleShopJs() {
+    return bundleJs("shop");
+}
+
 // //GULP IMAGE TASK
 
 function imageOptimizer() {
     return src(config.paths.src.allImg)
-        .pipe(plumber({ errorHandler: notifier.error }))
-        .pipe(
-            cache(
-                imagemin({
-                    verbose: true,
-                })
-            )
-        )
-        .pipe(dest(config.paths.dist.img));
+        .pipe(cache(imagemin()))
+        .pipe(clonesink)
+        .pipe(webp())
+        .pipe(clonesink.tap())
+        .pipe(gulp.dest("dist/img/"));
 }
 
 // // GULP LOCAL SERVER TASK
@@ -111,27 +240,30 @@ function localServer() {
     });
 }
 
-// // GULP IDIVIDUAL WATCH TASKS
+// // GULP IDIVIDUAL HTML WATCH TASKS
 
-watch(config.paths.src.allHtml, HTMLminify);
+// HTML
 
-watch(config.paths.src.sass, bundleCss);
+watch(config.paths.src.html.index, minifyIndexHtml);
+watch(config.paths.src.html.shop, minifyShopHtml);
+watch(config.paths.src.html.about, minifyAboutHtml);
+watch(config.paths.src.html.process, minifyProcessHtml);
+watch(config.paths.src.html.contact, minifyContactHtml);
+watch(config.paths.src.html.faq, minifyFaqHtml);
 
-watch(config.paths.src.allJs, bundleJs);
+// SCSS
+
+watch(config.paths.src.scss.index, bundleIndexScss);
+watch(config.paths.src.scss.shop, bundleShopScss);
+
+// JS
+
+watch(config.paths.src.javaScript.index, bundleIndexJs);
+watch(config.paths.src.javaScript.shop, bundleShopJs);
+
+// IMG
 
 watch(config.paths.src.allImg, imageOptimizer);
-
-function watchTask() {
-    watch(
-        [
-            config.paths.src.allHtml,
-            config.paths.src.singleJs.index,
-            config.paths.src.sass,
-        ],
-        parallel(HTMLminify, bundleCss, bundleIndexJs)
-    ),
-        watchTask;
-}
 
 // // GULP CLEAR CACHE TASK
 
@@ -139,23 +271,48 @@ function clearCache(done) {
     return cache.clearAll(done);
 }
 
-// GULP INDIVIDUAL TASKS EXPORTS
+// GULP TASKS EXPORTS
 
-exports.bundleCss = bundleCss;
-exports.HTMLminify = HTMLminify;
+exports.htmlMinify = htmlMinify;
+exports.minifyIndexHtml = minifyIndexHtml;
+exports.minifyShopHtml = minifyShopHtml;
+exports.minifyAboutHtml = minifyAboutHtml;
+exports.minifyProcessHtml = minifyProcessHtml;
+exports.minifyContactHtml = minifyContactHtml;
+exports.minifyFaqHtml = minifyFaqHtml;
+exports.minifyStorePolicyHtml = minifyStorePolicyHtml;
+exports.bundleScss = bundleScss;
+exports.bundleIndexScss = bundleIndexScss;
+exports.bundleShopScss = bundleShopScss;
+exports.bundleAboutScss = bundleAboutScss;
+exports.bundleProcessScss = bundleProcessScss;
+exports.bundleContactScss = bundleContactScss;
+exports.bundleFaqScss = bundleFaqScss;
 exports.bundleJs = bundleJs;
 exports.bundleIndexJs = bundleIndexJs;
+exports.bundleShopJs = bundleShopJs;
 exports.imageOptimizer = imageOptimizer;
 exports.localServer = localServer;
 exports.clearCache = clearCache;
-exports.watchTask = watchTask;
 
 // // GULP BUILD TASK EXPORT
 
 exports.build = parallel(
-    HTMLminify,
-    bundleCss,
+    minifyIndexHtml,
+    minifyShopHtml,
+    minifyAboutHtml,
+    minifyProcessHtml,
+    minifyContactHtml,
+    minifyFaqHtml,
+    minifyStorePolicyHtml,
+    bundleIndexScss,
+    bundleShopScss,
+    // bundleAboutScss,
+    // bundleProcessScss,
+    // bundleContactScss,
+    // bundleFaqScss,
     bundleIndexJs,
+    bundleShopJs,
     clearCache,
     localServer
 );
